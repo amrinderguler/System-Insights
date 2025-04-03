@@ -14,13 +14,17 @@ import subprocess
 import re
 import socket
 from collections import defaultdict
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # MongoDB Configuration
-MONGO_URI = "mongodb+srv://amrindersingh:7k9pHt7LcbOa8yqB@cluster0.6ememug.mongodb.net/"
-DB_NAME = "system_monitoring"
-COLLECTION_NAME = "system_activity"
+MONGO_URI = os.getenv("MONGO_URI")
+DB_NAME = os.getenv("DB_NAME")
+COLLECTION_NAME = os.getenv("COLLECTION_NAME")
 
 class SystemMonitor:
+    """A class to monitor system metrics and store them in MongoDB."""
     def __init__(self):
         self.collection = self._connect_to_mongodb()
         self.system_id = socket.gethostname()
@@ -262,7 +266,7 @@ class SystemMonitor:
 
     def collect_metrics(self):
         """Collects all metrics and stores them in MongoDB."""
-        if self.collection is None:  # Fixed: explicit None comparison
+        if self.collection is None:  # Check if MongoDB connection is available
             print("No MongoDB connection available")
             return
             
@@ -280,7 +284,7 @@ class SystemMonitor:
             "system_health": self._get_system_health()
         }
         
-        try:
+        try: 
             self.collection.insert_one(metrics)
             print(f"Metrics logged at {timestamp.isoformat()}")
         except Exception as e:
