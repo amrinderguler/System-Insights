@@ -23,10 +23,6 @@ A real-time monitoring solution that collects and visualizes system metrics incl
 
 ## 🛠️ Installation
 
-### Prerequisites
-- Python 3.8+
-- MongoDB Atlas cluster or local MongoDB 4.4+ 
-
 ### Setup
 1. Clone repository:
    ```bash
