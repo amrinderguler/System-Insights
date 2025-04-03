@@ -50,9 +50,8 @@ python monitor.py
 2. Dashboard
 
 Start the visualization interface:
-
-    ```bash
-    streamlit run dashboard.py
-    ```
+```bash
+streamlit run dashboard.py
+```
     
 
