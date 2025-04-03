@@ -32,4 +32,28 @@ A real-time monitoring solution that collects and visualizes system metrics incl
    ```bash
    git clone https://github.com/amrinderguler/System-Insights.git
    cd System-Insights
+   ```
+2. Install Python dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## 🚀 Usage
+
+1. Data Collection
+
+Run on monitored systems:
+
+    ```bash
+    python monitor.py
+    ```
+
+2. Dashboard
+
+Start the visualization interface:
+
+    ```bash
+    streamlit run dashboard.py
+    ```
+    
 
