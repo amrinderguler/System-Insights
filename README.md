@@ -43,10 +43,9 @@ A real-time monitoring solution that collects and visualizes system metrics incl
 1. Data Collection
 
 Run on monitored systems:
-
-    ```bash
-    python monitor.py
-    ```
+```bash
+python monitor.py
+```
 
 2. Dashboard
 
