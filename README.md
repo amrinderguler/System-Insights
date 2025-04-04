@@ -34,6 +34,9 @@ A real-time monitoring solution that collects and visualizes system metrics incl
     pip install -r requirements.txt
     ```
 
+3. Configure .env
+   Insert MongoDB credentials
+
 ## 🚀 Usage
 
 1. Data Collection
