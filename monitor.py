@@ -17,6 +17,10 @@ import pandas as pd
 import threading
 import queue
 from trend_model import TrendForecaster
+import aiofiles
+from aiouptime import uptime
+import asyncio
+from aioredis import Redis as AsyncRedis
 
 # Configure logging
 logging.basicConfig(
@@ -49,7 +53,7 @@ class SystemMonitor:
         self.is_windows = platform.system() == 'Windows'
         logger.debug("SystemMetricsCollector initialized")
 
-    def _connect_to_mongodb(self) -> Optional[MongoClient]:
+    async def _connect_to_mongodb(self) -> Optional[MongoClient]:
         """Connect to MongoDB with retry logic"""
         max_retries = 3
         retry_delay = 5
@@ -64,13 +68,14 @@ class SystemMonitor:
                     retryWrites=True,
                     retryReads=True
                 )
-                client.admin.command('ping')
+                await client.admin.command('ping')
                 logger.info("Successfully connected to MongoDB")
                 return client[DB_NAME][COLLECTION_NAME]
             except Exception as e:
                 logger.warning(f"Attempt {attempt + 1} failed to connect to MongoDB: {str(e)}")
                 if attempt < max_retries - 1:
-                    time.sleep(retry_delay)
+                    await asyncio.sleep(retry_delay)
+
                     continue
                 logger.error("Failed to connect to MongoDB after multiple attempts")
                 return None
@@ -177,6 +182,11 @@ class SystemMonitor:
             logger.warning(f"Could not get network interfaces: {str(e)}")
         return interfaces
 
+    async def _get_cpu_metrics_async(self) -> Dict[str, Any]:
+        """Get CPU metrics asynchronously"""
+        # For CPU intensive or blocking operations, use asyncio.to_thread
+        return await asyncio.to_thread(self._get_cpu_metrics)
+
     def _get_cpu_metrics(self) -> Dict[str, Any]:
         """Get CPU metrics"""
         metrics = {}
@@ -213,6 +223,10 @@ class SystemMonitor:
         
         return metrics
 
+    async def _get_memory_metrics_async(self) -> Dict[str, Any]:
+        """Get memory metrics asynchronously"""
+        return await asyncio.to_thread(self._get_memory_metrics)
+
     def _get_memory_metrics(self) -> Dict[str, Any]:
         """Get memory metrics"""
         metrics = {}
@@ -233,6 +247,10 @@ class SystemMonitor:
             metrics["error"] = f"Memory metrics collection failed: {str(e)}"
         
         return metrics
+    
+    async def _get_disk_metrics_async(self) -> Dict[str, Any]:
+        """Get disk metrics asynchronously"""
+        return await asyncio.to_thread(self._get_disk_metrics)
 
     def _get_disk_metrics(self) -> Dict[str, Any]:
         """Get disk metrics"""
@@ -264,6 +282,10 @@ class SystemMonitor:
             disk_metrics["error"] = f"Disk metrics collection failed: {str(e)}"
         
         return disk_metrics
+    
+    async def _get_network_metrics_async(self) -> Dict[str, Any]:
+        """Get network metrics asynchronously"""
+        return await asyncio.to_thread(self._get_network_metrics)
 
     def _get_network_metrics(self) -> Dict[str, Any]:
         """Get network metrics"""
@@ -282,6 +304,10 @@ class SystemMonitor:
             metrics["error"] = f"Network metrics collection failed: {str(e)}"
         
         return metrics
+    
+    async def _get_gpu_metrics_async(self) -> Optional[List[Dict[str, Any]]]:
+        """Get GPU metrics asynchronously"""
+        return await asyncio.to_thread(self._get_gpu_metrics)
 
     def _get_gpu_metrics(self) -> Optional[List[Dict[str, Any]]]:
         """Get GPU metrics"""
@@ -302,6 +328,10 @@ class SystemMonitor:
         except Exception as e:
             logger.warning(f"Could not get GPU metrics: {str(e)}")
             return None
+        
+    async def _get_process_metrics_async(self) -> Dict[str, Any]:
+        """Get process metrics asynchronously"""
+        return await asyncio.to_thread(self._get_process_metrics)
 
     def _get_process_metrics(self) -> Dict[str, Any]:
         """Get process metrics"""
@@ -338,7 +368,7 @@ class SystemMonitor:
                 "total_processes": 0
             }
 
-    def _get_system_health(self) -> Dict[str, Any]:
+    async def _get_system_health(self) -> Dict[str, Any]:
         """Get system health metrics"""
         health = {}
         try:
@@ -365,7 +395,7 @@ class SystemMonitor:
         
         return health
 
-    def collect_metrics(self) -> bool:
+    async def collect_metrics(self) -> bool:
         """Collect and store all system metrics"""
         if self.collection is None:
             logger.error("No MongoDB connection available")
@@ -390,7 +420,7 @@ class SystemMonitor:
                 metrics.update(self.system_info)
                 self.system_info_added = True
             
-            self.collection.insert_one(metrics)
+            await self.collection.insert_one(metrics)
             logger.info(f"Metrics stored for {self.system_id} at {timestamp.isoformat()}")
             return True
                 
@@ -398,7 +428,7 @@ class SystemMonitor:
             logger.error(f"Error during metrics collection: {str(e)}", exc_info=True)
             return False
 
-    def train_model_and_save(self, mac_address: str) -> Optional[TrendForecaster]:
+    async def train_model_and_save(self, mac_address: str) -> Optional[TrendForecaster]:
         """Train and save a new model"""
         try:
             if self.collection is None:
@@ -429,7 +459,8 @@ class SystemMonitor:
             historical.ffill(inplace=True)
             historical.bfill(inplace=True)
             
-            forecaster = TrendForecaster(
+            forecaster =await asyncio.to_thread(
+                lambda: TrendForecaster(
                 df=historical,
                 target='cpu.cpu_usage',
                 regressors=[
@@ -440,10 +471,11 @@ class SystemMonitor:
                     'processes.total_processes'
                 ]
             )
+        )
 
             os.makedirs('models', exist_ok=True)
-            with open(model_path, 'wb') as f:
-                pickle.dump(forecaster, f)
+            async with aiofiles.open(model_path, 'wb') as f:
+                await f.write(pickle.dumps(forecaster))
             
             logger.info(f"Model trained and saved to {model_path}")
             return forecaster
@@ -452,7 +484,7 @@ class SystemMonitor:
             logger.error(f"Error during model training: {str(e)}")
             return None
 
-    def _load_model_with_timeout(self, model_path: str) -> Optional[TrendForecaster]:
+    async def _load_model_with_timeout(self, model_path: str) -> Optional[TrendForecaster]:
         """Platform-agnostic model loading with timeout"""
         def load_model(q):
             try:
@@ -477,7 +509,7 @@ class SystemMonitor:
             
         return result if isinstance(result, TrendForecaster) else None
 
-    def load_trend_model(self, mac_address: str) -> Optional[TrendForecaster]:
+    async def load_trend_model(self, mac_address: str) -> Optional[TrendForecaster]:
         """Load an existing model"""
         try:
             sanitized_mac = TrendForecaster.sanitize_mac_address(mac_address)
@@ -497,7 +529,7 @@ class SystemMonitor:
             logger.error(f"Error loading model: {str(e)}")
             return None
 
-    def calculate_next_interval(self, forecaster: Optional[TrendForecaster], latest: Dict[str, Any]) -> int:
+    async def calculate_next_interval(self, forecaster: Optional[TrendForecaster], latest: Dict[str, Any]) -> int:
         """Calculate next collection interval"""
         if forecaster is None:
             return self.default_interval
@@ -513,32 +545,33 @@ class SystemMonitor:
                 "processes.total_processes": latest["processes"]["total_processes"]
             }
             
-            interval = forecaster.get_next_interval(input_data)
+            interval = await asyncio.to_thread(forecaster.get_next_interval, input_data)
             return max(self.min_interval, min(self.max_interval, interval))
             
         except Exception as e:
             logger.error(f"Error calculating interval: {str(e)}")
             return self.default_interval
 
-    def run(self, initial_interval: Optional[int] = None) -> None:
+    async def run(self, initial_interval: Optional[int] = None) -> None:
         """Main monitoring loop"""
+        await self.connect_to_mongodb()
         current_interval = initial_interval if initial_interval is not None else self.default_interval
         cycle = 0
         retrain_every = 12
         
         os.makedirs("models", exist_ok=True)
-        forecaster = self.load_trend_model(self.mac_address)
+        forecaster = await self.load_trend_model(self.mac_address)
         
         if forecaster is None:
             logger.info("Training initial model...")
-            forecaster = self.train_model_and_save(self.mac_address)
+            forecaster =await self.train_model_and_save(self.mac_address)
         
         while True:
             try:
                 start_time = time.time()
                 
-                if not self.collect_metrics():
-                    time.sleep(60)
+                if not await self.collect_metrics():
+                    await asyncio.sleep(60)
                     continue
                 
                 cycle += 1
@@ -546,10 +579,8 @@ class SystemMonitor:
                 if cycle % retrain_every == 0:
                     logger.info("Queueing model retrain...")
                     try:
-                        from rq import Queue
-                        from redis import Redis
-                        q = Queue(connection=Redis())
-                        q.enqueue(self.train_model_and_save, self.mac_address)
+                        redis = await AsyncRedis.from_url("redis://localhost:6379")
+                        await redis.rpush("train_queue", self.mac_address)
                     except Exception as e:
                         logger.error(f"Failed to queue retrain: {str(e)}")
                 
@@ -573,12 +604,14 @@ class SystemMonitor:
                 logger.error(f"Unexpected error: {str(e)}")
                 time.sleep(60)
 
-if __name__ == "__main__":
+async def main():
     try:
-        logger.info("Starting System Monitor")
-        monitor = SystemMonitor()
-        monitor.run()
+        logger.info("Starting Async System Monitor")
+        monitor =  SystemMonitor()
+        await monitor.run()
     except Exception as e:
         logger.critical(f"Fatal error: {str(e)}")
     finally:
         logger.info("Monitor stopped")
+if __name__ == "__main__":
+    asyncio.run(main())
