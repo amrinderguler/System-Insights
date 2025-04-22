@@ -335,3 +335,798 @@ cwd: None
 2025-04-22 18:04:40,042 - INFO - Next collection in 111.6s
 2025-04-22 18:04:44,663 - INFO - Shutting down...
 2025-04-22 18:04:44,664 - INFO - Monitor stopped
+2025-04-22 18:08:57,228 - INFO - Starting System Monitor
+2025-04-22 18:08:57,916 - INFO - Successfully connected to MongoDB
+2025-04-22 18:09:02,461 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:38:58.050568
+2025-04-22 18:09:02,555 - DEBUG - Calculated interval: 115s (Score: 6.75)
+2025-04-22 18:09:02,555 - INFO - Next collection in 110.5s
+2025-04-22 18:10:56,676 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:40:53.052058
+2025-04-22 18:10:56,770 - DEBUG - Calculated interval: 118s (Score: 6.57)
+2025-04-22 18:10:56,770 - INFO - Next collection in 114.3s
+2025-04-22 18:12:54,715 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:42:51.053304
+2025-04-22 18:12:54,804 - DEBUG - Calculated interval: 117s (Score: 6.63)
+2025-04-22 18:12:54,805 - INFO - Next collection in 113.2s
+2025-04-22 18:14:51,784 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:44:48.054887
+2025-04-22 18:14:51,881 - DEBUG - Calculated interval: 116s (Score: 6.69)
+2025-04-22 18:14:51,882 - INFO - Next collection in 112.2s
+2025-04-22 18:16:47,669 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:46:44.055307
+2025-04-22 18:16:47,743 - DEBUG - Calculated interval: 119s (Score: 6.51)
+2025-04-22 18:16:47,745 - INFO - Next collection in 115.3s
+2025-04-22 18:18:14,978 - INFO - Shutting down...
+2025-04-22 18:18:14,979 - INFO - Monitor stopped
+2025-04-22 18:18:25,861 - INFO - Starting System Monitor
+2025-04-22 18:18:25,862 - CRITICAL - Fatal error: SystemMonitor.__init__() got an unexpected keyword argument 'interval'
+Traceback (most recent call last):
+  File "D:\Coding\System Insights\monitor.py", line 587, in <module>
+    monitor = SystemMonitor(interval=5)  # Adjust interval if needed
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SystemMonitor.__init__() got an unexpected keyword argument 'interval'
+2025-04-22 18:18:25,862 - INFO - Monitor stopped
+2025-04-22 18:21:04,730 - INFO - Starting System Monitor
+2025-04-22 18:21:05,301 - INFO - Successfully connected to MongoDB
+2025-04-22 18:21:10,326 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:51:05.430363
+2025-04-22 18:21:10,415 - DEBUG - Calculated interval: 125s (Score: 6.06)
+2025-04-22 18:21:10,415 - INFO - Next collection in 120.0s
+2025-04-22 18:23:14,200 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:53:10.431723
+2025-04-22 18:23:14,280 - DEBUG - Calculated interval: 121s (Score: 6.33)
+2025-04-22 18:23:14,281 - INFO - Next collection in 117.2s
+2025-04-22 18:24:19,648 - INFO - Shutting down...
+2025-04-22 18:24:19,649 - INFO - Monitor stopped
+2025-04-22 18:24:22,360 - INFO - Starting System Monitor
+2025-04-22 18:24:23,215 - INFO - Successfully connected to MongoDB
+2025-04-22 18:24:27,623 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:54:23.336294
+2025-04-22 18:24:27,699 - DEBUG - Calculated interval: 109s (Score: 7.23)
+2025-04-22 18:24:27,700 - INFO - Next collection in 104.6s
+2025-04-22 18:26:15,958 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:56:12.336967
+2025-04-22 18:26:16,031 - DEBUG - Calculated interval: 117s (Score: 6.63)
+2025-04-22 18:26:16,032 - INFO - Next collection in 113.3s
+2025-04-22 18:28:12,963 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:58:09.338379
+2025-04-22 18:28:13,032 - DEBUG - Calculated interval: 78s (Score: 9.54)
+2025-04-22 18:28:13,032 - INFO - Next collection in 74.3s
+2025-04-22 18:29:30,975 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:59:27.339680
+2025-04-22 18:29:31,047 - DEBUG - Calculated interval: 119s (Score: 6.51)
+2025-04-22 18:29:31,048 - INFO - Next collection in 115.3s
+2025-04-22 18:31:30,025 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T13:01:26.340418
+2025-04-22 18:31:30,116 - DEBUG - Calculated interval: 121s (Score: 6.36)
+2025-04-22 18:31:30,117 - INFO - Next collection in 117.2s
+2025-04-22 18:33:30,974 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T13:03:27.340942
+2025-04-22 18:33:31,047 - DEBUG - Calculated interval: 120s (Score: 6.39)
+2025-04-22 18:33:31,047 - INFO - Next collection in 116.3s
+2025-04-22 18:35:31,133 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T13:05:27.342402
+2025-04-22 18:35:31,210 - DEBUG - Calculated interval: 124s (Score: 6.12)
+2025-04-22 18:35:31,212 - INFO - Next collection in 120.1s
+2025-04-22 18:37:35,097 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T13:07:31.343201
+2025-04-22 18:37:35,179 - DEBUG - Calculated interval: 111s (Score: 7.08)
+2025-04-22 18:37:35,179 - INFO - Next collection in 107.2s
+2025-04-22 18:39:25,899 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T13:09:22.344207
+2025-04-22 18:39:25,973 - DEBUG - Calculated interval: 119s (Score: 6.51)
+2025-04-22 18:39:25,973 - INFO - Next collection in 115.4s
+2025-04-22 18:41:24,990 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T13:11:21.345579
+2025-04-22 18:41:25,058 - DEBUG - Calculated interval: 121s (Score: 6.33)
+2025-04-22 18:41:25,059 - INFO - Next collection in 117.3s
+2025-04-22 18:43:25,940 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T13:13:22.346107
+2025-04-22 18:43:26,006 - DEBUG - Calculated interval: 124s (Score: 6.12)
+2025-04-22 18:43:26,006 - INFO - Next collection in 120.3s
+2025-04-22 18:45:29,913 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T13:15:26.347237
+2025-04-22 18:45:29,913 - INFO - Queueing model retrain...
+2025-04-22 18:45:29,971 - ERROR - Failed to queue retrain: Functions from the __main__ module cannot be processed by workers
+2025-04-22 18:45:30,058 - DEBUG - Calculated interval: 124s (Score: 6.09)
+2025-04-22 18:45:30,058 - INFO - Next collection in 120.3s
+2025-04-22 18:47:33,906 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T13:17:30.348141
+2025-04-22 18:47:33,974 - DEBUG - Calculated interval: 113s (Score: 6.90)
+2025-04-22 18:47:33,975 - INFO - Next collection in 109.4s
+2025-04-22 18:49:26,929 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T13:19:23.348812
+2025-04-22 18:49:27,011 - DEBUG - Calculated interval: 122s (Score: 6.24)
+2025-04-22 18:49:27,012 - INFO - Next collection in 118.3s
+2025-04-22 18:51:28,998 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T13:21:25.349631
+2025-04-22 18:51:29,066 - DEBUG - Calculated interval: 123s (Score: 6.18)
+2025-04-22 18:51:29,067 - INFO - Next collection in 119.3s
+2025-04-22 18:53:31,970 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T13:23:28.350333
+2025-04-22 18:53:32,037 - DEBUG - Calculated interval: 113s (Score: 6.93)
+2025-04-22 18:53:32,037 - INFO - Next collection in 109.3s
+2025-04-22 18:54:40,029 - INFO - Shutting down...
+2025-04-22 18:54:40,029 - INFO - Monitor stopped
+2025-04-22 20:36:41,085 - INFO - Starting System Monitor
+2025-04-22 20:36:42,095 - INFO - Successfully connected to MongoDB
+2025-04-22 20:36:46,448 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T15:06:42.392839
+2025-04-22 20:36:46,557 - DEBUG - Calculated interval: 97s (Score: 8.13)
+2025-04-22 20:36:46,558 - INFO - Next collection in 92.8s
+2025-04-22 20:41:44,019 - INFO - Starting System Monitor
+2025-04-22 20:41:44,019 - INFO - Starting System Monitor
+2025-04-22 20:41:45,612 - INFO - Successfully connected to MongoDB
+2025-04-22 20:41:45,618 - INFO - Successfully connected to MongoDB
+2025-04-22 20:41:46,486 - INFO - Starting System Monitor
+2025-04-22 20:41:47,083 - INFO - Successfully connected to MongoDB
+2025-04-22 20:41:50,053 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T15:11:46.146479
+2025-04-22 20:41:50,064 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T15:11:46.146479
+2025-04-22 20:41:50,287 - DEBUG - Calculated interval: 121s (Score: 6.33)
+2025-04-22 20:41:50,287 - DEBUG - Calculated interval: 121s (Score: 6.33)
+2025-04-22 20:41:50,320 - INFO - Next collection in 116.8s
+2025-04-22 20:41:50,544 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T15:11:47.192131
+2025-04-22 20:41:50,647 - DEBUG - Calculated interval: 128s (Score: 5.79)
+2025-04-22 20:41:50,647 - INFO - Next collection in 124.5s
+2025-04-22 20:41:54,857 - INFO - Shutting down...
+2025-04-22 20:41:54,858 - INFO - Monitor stopped
+2025-04-22 20:43:50,321 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T15:13:47.147249
+2025-04-22 20:43:50,327 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T15:13:47.147821
+2025-04-22 20:43:50,397 - DEBUG - Calculated interval: 106s (Score: 7.44)
+2025-04-22 20:43:50,398 - INFO - Next collection in 102.7s
+2025-04-22 20:43:50,404 - DEBUG - Calculated interval: 106s (Score: 7.44)
+2025-04-22 20:43:50,405 - INFO - Next collection in 102.7s
+2025-04-22 20:45:36,332 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T15:15:33.147786
+2025-04-22 20:45:36,335 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T15:15:33.148438
+2025-04-22 20:45:36,418 - DEBUG - Calculated interval: 121s (Score: 6.30)
+2025-04-22 20:45:36,418 - INFO - Next collection in 117.7s
+2025-04-22 20:45:36,419 - DEBUG - Calculated interval: 121s (Score: 6.30)
+2025-04-22 20:45:36,421 - INFO - Next collection in 117.7s
+2025-04-22 20:46:41,193 - INFO - Starting System Monitor
+2025-04-22 20:46:41,785 - INFO - Successfully connected to MongoDB
+2025-04-22 20:46:45,319 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T15:16:41.908001
+2025-04-22 20:46:45,419 - DEBUG - Calculated interval: 127s (Score: 5.88)
+2025-04-22 20:46:45,420 - INFO - Next collection in 123.5s
+2025-04-22 20:47:18,132 - INFO - Shutting down...
+2025-04-22 20:47:18,133 - INFO - Monitor stopped
+2025-04-22 20:47:37,301 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T15:17:34.149367
+2025-04-22 20:47:37,305 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T15:17:34.148853
+2025-04-22 20:47:37,385 - DEBUG - Calculated interval: 124s (Score: 6.09)
+2025-04-22 20:47:37,386 - INFO - Next collection in 120.8s
+2025-04-22 20:47:37,388 - DEBUG - Calculated interval: 124s (Score: 6.09)
+2025-04-22 20:47:37,389 - INFO - Next collection in 120.8s
+2025-04-22 20:56:20,899 - INFO - Starting System Monitor
+2025-04-22 20:56:23,603 - INFO - Successfully connected to MongoDB
+2025-04-22 20:56:25,571 - INFO - Shutting down...
+2025-04-22 20:56:25,573 - INFO - Monitor stopped
+2025-04-22 20:56:40,170 - INFO - Starting System Monitor
+2025-04-22 20:56:40,750 - INFO - Successfully connected to MongoDB
+2025-04-22 20:56:41,819 - INFO - Shutting down...
+2025-04-22 20:56:41,820 - INFO - Monitor stopped
+2025-04-22 20:58:06,422 - INFO - Starting System Monitor
+2025-04-22 20:58:08,231 - INFO - Successfully connected to MongoDB
+2025-04-22 20:58:12,368 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T15:28:08.858101
+2025-04-22 20:58:12,642 - DEBUG - Calculated interval: 93s (Score: 8.37)
+2025-04-22 20:58:12,663 - INFO - Next collection in 89.2s
+2025-04-22 21:19:33,976 - INFO - Starting Async System Monitor
+2025-04-22 21:19:34,066 - CRITICAL - Fatal error: 'SystemMonitor' object has no attribute 'connect_to_mongodb'
+2025-04-22 21:19:34,067 - INFO - Monitor stopped
+2025-04-22 21:20:39,219 - INFO - Starting Async System Monitor
+2025-04-22 21:20:39,304 - CRITICAL - Fatal error: 'SystemMonitor' object has no attribute '_SystemMonitor__connect_to_mongodb'
+2025-04-22 21:20:39,304 - INFO - Monitor stopped
+2025-04-22 21:22:28,248 - INFO - Starting Async System Monitor
+2025-04-22 21:22:28,822 - WARNING - Attempt 1 failed to connect to MongoDB: object dict can't be used in 'await' expression
+2025-04-22 21:22:34,440 - WARNING - Attempt 2 failed to connect to MongoDB: object dict can't be used in 'await' expression
+2025-04-22 21:22:39,888 - WARNING - Attempt 3 failed to connect to MongoDB: object dict can't be used in 'await' expression
+2025-04-22 21:22:39,888 - ERROR - Failed to connect to MongoDB after multiple attempts
+2025-04-22 21:22:44,100 - ERROR - Error during metrics collection: 'coroutine' object has no attribute 'insert_one'
+Traceback (most recent call last):
+  File "D:\Coding\SystemInsights\monitor.py", line 424, in collect_metrics
+    await self.collection.insert_one(metrics)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'coroutine' object has no attribute 'insert_one'
+2025-04-22 21:23:47,651 - ERROR - Error during metrics collection: 'coroutine' object has no attribute 'insert_one'
+Traceback (most recent call last):
+  File "D:\Coding\SystemInsights\monitor.py", line 424, in collect_metrics
+    await self.collection.insert_one(metrics)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'coroutine' object has no attribute 'insert_one'
+2025-04-22 21:24:51,267 - ERROR - Error during metrics collection: 'coroutine' object has no attribute 'insert_one'
+Traceback (most recent call last):
+  File "D:\Coding\SystemInsights\monitor.py", line 424, in collect_metrics
+    await self.collection.insert_one(metrics)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'coroutine' object has no attribute 'insert_one'
+2025-04-22 21:25:54,827 - ERROR - Error during metrics collection: 'coroutine' object has no attribute 'insert_one'
+Traceback (most recent call last):
+  File "D:\Coding\SystemInsights\monitor.py", line 424, in collect_metrics
+    await self.collection.insert_one(metrics)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'coroutine' object has no attribute 'insert_one'
+2025-04-22 21:26:58,458 - ERROR - Error during metrics collection: 'coroutine' object has no attribute 'insert_one'
+Traceback (most recent call last):
+  File "D:\Coding\SystemInsights\monitor.py", line 424, in collect_metrics
+    await self.collection.insert_one(metrics)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'coroutine' object has no attribute 'insert_one'
+2025-04-22 21:28:02,089 - ERROR - Error during metrics collection: 'coroutine' object has no attribute 'insert_one'
+Traceback (most recent call last):
+  File "D:\Coding\SystemInsights\monitor.py", line 424, in collect_metrics
+    await self.collection.insert_one(metrics)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'coroutine' object has no attribute 'insert_one'
+2025-04-22 21:28:26,903 - INFO - Monitor stopped
+2025-04-22 21:28:29,471 - INFO - Starting Async System Monitor
+2025-04-22 21:28:30,029 - INFO - Successfully connected to MongoDB
+2025-04-22 21:28:30,042 - ERROR - Error loading model: No module named 'numpy._core'
+2025-04-22 21:28:30,042 - INFO - Training initial model...
+2025-04-22 21:28:30,429 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2025-04-22 21:28:30,495 - DEBUG - Adding TBB (D:\Coding\SystemInsights\venv\Lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH
+2025-04-22 21:28:30,504 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2025-04-22 21:28:30,524 - DEBUG - input tempfile: C:\Users\Lenovo\AppData\Local\Temp\tmpgf76gafu\femi4kls.json
+2025-04-22 21:28:30,541 - DEBUG - input tempfile: C:\Users\Lenovo\AppData\Local\Temp\tmpgf76gafu\e9lctwjn.json
+2025-04-22 21:28:30,545 - DEBUG - idx 0
+2025-04-22 21:28:30,545 - DEBUG - running CmdStan, num_threads: None
+2025-04-22 21:28:30,545 - DEBUG - CmdStan args: ['D:\\Coding\\SystemInsights\\venv\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=18997', 'data', 'file=C:\\Users\\Lenovo\\AppData\\Local\\Temp\\tmpgf76gafu\\femi4kls.json', 'init=C:\\Users\\Lenovo\\AppData\\Local\\Temp\\tmpgf76gafu\\e9lctwjn.json', 'output', 'file=C:\\Users\\Lenovo\\AppData\\Local\\Temp\\tmpgf76gafu\\prophet_models5311cug\\prophet_model-20250422212830.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+2025-04-22 21:28:30,545 - INFO - Chain [1] start processing
+2025-04-22 21:28:30,826 - INFO - Chain [1] done processing
+2025-04-22 21:28:30,835 - INFO - Successfully trained new Prophet model
+2025-04-22 21:28:30,837 - INFO - Model trained and saved to models\96_22_trend_model.pkl
+2025-04-22 21:28:34,624 - ERROR - Error during metrics collection: cannot encode object: <coroutine object SystemMonitor._get_system_health at 0x000001D5C61BE640>, of type: <class 'coroutine'>
+Traceback (most recent call last):
+  File "D:\Coding\SystemInsights\monitor.py", line 424, in collect_metrics
+    await self.collection.insert_one(metrics)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\collection.py", line 671, in insert_one
+    self._insert_one(
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\collection.py", line 611, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\mongo_client.py", line 1568, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\mongo_client.py", line 1413, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\mongo_client.py", line 1460, in _retry_internal
+    return func(session, conn, retryable)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\collection.py", line 599, in _insert_command
+    result = conn.command(
+             ^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\helpers.py", line 315, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\pool.py", line 960, in command
+    self._raise_connection_failure(error)
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\pool.py", line 932, in command
+    return command(
+           ^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\network.py", line 150, in command
+    request_id, msg, size, max_doc_size = message._op_msg(
+                                          ^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\message.py", line 765, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+bson.errors.InvalidDocument: cannot encode object: <coroutine object SystemMonitor._get_system_health at 0x000001D5C61BE640>, of type: <class 'coroutine'>
+2025-04-22 21:28:58,827 - INFO - Monitor stopped
+2025-04-22 21:29:03,152 - INFO - Starting Async System Monitor
+2025-04-22 21:29:03,709 - INFO - Successfully connected to MongoDB
+2025-04-22 21:29:07,504 - ERROR - Error during metrics collection: cannot encode object: <coroutine object SystemMonitor._get_system_health at 0x000001BE2F7EA740>, of type: <class 'coroutine'>
+Traceback (most recent call last):
+  File "D:\Coding\SystemInsights\monitor.py", line 424, in collect_metrics
+    await self.collection.insert_one(metrics)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\collection.py", line 671, in insert_one
+    self._insert_one(
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\collection.py", line 611, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\mongo_client.py", line 1568, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\mongo_client.py", line 1413, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\mongo_client.py", line 1460, in _retry_internal
+    return func(session, conn, retryable)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\collection.py", line 599, in _insert_command
+    result = conn.command(
+             ^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\helpers.py", line 315, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\pool.py", line 960, in command
+    self._raise_connection_failure(error)
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\pool.py", line 932, in command
+    return command(
+           ^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\network.py", line 150, in command
+    request_id, msg, size, max_doc_size = message._op_msg(
+                                          ^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\message.py", line 765, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+bson.errors.InvalidDocument: cannot encode object: <coroutine object SystemMonitor._get_system_health at 0x000001BE2F7EA740>, of type: <class 'coroutine'>
+2025-04-22 21:30:11,364 - ERROR - Error during metrics collection: cannot encode object: <coroutine object SystemMonitor._get_system_health at 0x000001BE2F7EAE40>, of type: <class 'coroutine'>
+Traceback (most recent call last):
+  File "D:\Coding\SystemInsights\monitor.py", line 424, in collect_metrics
+    await self.collection.insert_one(metrics)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\collection.py", line 671, in insert_one
+    self._insert_one(
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\collection.py", line 611, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\mongo_client.py", line 1568, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\mongo_client.py", line 1413, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\mongo_client.py", line 1460, in _retry_internal
+    return func(session, conn, retryable)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\collection.py", line 599, in _insert_command
+    result = conn.command(
+             ^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\helpers.py", line 315, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\pool.py", line 960, in command
+    self._raise_connection_failure(error)
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\pool.py", line 932, in command
+    return command(
+           ^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\network.py", line 150, in command
+    request_id, msg, size, max_doc_size = message._op_msg(
+                                          ^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\message.py", line 765, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+bson.errors.InvalidDocument: cannot encode object: <coroutine object SystemMonitor._get_system_health at 0x000001BE2F7EAE40>, of type: <class 'coroutine'>
+2025-04-22 21:31:15,251 - ERROR - Error during metrics collection: cannot encode object: <coroutine object SystemMonitor._get_system_health at 0x000001BE2F7EB440>, of type: <class 'coroutine'>
+Traceback (most recent call last):
+  File "D:\Coding\SystemInsights\monitor.py", line 424, in collect_metrics
+    await self.collection.insert_one(metrics)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\collection.py", line 671, in insert_one
+    self._insert_one(
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\collection.py", line 611, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\mongo_client.py", line 1568, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\mongo_client.py", line 1413, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\mongo_client.py", line 1460, in _retry_internal
+    return func(session, conn, retryable)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\collection.py", line 599, in _insert_command
+    result = conn.command(
+             ^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\helpers.py", line 315, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\pool.py", line 960, in command
+    self._raise_connection_failure(error)
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\pool.py", line 932, in command
+    return command(
+           ^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\network.py", line 150, in command
+    request_id, msg, size, max_doc_size = message._op_msg(
+                                          ^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\message.py", line 765, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+bson.errors.InvalidDocument: cannot encode object: <coroutine object SystemMonitor._get_system_health at 0x000001BE2F7EB440>, of type: <class 'coroutine'>
+2025-04-22 21:32:19,050 - ERROR - Error during metrics collection: cannot encode object: <coroutine object SystemMonitor._get_system_health at 0x000001BE2F7EB040>, of type: <class 'coroutine'>
+Traceback (most recent call last):
+  File "D:\Coding\SystemInsights\monitor.py", line 424, in collect_metrics
+    await self.collection.insert_one(metrics)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\collection.py", line 671, in insert_one
+    self._insert_one(
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\collection.py", line 611, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\mongo_client.py", line 1568, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\mongo_client.py", line 1413, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\mongo_client.py", line 1460, in _retry_internal
+    return func(session, conn, retryable)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\collection.py", line 599, in _insert_command
+    result = conn.command(
+             ^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\helpers.py", line 315, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\pool.py", line 960, in command
+    self._raise_connection_failure(error)
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\pool.py", line 932, in command
+    return command(
+           ^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\network.py", line 150, in command
+    request_id, msg, size, max_doc_size = message._op_msg(
+                                          ^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\message.py", line 765, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+bson.errors.InvalidDocument: cannot encode object: <coroutine object SystemMonitor._get_system_health at 0x000001BE2F7EB040>, of type: <class 'coroutine'>
+2025-04-22 21:33:22,898 - ERROR - Error during metrics collection: cannot encode object: <coroutine object SystemMonitor._get_system_health at 0x000001BE2F7EAA40>, of type: <class 'coroutine'>
+Traceback (most recent call last):
+  File "D:\Coding\SystemInsights\monitor.py", line 424, in collect_metrics
+    await self.collection.insert_one(metrics)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\collection.py", line 671, in insert_one
+    self._insert_one(
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\collection.py", line 611, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\mongo_client.py", line 1568, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\mongo_client.py", line 1413, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\mongo_client.py", line 1460, in _retry_internal
+    return func(session, conn, retryable)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\collection.py", line 599, in _insert_command
+    result = conn.command(
+             ^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\helpers.py", line 315, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\pool.py", line 960, in command
+    self._raise_connection_failure(error)
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\pool.py", line 932, in command
+    return command(
+           ^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\network.py", line 150, in command
+    request_id, msg, size, max_doc_size = message._op_msg(
+                                          ^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\message.py", line 765, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+bson.errors.InvalidDocument: cannot encode object: <coroutine object SystemMonitor._get_system_health at 0x000001BE2F7EAA40>, of type: <class 'coroutine'>
+2025-04-22 21:34:26,732 - ERROR - Error during metrics collection: cannot encode object: <coroutine object SystemMonitor._get_system_health at 0x000001BE2F7EA940>, of type: <class 'coroutine'>
+Traceback (most recent call last):
+  File "D:\Coding\SystemInsights\monitor.py", line 424, in collect_metrics
+    await self.collection.insert_one(metrics)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\collection.py", line 671, in insert_one
+    self._insert_one(
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\collection.py", line 611, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\mongo_client.py", line 1568, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\mongo_client.py", line 1413, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\mongo_client.py", line 1460, in _retry_internal
+    return func(session, conn, retryable)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\collection.py", line 599, in _insert_command
+    result = conn.command(
+             ^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\helpers.py", line 315, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\pool.py", line 960, in command
+    self._raise_connection_failure(error)
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\pool.py", line 932, in command
+    return command(
+           ^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\network.py", line 150, in command
+    request_id, msg, size, max_doc_size = message._op_msg(
+                                          ^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\message.py", line 765, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+bson.errors.InvalidDocument: cannot encode object: <coroutine object SystemMonitor._get_system_health at 0x000001BE2F7EA940>, of type: <class 'coroutine'>
+2025-04-22 21:35:08,019 - INFO - Monitor stopped
+2025-04-22 21:35:12,311 - INFO - Starting Async System Monitor
+2025-04-22 21:35:12,844 - INFO - Successfully connected to MongoDB
+2025-04-22 21:35:12,879 - ERROR - Error getting system health metrics: 'module' object is not callable
+2025-04-22 21:35:16,692 - ERROR - Error during metrics collection: object InsertOneResult can't be used in 'await' expression
+Traceback (most recent call last):
+  File "D:\Coding\SystemInsights\monitor.py", line 427, in collect_metrics
+    await self.collection.insert_one(metrics)
+TypeError: object InsertOneResult can't be used in 'await' expression
+2025-04-22 21:36:16,706 - ERROR - Error getting system health metrics: 'module' object is not callable
+2025-04-22 21:36:20,423 - ERROR - Error during metrics collection: object InsertOneResult can't be used in 'await' expression
+Traceback (most recent call last):
+  File "D:\Coding\SystemInsights\monitor.py", line 427, in collect_metrics
+TypeError: object InsertOneResult can't be used in 'await' expression
+2025-04-22 21:37:20,441 - ERROR - Error getting system health metrics: 'module' object is not callable
+2025-04-22 21:37:24,122 - ERROR - Error during metrics collection: object InsertOneResult can't be used in 'await' expression
+Traceback (most recent call last):
+  File "D:\Coding\SystemInsights\monitor.py", line 427, in collect_metrics
+TypeError: object InsertOneResult can't be used in 'await' expression
+2025-04-22 21:38:04,374 - INFO - Monitor stopped
+2025-04-22 21:39:12,552 - INFO - Starting Async System Monitor
+2025-04-22 21:39:13,132 - INFO - Successfully connected to MongoDB
+2025-04-22 21:39:17,029 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:09:13.161238
+2025-04-22 21:39:17,029 - ERROR - Error calculating interval: '_asyncio.Future' object is not subscriptable
+2025-04-22 21:39:17,030 - INFO - Next collection in 296.1s
+2025-04-22 21:42:04,836 - INFO - Shutting down...
+2025-04-22 21:42:04,837 - INFO - Monitor stopped
+2025-04-22 21:42:08,368 - INFO - Starting Async System Monitor
+2025-04-22 21:42:08,933 - INFO - Successfully connected to MongoDB
+2025-04-22 21:42:12,815 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:12:08.977944
+2025-04-22 21:42:12,816 - ERROR - Error calculating interval: '_asyncio.Future' object is not subscriptable
+2025-04-22 21:42:12,816 - INFO - Next collection in 296.2s
+2025-04-22 21:44:08,075 - INFO - Shutting down...
+2025-04-22 21:44:08,077 - INFO - Monitor stopped
+2025-04-22 21:44:14,098 - INFO - Starting Async System Monitor
+2025-04-22 21:44:14,668 - INFO - Successfully connected to MongoDB
+2025-04-22 21:44:18,535 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:14:14.699629
+2025-04-22 21:44:18,539 - ERROR - Error calculating interval: '_asyncio.Future' object is not subscriptable
+Traceback (most recent call last):
+  File "D:\Coding\SystemInsights\monitor.py", line 550, in calculate_next_interval
+    "ds": latest["timestamp"],
+          ~~~~~~^^^^^^^^^^^^^
+TypeError: '_asyncio.Future' object is not subscriptable
+2025-04-22 21:44:18,542 - INFO - Next collection in 296.2s
+2025-04-22 21:44:52,847 - INFO - Shutting down...
+2025-04-22 21:44:52,850 - INFO - Monitor stopped
+2025-04-22 21:44:57,594 - INFO - Starting Async System Monitor
+2025-04-22 21:44:58,173 - INFO - Successfully connected to MongoDB
+2025-04-22 21:45:01,997 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:14:58.203963
+2025-04-22 21:45:01,998 - ERROR - Error calculating interval: '_asyncio.Future' object is not subscriptable
+Traceback (most recent call last):
+  File "D:\Coding\SystemInsights\monitor.py", line 550, in calculate_next_interval
+    "ds": latest["timestamp"],
+          ~~~~~~^^^^^^^^^^^^^
+TypeError: '_asyncio.Future' object is not subscriptable
+2025-04-22 21:45:01,999 - INFO - Next collection in 296.2s
+2025-04-22 21:46:27,714 - INFO - Shutting down...
+2025-04-22 21:46:27,714 - INFO - Monitor stopped
+2025-04-22 21:46:31,570 - INFO - Starting Async System Monitor
+2025-04-22 21:46:32,361 - INFO - Successfully connected to MongoDB
+2025-04-22 21:46:36,199 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:16:32.393664
+2025-04-22 21:46:36,202 - ERROR - Error calculating interval: '_asyncio.Future' object is not subscriptable
+Traceback (most recent call last):
+  File "D:\Coding\SystemInsights\monitor.py", line 550, in calculate_next_interval
+    "ds": latest["timestamp"],
+          ~~~~~~^^^^^^^^^^^^^
+TypeError: '_asyncio.Future' object is not subscriptable
+2025-04-22 21:46:36,205 - INFO - Next collection in 296.2s
+2025-04-22 21:48:46,712 - INFO - Monitor stopped
+2025-04-22 21:48:50,433 - INFO - Starting Async System Monitor
+2025-04-22 21:48:50,973 - INFO - Successfully connected to MongoDB
+2025-04-22 21:48:54,825 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:18:51.016699
+2025-04-22 21:48:54,827 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 21:48:54,900 - DEBUG - Calculated interval: 78s (Score: 11.20)
+2025-04-22 21:48:54,901 - INFO - Dynamic interval: 78s
+2025-04-22 21:48:54,901 - INFO - Next collection in 74.1s
+2025-04-22 21:50:12,946 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:20:09.022763
+2025-04-22 21:50:12,946 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 21:50:13,019 - DEBUG - Calculated interval: 70s (Score: 11.92)
+2025-04-22 21:50:13,021 - INFO - Dynamic interval: 70s
+2025-04-22 21:50:13,021 - INFO - Next collection in 66.0s
+2025-04-22 21:51:22,850 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:21:19.028690
+2025-04-22 21:51:22,851 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 21:51:22,925 - DEBUG - Calculated interval: 64s (Score: 12.46)
+2025-04-22 21:51:22,926 - INFO - Dynamic interval: 64s
+2025-04-22 21:51:22,926 - INFO - Next collection in 60.1s
+2025-04-22 21:52:26,799 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:22:23.033612
+2025-04-22 21:52:26,802 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 21:52:26,869 - DEBUG - Calculated interval: 69s (Score: 12.07)
+2025-04-22 21:52:26,869 - INFO - Dynamic interval: 69s
+2025-04-22 21:52:26,870 - INFO - Next collection in 65.2s
+2025-04-22 21:53:35,940 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:23:32.038731
+2025-04-22 21:53:35,941 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 21:53:36,009 - DEBUG - Calculated interval: 71s (Score: 11.86)
+2025-04-22 21:53:36,010 - INFO - Dynamic interval: 71s
+2025-04-22 21:53:36,010 - INFO - Next collection in 67.0s
+2025-04-22 21:54:46,968 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:24:43.044146
+2025-04-22 21:54:46,969 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 21:54:47,041 - DEBUG - Calculated interval: 72s (Score: 11.77)
+2025-04-22 21:54:47,041 - INFO - Dynamic interval: 72s
+2025-04-22 21:54:47,041 - INFO - Next collection in 68.0s
+2025-04-22 21:55:58,879 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:25:55.050137
+2025-04-22 21:55:58,879 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 21:55:58,949 - DEBUG - Calculated interval: 71s (Score: 11.90)
+2025-04-22 21:55:58,950 - INFO - Dynamic interval: 71s
+2025-04-22 21:55:58,950 - INFO - Next collection in 67.1s
+2025-04-22 21:57:09,801 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:27:06.055921
+2025-04-22 21:57:09,801 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 21:57:09,869 - DEBUG - Calculated interval: 62s (Score: 12.71)
+2025-04-22 21:57:09,870 - INFO - Dynamic interval: 62s
+2025-04-22 21:57:09,870 - INFO - Next collection in 58.2s
+2025-04-22 21:58:11,929 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:28:08.061211
+2025-04-22 21:58:11,932 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 21:58:12,000 - DEBUG - Calculated interval: 71s (Score: 11.90)
+2025-04-22 21:58:12,001 - INFO - Dynamic interval: 71s
+2025-04-22 21:58:12,001 - INFO - Next collection in 67.1s
+2025-04-22 21:59:22,879 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:29:19.066790
+2025-04-22 21:59:22,883 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 21:59:22,952 - DEBUG - Calculated interval: 71s (Score: 11.87)
+2025-04-22 21:59:22,953 - INFO - Dynamic interval: 71s
+2025-04-22 21:59:22,953 - INFO - Next collection in 67.1s
+2025-04-22 22:00:33,980 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:30:30.072313
+2025-04-22 22:00:33,981 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:00:34,049 - DEBUG - Calculated interval: 70s (Score: 11.96)
+2025-04-22 22:00:34,050 - INFO - Dynamic interval: 70s
+2025-04-22 22:00:34,050 - INFO - Next collection in 66.0s
+2025-04-22 22:01:43,940 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:31:40.078227
+2025-04-22 22:01:43,940 - INFO - Queueing model retrain...
+2025-04-22 22:01:48,037 - ERROR - Failed to queue retrain: Error 22 connecting to localhost:6379. 22.
+2025-04-22 22:01:48,038 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:01:48,120 - DEBUG - Calculated interval: 71s (Score: 11.87)
+2025-04-22 22:01:48,121 - INFO - Dynamic interval: 71s
+2025-04-22 22:01:48,121 - INFO - Next collection in 63.0s
+2025-04-22 22:02:54,946 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:32:51.082847
+2025-04-22 22:02:54,947 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:02:55,018 - DEBUG - Calculated interval: 70s (Score: 11.93)
+2025-04-22 22:02:55,020 - INFO - Dynamic interval: 70s
+2025-04-22 22:02:55,020 - INFO - Next collection in 66.1s
+2025-04-22 22:04:04,893 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:34:01.086839
+2025-04-22 22:04:04,894 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:04:04,960 - DEBUG - Calculated interval: 73s (Score: 11.66)
+2025-04-22 22:04:04,961 - INFO - Dynamic interval: 73s
+2025-04-22 22:04:04,961 - INFO - Next collection in 69.1s
+2025-04-22 22:05:18,190 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:35:14.091279
+2025-04-22 22:05:18,192 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:05:18,265 - DEBUG - Calculated interval: 66s (Score: 12.32)
+2025-04-22 22:05:18,266 - INFO - Dynamic interval: 66s
+2025-04-22 22:05:18,266 - INFO - Next collection in 61.8s
+2025-04-22 22:06:23,869 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:36:20.095267
+2025-04-22 22:06:23,873 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:06:23,950 - DEBUG - Calculated interval: 76s (Score: 11.42)
+2025-04-22 22:06:23,950 - INFO - Dynamic interval: 76s
+2025-04-22 22:06:23,950 - INFO - Next collection in 72.1s
+2025-04-22 22:07:40,539 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:37:36.100275
+2025-04-22 22:07:40,540 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:07:40,630 - DEBUG - Calculated interval: 54s (Score: 13.43)
+2025-04-22 22:07:40,631 - INFO - Dynamic interval: 54s
+2025-04-22 22:07:40,631 - INFO - Next collection in 49.5s
+2025-04-22 22:08:34,083 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:38:30.103151
+2025-04-22 22:08:34,086 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:08:34,155 - DEBUG - Calculated interval: 37s (Score: 14.90)
+2025-04-22 22:08:34,157 - INFO - Dynamic interval: 37s
+2025-04-22 22:08:34,158 - INFO - Next collection in 32.9s
+2025-04-22 22:09:11,230 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:39:07.105668
+2025-04-22 22:09:11,230 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:09:11,300 - DEBUG - Calculated interval: 62s (Score: 12.71)
+2025-04-22 22:09:11,300 - INFO - Dynamic interval: 62s
+2025-04-22 22:09:11,301 - INFO - Next collection in 57.8s
+2025-04-22 22:09:14,810 - INFO - Starting Async System Monitor
+2025-04-22 22:09:15,416 - INFO - Successfully connected to MongoDB
+2025-04-22 22:09:18,879 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:39:15.453397
+2025-04-22 22:09:18,880 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:09:18,954 - DEBUG - Calculated interval: 69s (Score: 12.02)
+2025-04-22 22:09:18,955 - INFO - Dynamic interval: 69s
+2025-04-22 22:09:18,955 - INFO - Next collection in 65.5s
+2025-04-22 22:10:12,905 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:40:09.109329
+2025-04-22 22:10:12,906 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:10:12,971 - DEBUG - Calculated interval: 70s (Score: 11.93)
+2025-04-22 22:10:12,972 - INFO - Dynamic interval: 70s
+2025-04-22 22:10:12,972 - INFO - Next collection in 66.1s
+2025-04-22 22:11:22,943 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:41:19.113631
+2025-04-22 22:11:22,948 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:11:23,015 - DEBUG - Calculated interval: 72s (Score: 11.78)
+2025-04-22 22:11:23,016 - INFO - Dynamic interval: 72s
+2025-04-22 22:11:23,016 - INFO - Next collection in 68.1s
+2025-04-22 22:12:34,963 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:42:31.117997
+2025-04-22 22:12:34,966 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:12:35,063 - DEBUG - Calculated interval: 62s (Score: 12.71)
+2025-04-22 22:12:35,064 - INFO - Dynamic interval: 62s
+2025-04-22 22:12:35,064 - INFO - Next collection in 58.1s
+2025-04-22 22:13:36,857 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:43:33.121851
+2025-04-22 22:13:36,859 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:13:36,938 - DEBUG - Calculated interval: 73s (Score: 11.66)
+2025-04-22 22:13:36,939 - INFO - Dynamic interval: 73s
+2025-04-22 22:13:36,939 - INFO - Next collection in 69.2s
+2025-04-22 22:14:49,925 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:44:46.125937
+2025-04-22 22:14:49,925 - INFO - Queueing model retrain...
+2025-04-22 22:14:54,001 - ERROR - Failed to queue retrain: Error 22 connecting to localhost:6379. 22.
+2025-04-22 22:14:54,002 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:14:54,071 - DEBUG - Calculated interval: 69s (Score: 12.05)
+2025-04-22 22:14:54,072 - INFO - Dynamic interval: 69s
+2025-04-22 22:14:54,072 - INFO - Next collection in 61.1s
+2025-04-22 22:15:58,912 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:45:55.130384
+2025-04-22 22:15:58,915 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:15:58,979 - DEBUG - Calculated interval: 68s (Score: 12.17)
+2025-04-22 22:15:58,980 - INFO - Dynamic interval: 68s
+2025-04-22 22:15:58,980 - INFO - Next collection in 64.1s
+2025-04-22 22:17:06,976 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:47:03.134720
+2025-04-22 22:17:06,979 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:17:07,050 - DEBUG - Calculated interval: 40s (Score: 14.63)
+2025-04-22 22:17:07,051 - INFO - Dynamic interval: 40s
+2025-04-22 22:17:07,051 - INFO - Next collection in 36.1s
+2025-04-22 22:17:46,923 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:47:43.137893
+2025-04-22 22:17:46,926 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:17:46,993 - DEBUG - Calculated interval: 69s (Score: 12.02)
+2025-04-22 22:17:46,994 - INFO - Dynamic interval: 69s
+2025-04-22 22:17:46,994 - INFO - Next collection in 65.1s
+2025-04-22 22:18:55,975 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:48:52.142051
+2025-04-22 22:18:55,975 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:18:56,040 - DEBUG - Calculated interval: 68s (Score: 12.11)
+2025-04-22 22:18:56,042 - INFO - Dynamic interval: 68s
+2025-04-22 22:18:56,042 - INFO - Next collection in 64.1s
+2025-04-22 22:20:03,956 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:50:00.145385
+2025-04-22 22:20:03,958 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:20:04,022 - DEBUG - Calculated interval: 71s (Score: 11.90)
+2025-04-22 22:20:04,023 - INFO - Dynamic interval: 71s
+2025-04-22 22:20:04,024 - INFO - Next collection in 67.1s
+2025-04-22 22:21:14,963 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:51:11.148105
+2025-04-22 22:21:14,965 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:21:15,038 - DEBUG - Calculated interval: 75s (Score: 11.54)
+2025-04-22 22:21:15,038 - INFO - Dynamic interval: 75s
+2025-04-22 22:21:15,038 - INFO - Next collection in 71.1s
+2025-04-22 22:22:29,988 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:52:26.152550
+2025-04-22 22:22:29,988 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:22:30,056 - DEBUG - Calculated interval: 66s (Score: 12.32)
+2025-04-22 22:22:30,057 - INFO - Dynamic interval: 66s
+2025-04-22 22:22:30,057 - INFO - Next collection in 62.1s
+2025-04-22 22:23:35,937 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:53:32.156235
+2025-04-22 22:23:35,938 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:23:36,003 - DEBUG - Calculated interval: 74s (Score: 11.63)
+2025-04-22 22:23:36,005 - INFO - Dynamic interval: 74s
+2025-04-22 22:23:36,006 - INFO - Next collection in 70.2s
+2025-04-22 22:24:49,947 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:54:46.159296
+2025-04-22 22:24:49,950 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:24:50,023 - DEBUG - Calculated interval: 74s (Score: 11.63)
+2025-04-22 22:24:50,024 - INFO - Dynamic interval: 74s
+2025-04-22 22:24:50,024 - INFO - Next collection in 70.1s
+2025-04-22 22:26:03,919 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:56:00.163266
+2025-04-22 22:26:03,920 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:26:03,986 - DEBUG - Calculated interval: 67s (Score: 12.20)
+2025-04-22 22:26:03,986 - INFO - Dynamic interval: 67s
+2025-04-22 22:26:03,986 - INFO - Next collection in 63.2s
+2025-04-22 22:27:10,966 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:57:07.167074
+2025-04-22 22:27:10,968 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:27:11,037 - DEBUG - Calculated interval: 62s (Score: 12.71)
+2025-04-22 22:27:11,038 - INFO - Dynamic interval: 62s
+2025-04-22 22:27:11,038 - INFO - Next collection in 58.1s
+2025-04-22 22:28:12,965 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:58:09.170264
+2025-04-22 22:28:12,966 - INFO - Queueing model retrain...
+2025-04-22 22:28:17,058 - ERROR - Failed to queue retrain: Error 22 connecting to localhost:6379. 22.
+2025-04-22 22:28:17,059 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:28:17,127 - DEBUG - Calculated interval: 75s (Score: 11.49)
+2025-04-22 22:28:17,128 - INFO - Dynamic interval: 75s
+2025-04-22 22:28:17,129 - INFO - Next collection in 67.0s
+2025-04-22 22:29:27,950 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T16:59:24.173133
+2025-04-22 22:29:27,950 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:29:28,019 - DEBUG - Calculated interval: 72s (Score: 11.82)
+2025-04-22 22:29:28,019 - INFO - Dynamic interval: 72s
+2025-04-22 22:29:28,020 - INFO - Next collection in 68.2s
+2025-04-22 22:30:39,945 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:00:36.176107
+2025-04-22 22:30:39,945 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:30:40,013 - DEBUG - Calculated interval: 73s (Score: 11.70)
+2025-04-22 22:30:40,013 - INFO - Dynamic interval: 73s
+2025-04-22 22:30:40,014 - INFO - Next collection in 69.2s
+2025-04-22 22:31:52,925 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:01:49.178942
+2025-04-22 22:31:52,929 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:31:52,993 - DEBUG - Calculated interval: 70s (Score: 11.94)
+2025-04-22 22:31:52,994 - INFO - Dynamic interval: 70s
+2025-04-22 22:31:52,994 - INFO - Next collection in 66.2s
+2025-04-22 22:33:02,981 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:02:59.182337
+2025-04-22 22:33:02,981 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:33:03,049 - DEBUG - Calculated interval: 72s (Score: 11.76)
+2025-04-22 22:33:03,050 - INFO - Dynamic interval: 72s
+2025-04-22 22:33:03,050 - INFO - Next collection in 68.1s
+2025-04-22 22:34:15,013 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:04:11.185946
+2025-04-22 22:34:15,014 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:34:15,090 - DEBUG - Calculated interval: 67s (Score: 12.24)
+2025-04-22 22:34:15,091 - INFO - Dynamic interval: 67s
+2025-04-22 22:34:15,091 - INFO - Next collection in 63.1s
+2025-04-22 22:35:22,063 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:05:18.189207
+2025-04-22 22:35:22,064 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:35:22,130 - DEBUG - Calculated interval: 70s (Score: 11.97)
+2025-04-22 22:35:22,130 - INFO - Dynamic interval: 70s
+2025-04-22 22:35:22,130 - INFO - Next collection in 66.1s
+2025-04-22 22:36:32,000 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:06:28.192824
+2025-04-22 22:36:32,001 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:36:32,068 - DEBUG - Calculated interval: 65s (Score: 12.39)
+2025-04-22 22:36:32,070 - INFO - Dynamic interval: 65s
+2025-04-22 22:36:32,070 - INFO - Next collection in 61.1s
+2025-04-22 22:37:37,249 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:07:33.195678
+2025-04-22 22:37:37,250 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:37:37,350 - DEBUG - Calculated interval: 67s (Score: 12.21)
+2025-04-22 22:37:37,351 - INFO - Dynamic interval: 67s
+2025-04-22 22:37:37,351 - INFO - Next collection in 62.8s

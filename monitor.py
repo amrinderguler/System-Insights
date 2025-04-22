@@ -18,9 +18,12 @@ import threading
 import queue
 from trend_model import TrendForecaster
 import aiofiles
-from aiouptime import uptime
+from uptime import uptime
+import uptime
 import asyncio
-from aioredis import Redis as AsyncRedis
+from redis.asyncio import Redis as AsyncRedis
+from motor.motor_asyncio import AsyncIOMotorClient
+
 
 # Configure logging
 logging.basicConfig(
@@ -42,7 +45,7 @@ COLLECTION_NAME = os.getenv("COLLECTION_NAME")
 
 class SystemMonitor:
     def __init__(self):
-        self.collection = self._connect_to_mongodb()
+        self.collection = None 
         self.system_id = socket.gethostname()
         self.mac_address = self._get_mac_address()
         self.system_info = self._get_system_info()
@@ -53,14 +56,17 @@ class SystemMonitor:
         self.is_windows = platform.system() == 'Windows'
         logger.debug("SystemMetricsCollector initialized")
 
-    async def _connect_to_mongodb(self) -> Optional[MongoClient]:
+    
+
+
+    async def _connect_to_mongodb(self) -> Optional[AsyncIOMotorClient]:
         """Connect to MongoDB with retry logic"""
         max_retries = 3
         retry_delay = 5
         
         for attempt in range(max_retries):
             try:
-                client = MongoClient(
+                client = AsyncIOMotorClient(
                     MONGO_URI,
                     serverSelectionTimeoutMS=5000,
                     connectTimeoutMS=10000,
@@ -68,6 +74,7 @@ class SystemMonitor:
                     retryWrites=True,
                     retryReads=True
                 )
+                # Verify connection
                 await client.admin.command('ping')
                 logger.info("Successfully connected to MongoDB")
                 return client[DB_NAME][COLLECTION_NAME]
@@ -75,7 +82,6 @@ class SystemMonitor:
                 logger.warning(f"Attempt {attempt + 1} failed to connect to MongoDB: {str(e)}")
                 if attempt < max_retries - 1:
                     await asyncio.sleep(retry_delay)
-
                     continue
                 logger.error("Failed to connect to MongoDB after multiple attempts")
                 return None
@@ -372,8 +378,10 @@ class SystemMonitor:
         """Get system health metrics"""
         health = {}
         try:
+            # Fix the uptime call
             health.update({
-                "uptime_seconds": uptime(),
+                "uptime_seconds": uptime.uptime(),  # Use uptime.uptime() if you import it as "import uptime"
+                # OR use just uptime() if you import it as "from uptime import uptime"
                 "boot_time": datetime.datetime.fromtimestamp(psutil.boot_time()).isoformat(),
                 "users": [u.name for u in psutil.users()]
             })
@@ -394,7 +402,6 @@ class SystemMonitor:
             health["error"] = f"System health collection failed: {str(e)}"
         
         return health
-
     async def collect_metrics(self) -> bool:
         """Collect and store all system metrics"""
         if self.collection is None:
@@ -403,17 +410,20 @@ class SystemMonitor:
             
         timestamp = datetime.datetime.utcnow()
         try:
+            # Get system health data using await
+            system_health = await self._get_system_health()
+            
             metrics = {
                 "timestamp": timestamp,
                 "mac_address": self.mac_address,
                 "system_id": self.system_id,
-                "cpu": self._get_cpu_metrics(),
-                "memory": self._get_memory_metrics(),
-                "disk": self._get_disk_metrics(),
-                "network": self._get_network_metrics(),
-                "gpu": self._get_gpu_metrics(),
-                "processes": self._get_process_metrics(),
-                "system_health": self._get_system_health()
+                "cpu": await self._get_cpu_metrics_async(),
+                "memory": await self._get_memory_metrics_async(),
+                "disk": await self._get_disk_metrics_async(),
+                "network": await self._get_network_metrics_async(),
+                "gpu": await self._get_gpu_metrics_async(),
+                "processes": await self._get_process_metrics_async(),
+                "system_health": system_health
             }
             
             if not hasattr(self, 'system_info_added'):
@@ -518,7 +528,7 @@ class SystemMonitor:
             if not os.path.exists(model_path) or os.path.getsize(model_path) == 0:
                 return None
                 
-            forecaster = self._load_model_with_timeout(model_path)
+            forecaster =await self._load_model_with_timeout(model_path)
             if forecaster and hasattr(forecaster, 'is_valid') and not forecaster.is_valid():
                 logger.warning("Loaded model failed validation")
                 return None
@@ -529,32 +539,47 @@ class SystemMonitor:
             logger.error(f"Error loading model: {str(e)}")
             return None
 
-    async def calculate_next_interval(self, forecaster: Optional[TrendForecaster], latest: Dict[str, Any]) -> int:
+    async def calculate_next_interval(self, forecaster: Optional[TrendForecaster], latest_future) -> int:
         """Calculate next collection interval"""
         if forecaster is None:
             return self.default_interval
-            
+        
         try:
+            # Make sure we have a dictionary, not a Future
+            if hasattr(latest_future, '__await__'):
+                logger.warning("latest is still a Future, attempting to resolve")
+                latest = await latest_future
+            else:
+                latest = latest_future
+                
+            if not isinstance(latest, dict):
+                logger.error(f"Expected dict, got {type(latest)}")
+                return self.default_interval
+                
+            # Create input data for forecaster
             input_data = {
                 "ds": latest["timestamp"],
-                "cpu.cpu_usage": latest["cpu"]["cpu_usage"],
                 "cpu.cpu_system": latest["cpu"]["cpu_system"],
+                "cpu.cpu_usage": latest["cpu"]["cpu_usage"],
                 "memory.memory_usage_percent": latest["memory"]["memory_usage_percent"],
                 "disk.total_read_mb": latest["disk"]["total_read_mb"],
                 "network.packets_sent": latest["network"]["packets_sent"],
                 "processes.total_processes": latest["processes"]["total_processes"]
             }
             
+            # Execute forecaster in thread pool
             interval = await asyncio.to_thread(forecaster.get_next_interval, input_data)
+            
+            # Apply bounds
             return max(self.min_interval, min(self.max_interval, interval))
             
         except Exception as e:
-            logger.error(f"Error calculating interval: {str(e)}")
+            logger.error(f"Error calculating interval: {str(e)}", exc_info=True)
             return self.default_interval
 
     async def run(self, initial_interval: Optional[int] = None) -> None:
         """Main monitoring loop"""
-        await self.connect_to_mongodb()
+        self.collection = await self._connect_to_mongodb()
         current_interval = initial_interval if initial_interval is not None else self.default_interval
         cycle = 0
         retrain_every = 12
@@ -564,7 +589,7 @@ class SystemMonitor:
         
         if forecaster is None:
             logger.info("Training initial model...")
-            forecaster =await self.train_model_and_save(self.mac_address)
+            forecaster = await self.train_model_and_save(self.mac_address)
         
         while True:
             try:
@@ -584,17 +609,30 @@ class SystemMonitor:
                     except Exception as e:
                         logger.error(f"Failed to queue retrain: {str(e)}")
                 
-                latest = self.collection.find_one(
-                    {'mac_address': self.mac_address},
-                    sort=[('timestamp', -1)]
-                )
+                # Use a completely synchronous approach with a separate thread
+                def get_latest():
+                    try:
+                        return self.collection.find_one(
+                            {'mac_address': self.mac_address},
+                            sort=[('timestamp', -1)]
+                        )
+                    except Exception as e:
+                        logger.error(f"Error in get_latest: {e}")
+                        return None
+                        
+                latest = await asyncio.to_thread(get_latest)
                 
                 if latest:
-                    current_interval = self.calculate_next_interval(forecaster, latest)
+                    try:
+                        current_interval = await self.calculate_next_interval(forecaster, latest)
+                        logger.info(f"Dynamic interval: {current_interval}s")
+                    except Exception as e:
+                        logger.error(f"Failed to calculate interval: {e}", exc_info=True)
                 
                 elapsed = time.time() - start_time
                 sleep_time = max(1, current_interval - elapsed)
                 logger.info(f"Next collection in {sleep_time:.1f}s")
+                # Use blocking sleep since this is the main loop
                 time.sleep(sleep_time)
                 
             except KeyboardInterrupt:
@@ -603,6 +641,22 @@ class SystemMonitor:
             except Exception as e:
                 logger.error(f"Unexpected error: {str(e)}")
                 time.sleep(60)
+
+    # Add this new method to SystemMonitor class
+    async def _get_latest_metrics(self) -> Optional[Dict[str, Any]]:
+        """Get the latest metrics from MongoDB"""
+        try:
+            def find_latest():
+                return self.collection.find_one(
+                    {'mac_address': self.mac_address},
+                    sort=[('timestamp', -1)]
+                )
+            
+            result = await asyncio.to_thread(find_latest)
+            return result
+        except Exception as e:
+            logger.error(f"Error getting latest metrics: {str(e)}")
+        return None
 
 async def main():
     try:
