@@ -1,0 +1,337 @@
+2025-04-22 00:26:41,480 - INFO - Starting System Monitor
+2025-04-22 00:26:42,052 - INFO - Successfully connected to MongoDB
+2025-04-22 00:26:42,218 - ERROR - Unexpected error loading model: module 'signal' has no attribute 'SIGALRM'
+2025-04-22 00:26:42,219 - INFO - No valid model found for 96:22. Training initial model...
+2025-04-22 00:26:42,219 - INFO - Fetching historical data for 96:22
+2025-04-22 00:26:42,495 - INFO - Training model with 314 data points
+2025-04-22 00:26:42,496 - ERROR - Error during model training: TrendForecaster.__init__() got an unexpected keyword argument 'validate'
+Traceback (most recent call last):
+  File "D:\Coding\System Insights\monitor.py", line 714, in train_model_and_save
+    forecaster = TrendForecaster(
+                 ^^^^^^^^^^^^^^^^
+TypeError: TrendForecaster.__init__() got an unexpected keyword argument 'validate'
+2025-04-22 00:26:42,499 - WARNING - Initial model training failed. Using fallback interval.
+2025-04-22 00:26:48,359 - INFO - Successfully stored metrics for DESKTOP-5A6SA56 at 2025-04-21T18:56:42.500572
+2025-04-22 00:26:48,395 - INFO - No forecaster available, using default interval
+2025-04-22 00:26:48,395 - INFO - Cycle 1 complete. Next collection in 294.1 seconds
+2025-04-22 00:27:49,011 - INFO - Monitoring stopped by user
+2025-04-22 00:27:49,012 - INFO - System Monitor stopped
+2025-04-22 00:27:52,855 - INFO - Starting System Monitor
+2025-04-22 00:27:53,437 - INFO - Successfully connected to MongoDB
+2025-04-22 00:27:53,596 - INFO - No model file found at models\96_22_trend_model.pkl
+2025-04-22 00:27:53,597 - INFO - No valid model found for 96:22. Training initial model...
+2025-04-22 00:27:53,597 - INFO - Fetching historical data for 96:22
+2025-04-22 00:27:53,754 - INFO - Training model with 315 data points
+2025-04-22 00:27:53,754 - ERROR - Error during model training: TrendForecaster.__init__() got an unexpected keyword argument 'validate'
+Traceback (most recent call last):
+  File "D:\Coding\System Insights\monitor.py", line 714, in train_model_and_save
+    forecaster = TrendForecaster(
+                 ^^^^^^^^^^^^^^^^
+TypeError: TrendForecaster.__init__() got an unexpected keyword argument 'validate'
+2025-04-22 00:27:53,755 - WARNING - Initial model training failed. Using fallback interval.
+2025-04-22 00:27:59,745 - INFO - Successfully stored metrics for DESKTOP-5A6SA56 at 2025-04-21T18:57:53.755004
+2025-04-22 00:27:59,781 - INFO - No forecaster available, using default interval
+2025-04-22 00:27:59,782 - INFO - Cycle 1 complete. Next collection in 294.0 seconds
+2025-04-22 00:29:51,636 - INFO - Monitoring stopped by user
+2025-04-22 00:29:51,637 - INFO - System Monitor stopped
+2025-04-22 00:29:56,243 - INFO - Starting System Monitor
+2025-04-22 00:29:56,825 - INFO - Successfully connected to MongoDB
+2025-04-22 00:29:56,970 - INFO - No model file found at models\96_22_trend_model.pkl
+2025-04-22 00:29:56,971 - INFO - No valid model found for 96:22. Training initial model...
+2025-04-22 00:29:56,971 - INFO - Fetching historical data for 96:22
+2025-04-22 00:29:57,138 - INFO - Training model with 316 data points
+2025-04-22 00:29:57,168 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2025-04-22 00:29:57,227 - DEBUG - Adding TBB (D:\Coding\System Insights\venv\Lib\site-packages\prophet\stan_model\cmdstan-2.33.1\stan\lib\stan_math\lib\tbb) to PATH
+2025-04-22 00:29:57,237 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2025-04-22 00:29:57,249 - DEBUG - input tempfile: C:\Users\Lenovo\AppData\Local\Temp\tmp9k24a1r6\3blvflqr.json
+2025-04-22 00:29:57,264 - DEBUG - input tempfile: C:\Users\Lenovo\AppData\Local\Temp\tmp9k24a1r6\w9o98mdp.json
+2025-04-22 00:29:57,268 - DEBUG - idx 0
+2025-04-22 00:29:57,268 - DEBUG - running CmdStan, num_threads: None
+2025-04-22 00:29:57,268 - DEBUG - CmdStan args: ['D:\\Coding\\System Insights\\venv\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=71842', 'data', 'file=C:\\Users\\Lenovo\\AppData\\Local\\Temp\\tmp9k24a1r6\\3blvflqr.json', 'init=C:\\Users\\Lenovo\\AppData\\Local\\Temp\\tmp9k24a1r6\\w9o98mdp.json', 'output', 'file=C:\\Users\\Lenovo\\AppData\\Local\\Temp\\tmp9k24a1r6\\prophet_modelypg9tee7\\prophet_model-20250422002957.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+2025-04-22 00:29:57,269 - INFO - Chain [1] start processing
+2025-04-22 00:29:57,312 - INFO - Chain [1] done processing
+2025-04-22 00:29:57,322 - INFO - Successfully trained new Prophet model
+2025-04-22 00:29:57,322 - ERROR - Error during model training: 'TrendForecaster' object has no attribute 'is_valid'
+Traceback (most recent call last):
+  File "D:\Coding\System Insights\monitor.py", line 727, in train_model_and_save
+    if not forecaster.is_valid():
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TrendForecaster' object has no attribute 'is_valid'
+2025-04-22 00:29:57,323 - WARNING - Initial model training failed. Using fallback interval.
+2025-04-22 00:30:03,283 - INFO - Successfully stored metrics for DESKTOP-5A6SA56 at 2025-04-21T18:59:57.323836
+2025-04-22 00:30:03,320 - INFO - No forecaster available, using default interval
+2025-04-22 00:30:03,321 - INFO - Cycle 1 complete. Next collection in 294.0 seconds
+2025-04-22 00:33:20,804 - INFO - Monitoring stopped by user
+2025-04-22 00:33:20,806 - INFO - System Monitor stopped
+2025-04-22 00:33:25,185 - INFO - Starting System Monitor
+2025-04-22 00:33:25,750 - INFO - Successfully connected to MongoDB
+2025-04-22 00:33:25,893 - INFO - No model file found at models\96_22_trend_model.pkl
+2025-04-22 00:33:25,893 - INFO - No valid model found for 96:22. Training initial model...
+2025-04-22 00:33:25,893 - INFO - Fetching historical data for 96:22
+2025-04-22 00:33:26,039 - INFO - Training model with 317 data points
+2025-04-22 00:33:26,070 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2025-04-22 00:33:26,126 - DEBUG - Adding TBB (D:\Coding\System Insights\venv\Lib\site-packages\prophet\stan_model\cmdstan-2.33.1\stan\lib\stan_math\lib\tbb) to PATH
+2025-04-22 00:33:26,136 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2025-04-22 00:33:26,148 - DEBUG - input tempfile: C:\Users\Lenovo\AppData\Local\Temp\tmpfv8htqhg\ze7onsnd.json
+2025-04-22 00:33:26,163 - DEBUG - input tempfile: C:\Users\Lenovo\AppData\Local\Temp\tmpfv8htqhg\kz28v3dr.json
+2025-04-22 00:33:26,167 - DEBUG - idx 0
+2025-04-22 00:33:26,167 - DEBUG - running CmdStan, num_threads: None
+2025-04-22 00:33:26,167 - DEBUG - CmdStan args: ['D:\\Coding\\System Insights\\venv\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=26307', 'data', 'file=C:\\Users\\Lenovo\\AppData\\Local\\Temp\\tmpfv8htqhg\\ze7onsnd.json', 'init=C:\\Users\\Lenovo\\AppData\\Local\\Temp\\tmpfv8htqhg\\kz28v3dr.json', 'output', 'file=C:\\Users\\Lenovo\\AppData\\Local\\Temp\\tmpfv8htqhg\\prophet_modelw777l2dm\\prophet_model-20250422003326.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+2025-04-22 00:33:26,167 - INFO - Chain [1] start processing
+2025-04-22 00:33:26,214 - INFO - Chain [1] done processing
+2025-04-22 00:33:26,223 - INFO - Successfully trained new Prophet model
+2025-04-22 00:33:26,234 - INFO - Model successfully trained and saved to models\96_22_trend_model.pkl
+2025-04-22 00:33:31,976 - INFO - Successfully stored metrics for DESKTOP-5A6SA56 at 2025-04-21T19:03:26.234744
+2025-04-22 00:33:32,040 - DEBUG - Calculated interval: 123s (Score: 6.15)
+2025-04-22 00:33:32,041 - INFO - Calculated next interval: 123 seconds
+2025-04-22 00:33:32,041 - INFO - Cycle 1 complete. Next collection in 117.2 seconds
+2025-04-22 00:35:34,388 - INFO - Successfully stored metrics for DESKTOP-5A6SA56 at 2025-04-21T19:05:29.238738
+2025-04-22 00:35:34,464 - DEBUG - Calculated interval: 125s (Score: 6.00)
+2025-04-22 00:35:34,464 - INFO - Calculated next interval: 125 seconds
+2025-04-22 00:35:34,465 - INFO - Cycle 2 complete. Next collection in 119.8 seconds
+2025-04-22 00:37:39,761 - INFO - Successfully stored metrics for DESKTOP-5A6SA56 at 2025-04-21T19:07:34.242572
+2025-04-22 00:37:39,833 - DEBUG - Calculated interval: 114s (Score: 6.78)
+2025-04-22 00:37:39,834 - INFO - Calculated next interval: 114 seconds
+2025-04-22 00:37:39,834 - INFO - Cycle 3 complete. Next collection in 108.4 seconds
+2025-04-22 00:37:59,198 - INFO - Monitoring stopped by user
+2025-04-22 00:37:59,198 - INFO - System Monitor stopped
+2025-04-22 00:38:02,460 - INFO - Starting System Monitor
+2025-04-22 00:38:03,075 - INFO - Successfully connected to MongoDB
+2025-04-22 00:38:03,210 - ERROR - Unexpected error loading model: module 'signal' has no attribute 'SIGALRM'
+2025-04-22 00:38:03,211 - INFO - No valid model found for 96:22. Training initial model...
+2025-04-22 00:38:03,211 - INFO - Fetching historical data for 96:22
+2025-04-22 00:38:03,388 - INFO - Training model with 320 data points
+2025-04-22 00:38:03,448 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2025-04-22 00:38:03,507 - DEBUG - Adding TBB (D:\Coding\System Insights\venv\Lib\site-packages\prophet\stan_model\cmdstan-2.33.1\stan\lib\stan_math\lib\tbb) to PATH
+2025-04-22 00:38:03,518 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2025-04-22 00:38:03,533 - DEBUG - input tempfile: C:\Users\Lenovo\AppData\Local\Temp\tmph8rr72w6\jdz8ki5z.json
+2025-04-22 00:38:03,551 - DEBUG - input tempfile: C:\Users\Lenovo\AppData\Local\Temp\tmph8rr72w6\i6ug8j4u.json
+2025-04-22 00:38:03,554 - DEBUG - idx 0
+2025-04-22 00:38:03,554 - DEBUG - running CmdStan, num_threads: None
+2025-04-22 00:38:03,554 - DEBUG - CmdStan args: ['D:\\Coding\\System Insights\\venv\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=53760', 'data', 'file=C:\\Users\\Lenovo\\AppData\\Local\\Temp\\tmph8rr72w6\\jdz8ki5z.json', 'init=C:\\Users\\Lenovo\\AppData\\Local\\Temp\\tmph8rr72w6\\i6ug8j4u.json', 'output', 'file=C:\\Users\\Lenovo\\AppData\\Local\\Temp\\tmph8rr72w6\\prophet_modeljhpf9pg2\\prophet_model-20250422003803.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+2025-04-22 00:38:03,555 - INFO - Chain [1] start processing
+2025-04-22 00:38:03,608 - INFO - Chain [1] done processing
+2025-04-22 00:38:03,618 - INFO - Successfully trained new Prophet model
+2025-04-22 00:38:03,629 - INFO - Model successfully trained and saved to models\96_22_trend_model.pkl
+2025-04-22 00:38:09,567 - INFO - Successfully stored metrics for DESKTOP-5A6SA56 at 2025-04-21T19:08:03.629043
+2025-04-22 00:38:09,655 - DEBUG - Calculated interval: 97s (Score: 8.02)
+2025-04-22 00:38:09,656 - INFO - Calculated next interval: 97 seconds
+2025-04-22 00:38:09,656 - INFO - Cycle 1 complete. Next collection in 91.0 seconds
+2025-04-22 00:39:46,158 - INFO - Successfully stored metrics for DESKTOP-5A6SA56 at 2025-04-21T19:09:40.632139
+2025-04-22 00:39:46,241 - DEBUG - Calculated interval: 102s (Score: 7.63)
+2025-04-22 00:39:46,242 - INFO - Calculated next interval: 102 seconds
+2025-04-22 00:39:46,242 - INFO - Cycle 2 complete. Next collection in 96.4 seconds
+2025-04-22 00:41:28,314 - INFO - Successfully stored metrics for DESKTOP-5A6SA56 at 2025-04-21T19:11:22.635021
+2025-04-22 00:41:28,391 - DEBUG - Calculated interval: 96s (Score: 8.05)
+2025-04-22 00:41:28,392 - INFO - Calculated next interval: 96 seconds
+2025-04-22 00:41:28,392 - INFO - Cycle 3 complete. Next collection in 90.2 seconds
+2025-04-22 00:43:04,253 - INFO - Successfully stored metrics for DESKTOP-5A6SA56 at 2025-04-21T19:12:58.637256
+2025-04-22 00:43:04,333 - DEBUG - Calculated interval: 98s (Score: 7.96)
+2025-04-22 00:43:04,333 - INFO - Calculated next interval: 98 seconds
+2025-04-22 00:43:04,334 - INFO - Cycle 4 complete. Next collection in 92.3 seconds
+2025-04-22 00:44:42,198 - INFO - Successfully stored metrics for DESKTOP-5A6SA56 at 2025-04-21T19:14:36.639555
+2025-04-22 00:44:42,267 - DEBUG - Calculated interval: 103s (Score: 7.54)
+2025-04-22 00:44:42,267 - INFO - Calculated next interval: 103 seconds
+2025-04-22 00:44:42,268 - INFO - Cycle 5 complete. Next collection in 97.4 seconds
+2025-04-22 00:46:24,998 - INFO - Successfully stored metrics for DESKTOP-5A6SA56 at 2025-04-21T19:16:19.642141
+2025-04-22 00:46:25,069 - DEBUG - Calculated interval: 98s (Score: 7.96)
+2025-04-22 00:46:25,069 - INFO - Calculated next interval: 98 seconds
+2025-04-22 00:46:25,070 - INFO - Cycle 6 complete. Next collection in 92.6 seconds
+2025-04-22 00:48:03,083 - INFO - Successfully stored metrics for DESKTOP-5A6SA56 at 2025-04-21T19:17:57.644437
+2025-04-22 00:48:03,162 - DEBUG - Calculated interval: 106s (Score: 7.36)
+2025-04-22 00:48:03,163 - INFO - Calculated next interval: 106 seconds
+2025-04-22 00:48:03,163 - INFO - Cycle 7 complete. Next collection in 100.5 seconds
+2025-04-22 00:49:49,234 - INFO - Successfully stored metrics for DESKTOP-5A6SA56 at 2025-04-21T19:19:43.647220
+2025-04-22 00:49:49,322 - DEBUG - Calculated interval: 87s (Score: 8.74)
+2025-04-22 00:49:49,323 - INFO - Calculated next interval: 87 seconds
+2025-04-22 00:49:49,323 - INFO - Cycle 8 complete. Next collection in 81.3 seconds
+2025-04-22 00:51:15,805 - INFO - Successfully stored metrics for DESKTOP-5A6SA56 at 2025-04-21T19:21:10.649761
+2025-04-22 00:51:15,881 - DEBUG - Calculated interval: 105s (Score: 7.42)
+2025-04-22 00:51:15,881 - INFO - Calculated next interval: 105 seconds
+2025-04-22 00:51:15,882 - INFO - Cycle 9 complete. Next collection in 99.8 seconds
+2025-04-22 00:53:01,088 - INFO - Successfully stored metrics for DESKTOP-5A6SA56 at 2025-04-21T19:22:55.652536
+2025-04-22 00:53:01,178 - DEBUG - Calculated interval: 107s (Score: 7.27)
+2025-04-22 00:53:01,178 - INFO - Calculated next interval: 107 seconds
+2025-04-22 00:53:01,178 - INFO - Cycle 10 complete. Next collection in 101.5 seconds
+2025-04-22 00:53:05,388 - INFO - Monitoring stopped by user
+2025-04-22 00:53:05,389 - INFO - System Monitor stopped
+2025-04-22 00:53:08,517 - INFO - Starting System Monitor
+2025-04-22 00:53:09,164 - INFO - Successfully connected to MongoDB
+2025-04-22 00:53:13,460 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-21T19:23:09.278536
+2025-04-22 00:53:13,508 - ERROR - Interval prediction failed: Regressor 'system_health.uptime_seconds' missing from dataframe
+2025-04-22 00:53:13,508 - INFO - Next collection in 25.8s
+2025-04-22 00:53:42,850 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-21T19:23:39.280625
+2025-04-22 00:53:42,894 - ERROR - Interval prediction failed: Regressor 'system_health.uptime_seconds' missing from dataframe
+2025-04-22 00:53:42,894 - INFO - Next collection in 26.4s
+2025-04-22 00:54:12,863 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-21T19:24:09.282497
+2025-04-22 00:54:12,917 - ERROR - Interval prediction failed: Regressor 'system_health.uptime_seconds' missing from dataframe
+2025-04-22 00:54:12,920 - INFO - Next collection in 26.4s
+2025-04-22 00:54:13,058 - INFO - Shutting down...
+2025-04-22 00:54:13,058 - INFO - Monitor stopped
+2025-04-22 00:54:19,630 - INFO - Starting System Monitor
+2025-04-22 00:54:20,326 - INFO - Successfully connected to MongoDB
+2025-04-22 00:54:20,410 - INFO - Training initial model...
+2025-04-22 00:54:20,821 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2025-04-22 00:54:20,881 - DEBUG - Adding TBB (D:\Coding\System Insights\venv\Lib\site-packages\prophet\stan_model\cmdstan-2.33.1\stan\lib\stan_math\lib\tbb) to PATH
+2025-04-22 00:54:20,891 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2025-04-22 00:54:20,906 - DEBUG - input tempfile: C:\Users\Lenovo\AppData\Local\Temp\tmpqskg2f32\4iayebib.json
+2025-04-22 00:54:20,923 - DEBUG - input tempfile: C:\Users\Lenovo\AppData\Local\Temp\tmpqskg2f32\pcbkwjqo.json
+2025-04-22 00:54:20,925 - DEBUG - idx 0
+2025-04-22 00:54:20,925 - DEBUG - running CmdStan, num_threads: None
+2025-04-22 00:54:20,926 - DEBUG - CmdStan args: ['D:\\Coding\\System Insights\\venv\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=97482', 'data', 'file=C:\\Users\\Lenovo\\AppData\\Local\\Temp\\tmpqskg2f32\\4iayebib.json', 'init=C:\\Users\\Lenovo\\AppData\\Local\\Temp\\tmpqskg2f32\\pcbkwjqo.json', 'output', 'file=C:\\Users\\Lenovo\\AppData\\Local\\Temp\\tmpqskg2f32\\prophet_modelc1wg7_3u\\prophet_model-20250422005420.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+2025-04-22 00:54:20,926 - INFO - Chain [1] start processing
+2025-04-22 00:54:20,971 - INFO - Chain [1] done processing
+2025-04-22 00:54:20,981 - INFO - Successfully trained new Prophet model
+2025-04-22 00:54:20,983 - INFO - Model trained and saved to models\96_22_trend_model.pkl
+2025-04-22 00:54:25,193 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-21T19:24:20.983610
+2025-04-22 00:54:25,286 - DEBUG - Calculated interval: 128s (Score: 5.82)
+2025-04-22 00:54:25,286 - INFO - Next collection in 123.7s
+2025-04-22 00:54:28,178 - INFO - Shutting down...
+2025-04-22 00:54:28,180 - INFO - Monitor stopped
+2025-04-22 00:54:30,655 - INFO - Starting System Monitor
+2025-04-22 00:54:31,201 - INFO - Successfully connected to MongoDB
+2025-04-22 00:54:35,772 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-21T19:24:31.321022
+2025-04-22 00:54:35,841 - DEBUG - Calculated interval: 116s (Score: 6.69)
+2025-04-22 00:54:35,841 - INFO - Next collection in 111.5s
+2025-04-22 00:56:30,977 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-21T19:26:27.324326
+2025-04-22 00:56:31,047 - DEBUG - Calculated interval: 119s (Score: 6.45)
+2025-04-22 00:56:31,047 - INFO - Next collection in 115.3s
+2025-04-22 00:58:29,905 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-21T19:28:26.327717
+2025-04-22 00:58:29,973 - DEBUG - Calculated interval: 119s (Score: 6.51)
+2025-04-22 00:58:29,973 - INFO - Next collection in 115.4s
+2025-04-22 01:00:28,931 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-21T19:30:25.330575
+2025-04-22 01:00:29,005 - DEBUG - Calculated interval: 124s (Score: 6.12)
+2025-04-22 01:00:29,006 - INFO - Next collection in 120.3s
+2025-04-22 01:02:32,939 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-21T19:32:29.333150
+2025-04-22 01:02:33,018 - DEBUG - Calculated interval: 130s (Score: 5.67)
+2025-04-22 01:02:33,018 - INFO - Next collection in 126.3s
+2025-04-22 01:04:42,902 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-21T19:34:39.336445
+2025-04-22 01:04:42,975 - DEBUG - Calculated interval: 130s (Score: 5.64)
+2025-04-22 01:04:42,975 - INFO - Next collection in 126.4s
+2025-04-22 01:05:19,481 - INFO - Shutting down...
+2025-04-22 01:05:19,482 - INFO - Monitor stopped
+2025-04-22 17:01:39,069 - INFO - Starting System Monitor
+2025-04-22 17:01:40,921 - INFO - Successfully connected to MongoDB
+2025-04-22 17:01:43,727 - INFO - Shutting down...
+2025-04-22 17:01:43,728 - INFO - Monitor stopped
+2025-04-22 17:01:46,813 - INFO - Starting System Monitor
+2025-04-22 17:01:47,422 - INFO - Successfully connected to MongoDB
+2025-04-22 17:01:53,282 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T11:31:47.584743
+2025-04-22 17:01:53,605 - DEBUG - Calculated interval: 117s (Score: 6.60)
+2025-04-22 17:01:53,616 - INFO - Next collection in 111.0s
+2025-04-22 17:03:48,791 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T11:33:44.585866
+2025-04-22 17:03:48,908 - DEBUG - Calculated interval: 123s (Score: 6.21)
+2025-04-22 17:03:48,908 - INFO - Next collection in 118.7s
+2025-04-22 17:05:52,111 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T11:35:47.587041
+2025-04-22 17:05:52,197 - DEBUG - Calculated interval: 100s (Score: 7.92)
+2025-04-22 17:05:52,197 - INFO - Next collection in 95.4s
+2025-04-22 17:07:31,875 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T11:37:27.588734
+2025-04-22 17:07:31,972 - DEBUG - Calculated interval: 102s (Score: 7.74)
+2025-04-22 17:07:31,972 - INFO - Next collection in 97.6s
+2025-04-22 17:09:13,910 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T11:39:09.590057
+2025-04-22 17:09:14,022 - DEBUG - Calculated interval: 122s (Score: 6.24)
+2025-04-22 17:09:14,022 - INFO - Next collection in 117.6s
+2025-04-22 17:11:15,775 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T11:41:11.591303
+2025-04-22 17:11:15,893 - DEBUG - Calculated interval: 119s (Score: 6.51)
+2025-04-22 17:11:15,893 - INFO - Next collection in 114.7s
+2025-04-22 17:13:14,837 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T11:43:10.593407
+2025-04-22 17:13:14,946 - DEBUG - Calculated interval: 107s (Score: 7.35)
+2025-04-22 17:13:14,946 - INFO - Next collection in 102.6s
+2025-04-22 17:15:01,743 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T11:44:57.594842
+2025-04-22 17:15:01,863 - DEBUG - Calculated interval: 119s (Score: 6.51)
+2025-04-22 17:15:01,864 - INFO - Next collection in 114.7s
+2025-04-22 17:17:00,792 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T11:46:56.595217
+2025-04-22 17:17:00,871 - DEBUG - Calculated interval: 119s (Score: 6.48)
+2025-04-22 17:17:00,872 - INFO - Next collection in 114.7s
+2025-04-22 17:18:59,856 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T11:48:55.595693
+2025-04-22 17:18:59,960 - DEBUG - Calculated interval: 114s (Score: 6.87)
+2025-04-22 17:18:59,961 - INFO - Next collection in 109.6s
+2025-04-22 17:20:53,838 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T11:50:49.596268
+2025-04-22 17:20:53,929 - DEBUG - Calculated interval: 103s (Score: 7.65)
+2025-04-22 17:20:53,930 - INFO - Next collection in 98.7s
+2025-04-22 17:22:36,808 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T11:52:32.597000
+2025-04-22 17:22:36,808 - INFO - Queueing model retrain...
+2025-04-22 17:22:37,957 - ERROR - Failed to queue retrain: Functions from the __main__ module cannot be processed by workers
+2025-04-22 17:22:38,033 - DEBUG - Calculated interval: 113s (Score: 6.90)
+2025-04-22 17:22:38,033 - INFO - Next collection in 107.6s
+2025-04-22 17:24:29,767 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T11:54:25.598102
+2025-04-22 17:24:29,851 - DEBUG - Calculated interval: 117s (Score: 6.63)
+2025-04-22 17:24:29,852 - INFO - Next collection in 112.7s
+2025-04-22 17:26:26,868 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T11:56:22.598605
+2025-04-22 17:26:26,958 - DEBUG - Calculated interval: 108s (Score: 7.26)
+2025-04-22 17:26:26,958 - INFO - Next collection in 103.6s
+2025-04-22 17:28:14,354 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T11:58:10.600314
+2025-04-22 17:28:14,432 - DEBUG - Calculated interval: 119s (Score: 6.48)
+2025-04-22 17:28:14,433 - INFO - Next collection in 115.2s
+2025-04-22 17:30:13,846 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:00:09.601652
+2025-04-22 17:30:13,927 - DEBUG - Calculated interval: 115s (Score: 6.75)
+2025-04-22 17:30:13,928 - INFO - Next collection in 110.7s
+2025-04-22 17:32:08,766 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:02:04.602441
+2025-04-22 17:32:08,883 - DEBUG - Calculated interval: 120s (Score: 6.39)
+2025-04-22 17:32:08,883 - INFO - Next collection in 115.7s
+2025-04-22 17:34:08,877 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:04:04.603705
+2025-04-22 17:34:08,952 - DEBUG - Calculated interval: 108s (Score: 7.29)
+2025-04-22 17:34:08,952 - INFO - Next collection in 103.7s
+2025-04-22 17:35:56,804 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:05:52.604909
+2025-04-22 17:35:56,885 - DEBUG - Calculated interval: 108s (Score: 7.32)
+2025-04-22 17:35:56,886 - INFO - Next collection in 103.7s
+2025-04-22 17:37:44,815 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:07:40.605989
+2025-04-22 17:37:44,896 - DEBUG - Calculated interval: 123s (Score: 6.21)
+2025-04-22 17:37:44,896 - INFO - Next collection in 118.7s
+2025-04-22 17:39:48,178 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:09:43.607343
+2025-04-22 17:39:48,273 - DEBUG - Calculated interval: 118s (Score: 6.57)
+2025-04-22 17:39:48,274 - INFO - Next collection in 113.3s
+2025-04-22 17:41:45,826 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:11:41.608801
+2025-04-22 17:41:45,909 - DEBUG - Calculated interval: 121s (Score: 6.36)
+2025-04-22 17:41:45,910 - INFO - Next collection in 116.7s
+2025-04-22 17:43:46,865 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:13:42.610063
+2025-04-22 17:43:46,967 - DEBUG - Calculated interval: 117s (Score: 6.60)
+2025-04-22 17:43:46,968 - INFO - Next collection in 112.6s
+2025-04-22 17:45:43,841 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:15:39.610677
+2025-04-22 17:45:43,842 - INFO - Queueing model retrain...
+2025-04-22 17:45:43,842 - ERROR - Failed to queue retrain: Functions from the __main__ module cannot be processed by workers
+2025-04-22 17:45:43,914 - DEBUG - Calculated interval: 118s (Score: 6.57)
+2025-04-22 17:45:43,916 - INFO - Next collection in 113.7s
+2025-04-22 17:47:41,923 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:17:37.611257
+2025-04-22 17:47:42,028 - DEBUG - Calculated interval: 106s (Score: 7.44)
+2025-04-22 17:47:42,028 - INFO - Next collection in 101.6s
+2025-04-22 17:49:27,879 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:19:23.612637
+2025-04-22 17:49:27,956 - DEBUG - Calculated interval: 117s (Score: 6.66)
+2025-04-22 17:49:27,956 - INFO - Next collection in 112.7s
+2025-04-22 17:51:24,882 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:21:20.613847
+2025-04-22 17:51:24,958 - DEBUG - Calculated interval: 121s (Score: 6.36)
+2025-04-22 17:51:24,958 - INFO - Next collection in 116.7s
+2025-04-22 17:53:25,850 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:23:21.615125
+2025-04-22 17:53:25,968 - DEBUG - Calculated interval: 115s (Score: 6.81)
+2025-04-22 17:53:25,969 - INFO - Next collection in 110.6s
+2025-04-22 17:55:21,076 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:25:16.615904
+2025-04-22 17:55:21,156 - DEBUG - Calculated interval: 109s (Score: 7.23)
+2025-04-22 17:55:21,157 - INFO - Next collection in 104.5s
+2025-04-22 17:57:10,118 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:27:05.616634
+2025-04-22 17:57:10,198 - DEBUG - Calculated interval: 106s (Score: 7.41)
+2025-04-22 17:57:10,198 - INFO - Next collection in 101.4s
+2025-04-22 17:58:56,449 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:28:51.617724
+2025-04-22 17:58:56,545 - DEBUG - Calculated interval: 111s (Score: 7.05)
+2025-04-22 17:58:56,546 - INFO - Next collection in 106.1s
+2025-04-22 18:00:46,286 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:30:42.618834
+2025-04-22 18:00:46,355 - DEBUG - Calculated interval: 111s (Score: 7.08)
+2025-04-22 18:00:46,355 - INFO - Next collection in 107.3s
+2025-04-22 18:02:37,352 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:32:33.620050
+2025-04-22 18:02:37,446 - DEBUG - Calculated interval: 112s (Score: 6.99)
+2025-04-22 18:02:37,447 - INFO - Next collection in 108.2s
+2025-04-22 18:04:29,393 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:34:25.624676
+2025-04-22 18:04:29,468 - DEBUG - Calculated interval: 115s (Score: 6.78)
+2025-04-22 18:04:29,468 - INFO - Next collection in 111.2s
+2025-04-22 18:04:31,645 - INFO - Shutting down...
+2025-04-22 18:04:31,645 - INFO - Monitor stopped
+2025-04-22 18:04:34,927 - INFO - Starting System Monitor
+2025-04-22 18:04:35,524 - INFO - Successfully connected to MongoDB
+2025-04-22 18:04:39,967 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T12:34:35.671106
+2025-04-22 18:04:40,041 - DEBUG - Calculated interval: 116s (Score: 6.69)
+2025-04-22 18:04:40,042 - INFO - Next collection in 111.6s
+2025-04-22 18:04:44,663 - INFO - Shutting down...
+2025-04-22 18:04:44,664 - INFO - Monitor stopped

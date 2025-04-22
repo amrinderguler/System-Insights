@@ -8,6 +8,10 @@ from datetime import datetime, timedelta
 import pytz
 import numpy as np
 from collections import defaultdict
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Page configuration
 st.set_page_config(
@@ -17,9 +21,9 @@ st.set_page_config(
 )
 
 # MongoDB Configuration
-MONGO_URI = "mongodb+srv://amrindersingh:7k9pHt7LcbOa8yqB@cluster0.6ememug.mongodb.net/"
-DB_NAME = "system_monitoring"
-COLLECTION_NAME = "system_activity"
+MONGO_URI = os.getenv("MONGO_URI")
+DB_NAME = os.getenv("DB_NAME")
+COLLECTION_NAME = os.getenv("COLLECTION_NAME")
 
 # Custom CSS
 st.markdown("""
@@ -117,7 +121,7 @@ selected_agg = st.sidebar.selectbox(
 st.title("System Monitoring Dashboard")
 
 if selected_system:
-    # Query data with proper type handling
+   # Load data based on selected system and date range
     @st.cache_data(ttl=60)
     def get_system_data(mac_address, start_date, end_date):
         query = {
@@ -129,10 +133,10 @@ if selected_system:
         }
         
         try:
-            # Exclude _id field to avoid ObjectId issues
+            # Fetch data from MongoDB
             data = list(collection.find(query, {'_id': 0}).sort("timestamp", 1))
             
-            # Ensure all documents have required structure
+            # Ensure all documents have the same structure
             for doc in data:
                 doc.setdefault('cpu', {})
                 doc.setdefault('memory', {})
@@ -158,6 +162,7 @@ if selected_system:
         col1, col2, col3, col4 = st.columns(4)
         
         with col1:
+            # Get the latest system ID and OS information
             system_id = df.iloc[-1].get('system_id', 'N/A')
             os_info = f"{df.iloc[-1].get('os', 'N/A')} {df.iloc[-1].get('os_version', '')}"
             st.markdown(f"""
@@ -170,6 +175,7 @@ if selected_system:
             """, unsafe_allow_html=True)
         
         with col2:
+            # Get the latest system boot time and uptime
             uptime_seconds = df.iloc[-1].get('system_health', {}).get('uptime_seconds', 0)
             uptime_str = str(timedelta(seconds=int(uptime_seconds))) if uptime_seconds else "N/A"
             boot_time = df.iloc[-1].get('system_health', {}).get('boot_time', 'N/A')
@@ -183,6 +189,7 @@ if selected_system:
             """, unsafe_allow_html=True)
         
         with col3:
+            # Get the latest CPU usage and frequency
             cpu_df = pd.json_normalize(df['cpu'])
             cpu_usage = cpu_df.iloc[-1].get('cpu_usage', 0)
             cpu_status = "status-healthy" if cpu_usage < 70 else "status-warning" if cpu_usage < 90 else "status-critical"
@@ -197,6 +204,7 @@ if selected_system:
             """, unsafe_allow_html=True)
         
         with col4:
+            # Get the latest memory usage and processes
             mem_df = pd.json_normalize(df['memory'])
             mem_usage = mem_df.iloc[-1].get('memory_usage_percent', 0)
             mem_status = "status-healthy" if mem_usage < 70 else "status-warning" if mem_usage < 90 else "status-critical"
@@ -227,7 +235,9 @@ if selected_system:
             cpu_df = pd.DataFrame(cpu_data)
             
             if not cpu_df.empty:
+                # Resample data if aggregation is selected
                 if agg_options[selected_agg]:
+
                     cpu_df = cpu_df.set_index('timestamp')
                     numeric_cols = cpu_df.select_dtypes(include=[np.number]).columns
                     cpu_df = cpu_df[numeric_cols].resample(agg_options[selected_agg]).mean().reset_index()
@@ -454,7 +464,7 @@ if selected_system:
                 )
                 st.plotly_chart(fig_tcp, use_container_width=True, key=f"tcp_states_{selected_system}")
     
-            # Moved Network Interfaces section here
+            # Network Interfaces
             st.subheader("Network Interfaces")
             net_interfaces = df.iloc[-1].get('network_interfaces', [])
             for interface in net_interfaces:
@@ -571,6 +581,7 @@ if selected_system:
                         )
                 
         with tab7:
+            # System Details section
             st.subheader("System Details")
             st.write(f"**Processor:** {df.iloc[-1].get('processor', 'N/A')}")
             st.write(f"**Architecture:** {df.iloc[-1].get('architecture', 'N/A')}")
@@ -586,7 +597,8 @@ if selected_system:
             # Create a comprehensive list of all properties
             snapshot_data = []
 
-            # Improved helper function with complete error handling
+            # Function to recursively add nested items
+            # This function will handle nested dictionaries and lists
             def add_nested_items(category, data, prefix=""):
                 try:
                     if data is None:
