@@ -2628,3 +2628,5 @@ cwd: None
 2025-04-28 16:03:04,378 - DEBUG - Calculated interval: 131s (Score: 7.34)
 2025-04-28 16:03:04,379 - INFO - Dynamic interval: 131s
 2025-04-28 16:03:04,379 - INFO - Next collection in 126.9s
+2025-04-28 16:05:00,580 - INFO - Shutting down...
+2025-04-28 16:05:00,583 - INFO - Monitor stopped
