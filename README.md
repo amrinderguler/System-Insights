@@ -96,9 +96,3 @@ System Insights consists of several components:
 2. **TrendForecaster**: Machine learning component for analyzing metrics and predicting optimal intervals
 3. **MongoDB**: Backend database for storing metrics and system information
 4. **Redis**: Optional queue system for distributed model training
-
-
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
