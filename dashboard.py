@@ -57,6 +57,20 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+# Helper function for safe iteration
+def safe_iterate(data, default=None):
+    """Safely iterate over data that might be None, float, or non-iterable"""
+    if default is None:
+        default = []
+    if data is None:
+        return default
+    if isinstance(data, (float, int, str)) and not isinstance(data, (list, tuple, dict)):
+        return default
+    try:
+        return data if isinstance(data, (list, tuple, dict)) else default
+    except TypeError:
+        return default
+
 # Connect to MongoDB
 @st.cache_resource
 def get_mongo_connection():
@@ -121,7 +135,7 @@ selected_agg = st.sidebar.selectbox(
 st.title("System Monitoring Dashboard")
 
 if selected_system:
-   # Load data based on selected system and date range
+    # Load data based on selected system and date range
     @st.cache_data(ttl=60)
     def get_system_data(mac_address, start_date, end_date):
         query = {
@@ -146,10 +160,11 @@ if selected_system:
                 doc.setdefault('processes', {})
                 doc.setdefault('system_health', {})
                 
-                # Ensure disks is always a list
-                if 'disks' not in doc or not isinstance(doc['disks'], (list, tuple)):
-                    doc['disks'] = []
-                    
+                # Force these to be lists if they exist but are wrong type
+                for field in ['disks', 'network_interfaces', 'gpu']:
+                    if field in doc and not isinstance(doc[field], (list, tuple)):
+                        doc[field] = []
+                        
             return pd.DataFrame(data)
         except Exception as e:
             st.error(f"Error loading data: {str(e)}")
@@ -169,6 +184,7 @@ if selected_system:
             # Get the latest system ID and OS information
             system_id = df.iloc[-1].get('system_id', 'N/A')
             os_info = f"{df.iloc[-1].get('os', 'N/A')} {df.iloc[-1].get('os_version', '')}"
+            os_info = os_info.replace('nan', 'N/A')  # Clean up any NaN values
             st.markdown(f"""
             <div class="metric-card">
                 <h4>System ID</h4>
@@ -214,17 +230,19 @@ if selected_system:
             mem_status = "status-healthy" if mem_usage < 70 else "status-warning" if mem_usage < 90 else "status-critical"
             mem_used = mem_df.iloc[-1].get('memory_used_gb', 'N/A')
             mem_total = df.iloc[-1].get('ram_size_gb', 'N/A')
+            if pd.isna(mem_total):  # Handle NaN values
+                mem_total = 'N/A'
             st.markdown(f"""
             <div class="metric-card">
                 <h4>Memory Usage</h4>
-                <p class="{mem_status}">{mem_usage:.1f}% ({mem_used:.1f}/{mem_total:.1f} GB)</p>
+                <p class="{mem_status}">{mem_usage:.1f}% ({mem_used:.1f}/{mem_total} GB)</p>
                 <h4>Processes</h4>
                 <p>{df.iloc[-1].get('processes', {}).get('total_processes', 'N/A')}</p>
             </div>
             """, unsafe_allow_html=True)
 
         # Main tabs
-        tab1, tab2, tab3, tab4, tab5,tab6,tab7,tab8 = st.tabs(["CPU", "Memory", "Disk", "Network", "GPU","Top Processes","System Details","System Snapshot"])
+        tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs(["CPU", "Memory", "Disk", "Network", "GPU", "Top Processes", "System Details", "System Snapshot"])
         
         with tab1:
             st.subheader("CPU Metrics")
@@ -241,7 +259,6 @@ if selected_system:
             if not cpu_df.empty:
                 # Resample data if aggregation is selected
                 if agg_options[selected_agg]:
-
                     cpu_df = cpu_df.set_index('timestamp')
                     numeric_cols = cpu_df.select_dtypes(include=[np.number]).columns
                     cpu_df = cpu_df[numeric_cols].resample(agg_options[selected_agg]).mean().reset_index()
@@ -254,7 +271,7 @@ if selected_system:
                     title="CPU Usage (%)",
                     labels={"cpu_usage": "Usage (%)", "timestamp": "Time"}
                 )
-                st.plotly_chart(fig_cpu, use_container_width=True,key=f"cpu_usage_{selected_system}")
+                st.plotly_chart(fig_cpu, use_container_width=True, key=f"cpu_usage_{selected_system}")
                 
                 # CPU Load Chart
                 if 'load_1min' in cpu_df.columns:
@@ -284,7 +301,7 @@ if selected_system:
                         xaxis_title="Time",
                         yaxis_title="Load"
                     )
-                    st.plotly_chart(fig_load, use_container_width=True,key=f"cpu_load_{selected_system}")
+                    st.plotly_chart(fig_load, use_container_width=True, key=f"cpu_load_{selected_system}")
         
         with tab2:
             st.subheader("Memory Metrics")
@@ -359,7 +376,7 @@ if selected_system:
                 # Disk Usage Chart
                 partitions = []
                 for _, row in df.iterrows():
-                    for part in row.get('disk', {}).get('partitions', []):
+                    for part in safe_iterate(row.get('disk', {}).get('partitions', [])):
                         part['timestamp'] = row['timestamp']
                         partitions.append(part)
                 
@@ -399,17 +416,12 @@ if selected_system:
                     st.plotly_chart(fig_disk_io, use_container_width=True, key=f"disk_io_{selected_system}")
 
             st.subheader("Disk Details")
-            disks = df.iloc[-1].get('disks', [])
-            
-            # Handle case where disks is not a list/iterable
-            if isinstance(disks, (list, tuple)):
-                for disk in disks:
-                    st.write(f"**{disk.get('device', 'Unknown')}**")
-                    st.write(f"Mount: {disk.get('mountpoint', 'N/A')}")
-                    st.write(f"Type: {disk.get('fstype', 'N/A')}")
-                    st.write(f"Size: {disk.get('total_gb', 'N/A')} GB")
-            else:
-                st.warning("Disk information is not in the expected format")
+            disks = safe_iterate(df.iloc[-1].get('disks'))
+            for disk in disks:
+                st.write(f"**{disk.get('device', 'Unknown')}**")
+                st.write(f"Mount: {disk.get('mountpoint', 'N/A')}")
+                st.write(f"Type: {disk.get('fstype', 'N/A')}")
+                st.write(f"Size: {disk.get('total_gb', 'N/A')} GB")
         
         with tab4:
             st.subheader("Network Metrics")
@@ -475,7 +487,7 @@ if selected_system:
     
             # Network Interfaces
             st.subheader("Network Interfaces")
-            net_interfaces = df.iloc[-1].get('network_interfaces', [])
+            net_interfaces = safe_iterate(df.iloc[-1].get('network_interfaces'))
             for interface in net_interfaces:
                 st.write(f"**{interface.get('name', 'Unknown')}:**")
                 st.write(interface.get('addresses', []))
@@ -486,13 +498,10 @@ if selected_system:
             # Prepare GPU data
             gpu_data = []
             for _, row in df.iterrows():
-                gpus = row.get('gpu', [{}])
-                try:
-                    for gpu in gpus:
-                        gpu['timestamp'] = row['timestamp']
-                        gpu_data.append(gpu)
-                except Exception as e:
-                    st.error(f"Error processing GPU data: {str(e)}")
+                gpus = safe_iterate(row.get('gpu'))
+                for gpu in gpus:
+                    gpu['timestamp'] = row['timestamp']
+                    gpu_data.append(gpu)
             
             if gpu_data:
                 gpu_df = pd.DataFrame(gpu_data)
@@ -546,7 +555,7 @@ if selected_system:
             with col1:
                 st.markdown("**Top CPU Processes**")
                 try:
-                    top_cpu = df.iloc[-1].get('processes', {}).get('top_cpu_processes', [])
+                    top_cpu = safe_iterate(df.iloc[-1].get('processes', {}).get('top_cpu_processes'))
                     if top_cpu:
                         cpu_proc_df = pd.DataFrame(top_cpu)
                         st.dataframe(cpu_proc_df[['name', 'pid', 'cpu_percent', 'memory_percent', 'memory_rss_mb']], 
@@ -559,7 +568,7 @@ if selected_system:
             with col2:
                 st.markdown("**Top Memory Processes**")
                 try:
-                    top_mem = df.iloc[-1].get('processes', {}).get('top_memory_processes', [])
+                    top_mem = safe_iterate(df.iloc[-1].get('processes', {}).get('top_memory_processes'))
                     if top_mem:
                         mem_proc_df = pd.DataFrame(top_mem)
                         st.dataframe(mem_proc_df[['name', 'pid', 'memory_percent', 'memory_rss_mb', 'cpu_percent']], 
@@ -587,7 +596,7 @@ if selected_system:
                     file_name=f"system_metrics_{selected_system}.csv",
                     mime="text/csv",
                     key=f"download_{selected_system}_{datetime.now().timestamp()}"  # Unique key
-                        )
+                )
                 
         with tab7:
             # System Details section
@@ -607,7 +616,6 @@ if selected_system:
             snapshot_data = []
 
             # Function to recursively add nested items
-            # This function will handle nested dictionaries and lists
             def add_nested_items(category, data, prefix=""):
                 try:
                     if data is None:
@@ -668,12 +676,13 @@ if selected_system:
             add_nested_items("Disk", latest_data.get('disk', {}))
             add_nested_items("Network", latest_data.get('network', {}))
             
-            # Handle network interfaces separately - ensure we get a list
-            for i, interface in enumerate(latest_data.get('network_interfaces', [])):
+            # Handle network interfaces safely
+            net_interfaces = safe_iterate(latest_data.get('network_interfaces'))
+            for i, interface in enumerate(net_interfaces):
                 add_nested_items(f"Network Interface {i+1}", interface)
             
-            # Handle GPU data - ensure we get a list even if None
-            gpu_data = latest_data.get('gpu', []) or []  # Handle None case
+            # Handle GPU data safely
+            gpu_data = safe_iterate(latest_data.get('gpu'))
             for i, gpu in enumerate(gpu_data):
                 add_nested_items(f"GPU {i+1}", gpu)
             
