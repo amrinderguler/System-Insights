@@ -28,7 +28,7 @@ The application features intelligent monitoring with adaptive collection interva
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/amrinderguler/System-Insights.git
+   git clone --single-branch --branch Model https://github.com/amrinderguler/System-Insights.git
    cd System-Insights
    ```
 
