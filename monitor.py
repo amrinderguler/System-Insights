@@ -42,8 +42,8 @@ load_dotenv()
 MONGO_URI = os.getenv("MONGO_URI")
 DB_NAME = os.getenv("DB_NAME")
 COLLECTION_NAME = os.getenv("COLLECTION_NAME")
-MIN_INTERVAL = int(os.getenv("MIN_INTERVAL"))  # seconds
-MAX_INTERVAL = int(os.getenv("MAX_INTERVAL"))  # seconds
+MIN_INTERVAL = int(os.getenv("MIN_INTERVAL",30))  # seconds
+MAX_INTERVAL = int(os.getenv("MAX_INTERVAL",180))  # seconds
 
 class SystemMonitor:
     def __init__(self):

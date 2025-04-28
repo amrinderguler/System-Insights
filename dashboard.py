@@ -146,6 +146,10 @@ if selected_system:
                 doc.setdefault('processes', {})
                 doc.setdefault('system_health', {})
                 
+                # Ensure disks is always a list
+                if 'disks' not in doc or not isinstance(doc['disks'], (list, tuple)):
+                    doc['disks'] = []
+                    
             return pd.DataFrame(data)
         except Exception as e:
             st.error(f"Error loading data: {str(e)}")
@@ -396,11 +400,16 @@ if selected_system:
 
             st.subheader("Disk Details")
             disks = df.iloc[-1].get('disks', [])
-            for disk in disks:
-                st.write(f"**{disk.get('device', 'Unknown')}**")
-                st.write(f"Mount: {disk.get('mountpoint', 'N/A')}")
-                st.write(f"Type: {disk.get('fstype', 'N/A')}")
-                st.write(f"Size: {disk.get('total_gb', 'N/A')} GB")
+            
+            # Handle case where disks is not a list/iterable
+            if isinstance(disks, (list, tuple)):
+                for disk in disks:
+                    st.write(f"**{disk.get('device', 'Unknown')}**")
+                    st.write(f"Mount: {disk.get('mountpoint', 'N/A')}")
+                    st.write(f"Type: {disk.get('fstype', 'N/A')}")
+                    st.write(f"Size: {disk.get('total_gb', 'N/A')} GB")
+            else:
+                st.warning("Disk information is not in the expected format")
         
         with tab4:
             st.subheader("Network Metrics")
