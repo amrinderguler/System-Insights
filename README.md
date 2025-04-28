@@ -46,9 +46,13 @@ The application features intelligent monitoring with adaptive collection interva
 4. Configure environment variables:
    Create a `.env` file with the following variables:
    ```
-   MONGO_URI=mongodb://localhost:27017
-   DB_NAME=system_metrics
-   COLLECTION_NAME=metrics
+   MONGO_URI="mongodb+srv://amrindersingh:7k9pHt7LcbOa8yqB@cluster0.6ememug.mongodb.net/"
+   DB_NAME="system_monitoring"
+   COLLECTION_NAME="system_activity"
+   REDIS_URL=redis://localhost:6379/0
+   MIN_INTERVAL=30
+   MAX_INTERVAL=180
+   RETRAIN_CYCLES=10
    ```
 
 5. Install and start MongoDB (if not already installed)
@@ -68,14 +72,19 @@ python monitor.py
 
 The system will start collecting metrics at default intervals and store them in MongoDB. If Redis is available, it will queue model retraining tasks.
 
+### Running the dashboard
+```bash
+streamlit run dashboard.py
+```
+
 ### Configuration
 
 The monitor has several configurable parameters:
 
 - `min_data_points_for_training`: Minimum data points required before model training (default: 20)
 - `min_interval`: Minimum collection interval in seconds (default: 30)
-- `max_interval`: Maximum collection interval in seconds (default: 600)
-- `default_interval`: Default collection interval in seconds (default: 300)
+- `max_interval`: Maximum collection interval in seconds (default: 180)
+- `default_interval`: Default collection interval in seconds (default: 60)
 
 These can be modified in the `SystemMonitor` class initialization.
 
@@ -87,33 +96,3 @@ System Insights consists of several components:
 2. **TrendForecaster**: Machine learning component for analyzing metrics and predicting optimal intervals
 3. **MongoDB**: Backend database for storing metrics and system information
 4. **Redis**: Optional queue system for distributed model training
-
-## Troubleshooting
-
-### Redis Connection Error
-
-If you see the error `Failed to queue retrain: Error 22 connecting to localhost:6379`, Redis is either not installed or not running. You can:
-
-1. Install and start Redis
-2. Modify the script to handle Redis failures gracefully
-3. Implement an alternative queueing mechanism
-
-### MongoDB Connection Issues
-
-If MongoDB connection fails, the monitor will log errors and retry. Ensure MongoDB is installed and running correctly.
-
-## Future Enhancements
-
-- Web dashboard for metric visualization
-- Alerting system for anomaly detection
-- Cross-system correlation analysis
-- Support for containerized environments
-- Remote monitoring capabilities
-
-## License
-
-[MIT License](LICENSE)
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
