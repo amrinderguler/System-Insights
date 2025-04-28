@@ -22,8 +22,8 @@ class Config:
     RESULT_TTL = int(os.getenv("RESULT_TTL", "86400"))  # 24 hours
     
     # Monitoring Parameters
-    MIN_INTERVAL = int(os.getenv("MIN_INTERVAL", "30"))  # seconds
-    MAX_INTERVAL = int(os.getenv("MAX_INTERVAL", "600"))  # seconds
+    MIN_INTERVAL = int(os.getenv("MIN_INTERVAL"))  # seconds
+    MAX_INTERVAL = int(os.getenv("MAX_INTERVAL"))  # seconds
     RETRAIN_CYCLES = int(os.getenv("RETRAIN_CYCLES", "10"))
     
     # Path Configuration

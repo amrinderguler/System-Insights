@@ -42,6 +42,8 @@ load_dotenv()
 MONGO_URI = os.getenv("MONGO_URI")
 DB_NAME = os.getenv("DB_NAME")
 COLLECTION_NAME = os.getenv("COLLECTION_NAME")
+MIN_INTERVAL = int(os.getenv("MIN_INTERVAL"))  # seconds
+MAX_INTERVAL = int(os.getenv("MAX_INTERVAL"))  # seconds
 
 class SystemMonitor:
     def __init__(self):
@@ -50,9 +52,9 @@ class SystemMonitor:
         self.mac_address = self._get_mac_address()
         self.system_info = self._get_system_info()
         self.min_data_points_for_training = 20
-        self.min_interval = 30
-        self.max_interval = 600
-        self.default_interval = 300
+        self.min_interval = MIN_INTERVAL
+        self.max_interval = MAX_INTERVAL
+        self.default_interval = 60
         self.is_windows = platform.system() == 'Windows'
         logger.debug("SystemMetricsCollector initialized")
 
@@ -447,41 +449,51 @@ class SystemMonitor:
             sanitized_mac = TrendForecaster.sanitize_mac_address(mac_address)
             model_path = os.path.join('models', f"{sanitized_mac}_trend_model.pkl")
             
-            historical = pd.json_normalize(list(
-                self.collection.find(
-                    {'mac_address': mac_address},
-                    {
-                        '_id': 0,
-                        'timestamp': 1,
-                        'cpu.cpu_usage': 1,
-                        'cpu.cpu_system': 1,
-                        'memory.memory_usage_percent': 1,
-                        'disk.total_read_mb': 1,
-                        'network.packets_sent': 1,
-                        'processes.total_processes': 1
-                    }
-                ).sort("timestamp", 1)
-            ))
-
-            if len(historical) < self.min_data_points_for_training:
+            # Get all documents first
+            cursor = self.collection.find(
+                {'mac_address': mac_address},
+                {
+                    '_id': 0,
+                    'timestamp': 1,
+                    'cpu.cpu_usage': 1,
+                    'cpu.cpu_system': 1,
+                    'memory.memory_usage_percent': 1,
+                    'disk.total_read_mb': 1,
+                    'network.packets_sent': 1,
+                    'processes.total_processes': 1
+                }
+            ).sort("timestamp", 1)
+            
+            # Convert cursor to list
+            documents = await cursor.to_list(length=None)
+            
+            if len(documents) < self.min_data_points_for_training:
+                logger.warning(f"Not enough data points ({len(documents)} available for training")
+                return None
+                
+            historical = pd.json_normalize(documents)  # Use the documents list directly
+            
+            if historical.empty:
+                logger.warning("No valid data for training")
                 return None
                 
             historical.ffill(inplace=True)
             historical.bfill(inplace=True)
             
-            forecaster =await asyncio.to_thread(
+            # Train model
+            forecaster = await asyncio.to_thread(
                 lambda: TrendForecaster(
-                df=historical,
-                target='cpu.cpu_usage',
-                regressors=[
-                    'cpu.cpu_system',
-                    'memory.memory_usage_percent',
-                    'disk.total_read_mb',
-                    'network.packets_sent',
-                    'processes.total_processes'
-                ]
+                    df=historical,
+                    target='cpu.cpu_usage',
+                    regressors=[
+                        'cpu.cpu_system',
+                        'memory.memory_usage_percent',
+                        'disk.total_read_mb',
+                        'network.packets_sent',
+                        'processes.total_processes'
+                    ]
+                )
             )
-        )
 
             os.makedirs('models', exist_ok=True)
             async with aiofiles.open(model_path, 'wb') as f:
@@ -491,7 +503,7 @@ class SystemMonitor:
             return forecaster
 
         except Exception as e:
-            logger.error(f"Error during model training: {str(e)}")
+            logger.error(f"Error during model training: {str(e)}", exc_info=True)
             return None
 
     async def _load_model_with_timeout(self, model_path: str) -> Optional[TrendForecaster]:
@@ -646,17 +658,16 @@ class SystemMonitor:
     async def _get_latest_metrics(self) -> Optional[Dict[str, Any]]:
         """Get the latest metrics from MongoDB"""
         try:
-            def find_latest():
-                return self.collection.find_one(
-                    {'mac_address': self.mac_address},
-                    sort=[('timestamp', -1)]
-                )
-            
-            result = await asyncio.to_thread(find_latest)
-            return result
+            if self.collection is None:
+                return None
+                
+            return await self.collection.find_one(
+                {'mac_address': self.mac_address},
+                sort=[('timestamp', -1)]
+            )
         except Exception as e:
             logger.error(f"Error getting latest metrics: {str(e)}")
-        return None
+            return None
 
 async def main():
     try:

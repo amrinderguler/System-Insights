@@ -1130,3 +1130,1501 @@ TypeError: '_asyncio.Future' object is not subscriptable
 2025-04-22 22:37:37,350 - DEBUG - Calculated interval: 67s (Score: 12.21)
 2025-04-22 22:37:37,351 - INFO - Dynamic interval: 67s
 2025-04-22 22:37:37,351 - INFO - Next collection in 62.8s
+2025-04-22 22:38:43,943 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:08:40.198641
+2025-04-22 22:38:43,945 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:38:44,015 - DEBUG - Calculated interval: 76s (Score: 11.43)
+2025-04-22 22:38:44,015 - INFO - Dynamic interval: 76s
+2025-04-22 22:38:44,016 - INFO - Next collection in 72.2s
+2025-04-22 22:40:00,050 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:09:56.201172
+2025-04-22 22:40:00,052 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:40:00,118 - DEBUG - Calculated interval: 74s (Score: 11.58)
+2025-04-22 22:40:00,119 - INFO - Dynamic interval: 74s
+2025-04-22 22:40:00,119 - INFO - Next collection in 70.1s
+2025-04-22 22:41:14,012 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:11:10.204417
+2025-04-22 22:41:14,013 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:41:14,118 - DEBUG - Calculated interval: 73s (Score: 11.70)
+2025-04-22 22:41:14,119 - INFO - Dynamic interval: 73s
+2025-04-22 22:41:14,119 - INFO - Next collection in 69.1s
+2025-04-22 22:42:26,948 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:12:23.206695
+2025-04-22 22:42:26,949 - INFO - Queueing model retrain...
+2025-04-22 22:42:31,059 - ERROR - Failed to queue retrain: Error 22 connecting to localhost:6379. 22.
+2025-04-22 22:42:31,061 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:42:31,133 - DEBUG - Calculated interval: 72s (Score: 11.76)
+2025-04-22 22:42:31,133 - INFO - Dynamic interval: 72s
+2025-04-22 22:42:31,133 - INFO - Next collection in 64.1s
+2025-04-22 22:43:38,955 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:13:35.208941
+2025-04-22 22:43:38,955 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:43:39,034 - DEBUG - Calculated interval: 74s (Score: 11.61)
+2025-04-22 22:43:39,034 - INFO - Dynamic interval: 74s
+2025-04-22 22:43:39,035 - INFO - Next collection in 70.2s
+2025-04-22 22:44:52,979 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:14:49.211963
+2025-04-22 22:44:52,984 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:44:53,062 - DEBUG - Calculated interval: 75s (Score: 11.52)
+2025-04-22 22:44:53,063 - INFO - Dynamic interval: 75s
+2025-04-22 22:44:53,063 - INFO - Next collection in 71.1s
+2025-04-22 22:46:07,960 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:16:04.214596
+2025-04-22 22:46:07,962 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:46:08,024 - DEBUG - Calculated interval: 70s (Score: 11.91)
+2025-04-22 22:46:08,025 - INFO - Dynamic interval: 70s
+2025-04-22 22:46:08,025 - INFO - Next collection in 66.2s
+2025-04-22 22:47:18,158 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:17:14.216893
+2025-04-22 22:47:18,159 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:47:18,223 - DEBUG - Calculated interval: 63s (Score: 12.60)
+2025-04-22 22:47:18,224 - INFO - Dynamic interval: 63s
+2025-04-22 22:47:18,224 - INFO - Next collection in 59.0s
+2025-04-22 22:48:20,965 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:18:17.219458
+2025-04-22 22:48:20,966 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:48:21,059 - DEBUG - Calculated interval: 72s (Score: 11.79)
+2025-04-22 22:48:21,060 - INFO - Dynamic interval: 72s
+2025-04-22 22:48:21,060 - INFO - Next collection in 68.2s
+2025-04-22 22:49:33,082 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:19:29.221899
+2025-04-22 22:49:33,083 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:49:33,149 - DEBUG - Calculated interval: 70s (Score: 11.94)
+2025-04-22 22:49:33,150 - INFO - Dynamic interval: 70s
+2025-04-22 22:49:33,150 - INFO - Next collection in 66.1s
+2025-04-22 22:50:43,021 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:20:39.224263
+2025-04-22 22:50:43,022 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:50:43,084 - DEBUG - Calculated interval: 64s (Score: 12.48)
+2025-04-22 22:50:43,086 - INFO - Dynamic interval: 64s
+2025-04-22 22:50:43,086 - INFO - Next collection in 60.1s
+2025-04-22 22:51:47,067 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:21:43.227238
+2025-04-22 22:51:47,068 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:51:47,145 - DEBUG - Calculated interval: 70s (Score: 11.94)
+2025-04-22 22:51:47,145 - INFO - Dynamic interval: 70s
+2025-04-22 22:51:47,145 - INFO - Next collection in 66.1s
+2025-04-22 22:52:57,170 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:22:53.230815
+2025-04-22 22:52:57,171 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:52:57,239 - DEBUG - Calculated interval: 74s (Score: 11.61)
+2025-04-22 22:52:57,240 - INFO - Dynamic interval: 74s
+2025-04-22 22:52:57,240 - INFO - Next collection in 70.0s
+2025-04-22 22:54:11,136 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:24:07.232934
+2025-04-22 22:54:11,136 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:54:11,214 - DEBUG - Calculated interval: 72s (Score: 11.76)
+2025-04-22 22:54:11,215 - INFO - Dynamic interval: 72s
+2025-04-22 22:54:11,215 - INFO - Next collection in 68.0s
+2025-04-22 22:55:23,228 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:25:19.235323
+2025-04-22 22:55:23,229 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:55:23,305 - DEBUG - Calculated interval: 69s (Score: 12.03)
+2025-04-22 22:55:23,306 - INFO - Dynamic interval: 69s
+2025-04-22 22:55:23,306 - INFO - Next collection in 64.9s
+2025-04-22 22:56:32,289 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:26:28.237912
+2025-04-22 22:56:32,290 - INFO - Queueing model retrain...
+2025-04-22 22:56:36,348 - ERROR - Failed to queue retrain: Error 22 connecting to localhost:6379. 22.
+2025-04-22 22:56:36,349 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:56:36,437 - DEBUG - Calculated interval: 63s (Score: 12.57)
+2025-04-22 22:56:36,438 - INFO - Dynamic interval: 63s
+2025-04-22 22:56:36,438 - INFO - Next collection in 54.8s
+2025-04-22 22:57:35,489 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:27:31.240293
+2025-04-22 22:57:35,490 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:57:35,578 - DEBUG - Calculated interval: 64s (Score: 12.45)
+2025-04-22 22:57:35,579 - INFO - Dynamic interval: 64s
+2025-04-22 22:57:35,579 - INFO - Next collection in 59.7s
+2025-04-22 22:58:39,347 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:28:35.242923
+2025-04-22 22:58:39,348 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:58:39,422 - DEBUG - Calculated interval: 67s (Score: 12.18)
+2025-04-22 22:58:39,424 - INFO - Dynamic interval: 67s
+2025-04-22 22:58:39,424 - INFO - Next collection in 62.8s
+2025-04-22 22:59:46,215 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:29:42.245010
+2025-04-22 22:59:46,215 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 22:59:46,291 - DEBUG - Calculated interval: 66s (Score: 12.31)
+2025-04-22 22:59:46,291 - INFO - Dynamic interval: 66s
+2025-04-22 22:59:46,291 - INFO - Next collection in 62.0s
+2025-04-22 23:00:52,377 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:30:48.247511
+2025-04-22 23:00:52,378 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 23:00:52,454 - DEBUG - Calculated interval: 72s (Score: 11.77)
+2025-04-22 23:00:52,454 - INFO - Dynamic interval: 72s
+2025-04-22 23:00:52,454 - INFO - Next collection in 67.8s
+2025-04-22 23:02:04,362 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:32:00.250563
+2025-04-22 23:02:04,363 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 23:02:04,441 - DEBUG - Calculated interval: 64s (Score: 12.52)
+2025-04-22 23:02:04,443 - INFO - Dynamic interval: 64s
+2025-04-22 23:02:04,443 - INFO - Next collection in 59.8s
+2025-04-22 23:03:08,268 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:33:04.252495
+2025-04-22 23:03:08,269 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 23:03:08,344 - DEBUG - Calculated interval: 72s (Score: 11.77)
+2025-04-22 23:03:08,345 - INFO - Dynamic interval: 72s
+2025-04-22 23:03:08,345 - INFO - Next collection in 67.9s
+2025-04-22 23:04:20,193 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:34:16.255006
+2025-04-22 23:04:20,193 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 23:04:20,264 - DEBUG - Calculated interval: 70s (Score: 11.92)
+2025-04-22 23:04:20,264 - INFO - Dynamic interval: 70s
+2025-04-22 23:04:20,265 - INFO - Next collection in 66.0s
+2025-04-22 23:05:30,198 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-22T17:35:26.256810
+2025-04-22 23:05:30,198 - WARNING - latest is still a Future, attempting to resolve
+2025-04-22 23:05:30,270 - DEBUG - Calculated interval: 72s (Score: 11.77)
+2025-04-22 23:05:30,271 - INFO - Dynamic interval: 72s
+2025-04-22 23:05:30,271 - INFO - Next collection in 68.0s
+2025-04-22 23:06:36,927 - INFO - Shutting down...
+2025-04-22 23:06:37,261 - INFO - Monitor stopped
+2025-04-22 23:30:53,826 - INFO - Starting Async System Monitor
+2025-04-22 23:30:53,832 - ERROR - Error getting system info: 'SystemMonitor' object has no attribute '_get_disk_info'
+2025-04-22 23:30:54,409 - INFO - Successfully connected to MongoDB
+2025-04-22 23:30:54,410 - CRITICAL - Fatal error: 'SystemMonitor' object has no attribute '_initialize_forecaster'
+2025-04-22 23:30:54,411 - INFO - Monitor stopped
+2025-04-24 11:02:26,379 - INFO - Starting Async System Monitor
+2025-04-24 11:02:28,430 - INFO - Successfully connected to MongoDB
+2025-04-24 11:02:35,053 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:32:29.101092
+2025-04-24 11:02:35,056 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:02:39,971 - DEBUG - Calculated interval: 44s (Score: 14.33)
+2025-04-24 11:02:39,986 - INFO - Dynamic interval: 44s
+2025-04-24 11:02:39,986 - INFO - Next collection in 33.1s
+2025-04-24 11:03:14,607 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:33:10.613468
+2025-04-24 11:03:14,608 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:03:14,752 - DEBUG - Calculated interval: 30s (Score: 20.30)
+2025-04-24 11:03:14,753 - INFO - Dynamic interval: 30s
+2025-04-24 11:03:14,753 - INFO - Next collection in 25.9s
+2025-04-24 11:03:44,365 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:33:40.614156
+2025-04-24 11:03:44,366 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:03:44,489 - DEBUG - Calculated interval: 66s (Score: 12.32)
+2025-04-24 11:03:44,490 - INFO - Dynamic interval: 66s
+2025-04-24 11:03:44,490 - INFO - Next collection in 62.1s
+2025-04-24 11:04:49,818 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:34:46.614985
+2025-04-24 11:04:49,820 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:04:49,899 - DEBUG - Calculated interval: 52s (Score: 13.61)
+2025-04-24 11:04:49,900 - INFO - Dynamic interval: 52s
+2025-04-24 11:04:49,900 - INFO - Next collection in 48.7s
+2025-04-24 11:05:42,320 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:35:38.615532
+2025-04-24 11:05:42,321 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:05:42,444 - DEBUG - Calculated interval: 57s (Score: 13.10)
+2025-04-24 11:05:42,445 - INFO - Dynamic interval: 57s
+2025-04-24 11:05:42,445 - INFO - Next collection in 53.2s
+2025-04-24 11:06:39,329 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:36:35.616595
+2025-04-24 11:06:39,330 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:06:39,406 - DEBUG - Calculated interval: 67s (Score: 12.20)
+2025-04-24 11:06:39,406 - INFO - Dynamic interval: 67s
+2025-04-24 11:06:39,407 - INFO - Next collection in 63.2s
+2025-04-24 11:07:46,373 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:37:42.617307
+2025-04-24 11:07:46,375 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:07:46,493 - DEBUG - Calculated interval: 49s (Score: 13.88)
+2025-04-24 11:07:46,494 - INFO - Dynamic interval: 49s
+2025-04-24 11:07:46,494 - INFO - Next collection in 45.1s
+2025-04-24 11:08:35,405 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:38:31.618041
+2025-04-24 11:08:35,406 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:08:35,528 - DEBUG - Calculated interval: 47s (Score: 14.00)
+2025-04-24 11:08:35,529 - INFO - Dynamic interval: 47s
+2025-04-24 11:08:35,530 - INFO - Next collection in 43.1s
+2025-04-24 11:09:22,424 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:39:18.619561
+2025-04-24 11:09:22,425 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:09:22,511 - DEBUG - Calculated interval: 49s (Score: 13.88)
+2025-04-24 11:09:22,512 - INFO - Dynamic interval: 49s
+2025-04-24 11:09:22,513 - INFO - Next collection in 45.1s
+2025-04-24 11:10:11,385 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:40:07.621213
+2025-04-24 11:10:11,387 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:10:11,515 - DEBUG - Calculated interval: 50s (Score: 13.79)
+2025-04-24 11:10:11,516 - INFO - Dynamic interval: 50s
+2025-04-24 11:10:11,517 - INFO - Next collection in 46.1s
+2025-04-24 11:11:01,374 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:40:57.621868
+2025-04-24 11:11:01,375 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:11:01,462 - DEBUG - Calculated interval: 62s (Score: 12.71)
+2025-04-24 11:11:01,462 - INFO - Dynamic interval: 62s
+2025-04-24 11:11:01,463 - INFO - Next collection in 58.2s
+2025-04-24 11:12:03,384 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:41:59.622376
+2025-04-24 11:12:03,384 - INFO - Queueing model retrain...
+2025-04-24 11:12:07,479 - ERROR - Failed to queue retrain: Error 22 connecting to localhost:6379. 22.
+2025-04-24 11:12:07,479 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:12:07,562 - DEBUG - Calculated interval: 65s (Score: 12.41)
+2025-04-24 11:12:07,562 - INFO - Dynamic interval: 65s
+2025-04-24 11:12:07,562 - INFO - Next collection in 57.1s
+2025-04-24 11:13:08,318 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:43:04.623701
+2025-04-24 11:13:08,319 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:13:08,395 - DEBUG - Calculated interval: 64s (Score: 12.47)
+2025-04-24 11:13:08,396 - INFO - Dynamic interval: 64s
+2025-04-24 11:13:08,396 - INFO - Next collection in 60.2s
+2025-04-24 11:14:12,358 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:44:08.625015
+2025-04-24 11:14:12,361 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:14:12,483 - DEBUG - Calculated interval: 63s (Score: 12.62)
+2025-04-24 11:14:12,484 - INFO - Dynamic interval: 63s
+2025-04-24 11:14:12,484 - INFO - Next collection in 59.1s
+2025-04-24 11:15:15,401 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:45:11.626111
+2025-04-24 11:15:15,402 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:15:15,489 - DEBUG - Calculated interval: 60s (Score: 12.83)
+2025-04-24 11:15:15,490 - INFO - Dynamic interval: 60s
+2025-04-24 11:15:15,490 - INFO - Next collection in 56.1s
+2025-04-24 11:16:15,343 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:46:11.627180
+2025-04-24 11:16:15,345 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:16:15,479 - DEBUG - Calculated interval: 60s (Score: 12.86)
+2025-04-24 11:16:15,479 - INFO - Dynamic interval: 60s
+2025-04-24 11:16:15,480 - INFO - Next collection in 56.1s
+2025-04-24 11:17:15,643 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:47:11.627486
+2025-04-24 11:17:15,644 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:17:15,735 - DEBUG - Calculated interval: 54s (Score: 13.37)
+2025-04-24 11:17:15,736 - INFO - Dynamic interval: 54s
+2025-04-24 11:17:15,736 - INFO - Next collection in 49.9s
+2025-04-24 11:18:09,331 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:48:05.628357
+2025-04-24 11:18:09,332 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:18:09,460 - DEBUG - Calculated interval: 64s (Score: 12.47)
+2025-04-24 11:18:09,460 - INFO - Dynamic interval: 64s
+2025-04-24 11:18:09,461 - INFO - Next collection in 60.2s
+2025-04-24 11:19:13,368 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:49:09.629240
+2025-04-24 11:19:13,372 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:19:13,469 - DEBUG - Calculated interval: 60s (Score: 12.89)
+2025-04-24 11:19:13,469 - INFO - Dynamic interval: 60s
+2025-04-24 11:19:13,470 - INFO - Next collection in 56.2s
+2025-04-24 11:20:13,476 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:50:09.630744
+2025-04-24 11:20:13,479 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:20:13,622 - DEBUG - Calculated interval: 30s (Score: 15.80)
+2025-04-24 11:20:13,624 - INFO - Dynamic interval: 30s
+2025-04-24 11:20:13,624 - INFO - Next collection in 26.0s
+2025-04-24 11:20:43,339 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:50:39.632222
+2025-04-24 11:20:43,340 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:20:43,446 - DEBUG - Calculated interval: 60s (Score: 12.89)
+2025-04-24 11:20:43,447 - INFO - Dynamic interval: 60s
+2025-04-24 11:20:43,447 - INFO - Next collection in 56.2s
+2025-04-24 11:21:43,434 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:51:39.633649
+2025-04-24 11:21:43,435 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:21:43,526 - DEBUG - Calculated interval: 59s (Score: 12.98)
+2025-04-24 11:21:43,528 - INFO - Dynamic interval: 59s
+2025-04-24 11:21:43,528 - INFO - Next collection in 55.1s
+2025-04-24 11:22:42,468 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:52:38.635308
+2025-04-24 11:22:42,470 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:22:42,609 - DEBUG - Calculated interval: 53s (Score: 13.52)
+2025-04-24 11:22:42,609 - INFO - Dynamic interval: 53s
+2025-04-24 11:22:42,609 - INFO - Next collection in 49.0s
+2025-04-24 11:23:35,414 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:53:31.637279
+2025-04-24 11:23:35,414 - INFO - Queueing model retrain...
+2025-04-24 11:23:39,486 - ERROR - Failed to queue retrain: Error 22 connecting to localhost:6379. 22.
+2025-04-24 11:23:39,489 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:23:39,577 - DEBUG - Calculated interval: 60s (Score: 12.89)
+2025-04-24 11:23:39,578 - INFO - Dynamic interval: 60s
+2025-04-24 11:23:39,578 - INFO - Next collection in 52.1s
+2025-04-24 11:24:35,487 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:54:31.638253
+2025-04-24 11:24:35,488 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:24:35,566 - DEBUG - Calculated interval: 57s (Score: 13.10)
+2025-04-24 11:24:35,567 - INFO - Dynamic interval: 57s
+2025-04-24 11:24:35,567 - INFO - Next collection in 53.1s
+2025-04-24 11:25:32,348 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:55:28.639424
+2025-04-24 11:25:32,349 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:25:32,429 - DEBUG - Calculated interval: 61s (Score: 12.77)
+2025-04-24 11:25:32,431 - INFO - Dynamic interval: 61s
+2025-04-24 11:25:32,431 - INFO - Next collection in 57.2s
+2025-04-24 11:26:33,396 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:56:29.639946
+2025-04-24 11:26:33,397 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:26:33,524 - DEBUG - Calculated interval: 60s (Score: 12.86)
+2025-04-24 11:26:33,525 - INFO - Dynamic interval: 60s
+2025-04-24 11:26:33,525 - INFO - Next collection in 56.1s
+2025-04-24 11:27:33,392 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:57:29.640582
+2025-04-24 11:27:33,394 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:27:33,487 - DEBUG - Calculated interval: 56s (Score: 13.25)
+2025-04-24 11:27:33,488 - INFO - Dynamic interval: 56s
+2025-04-24 11:27:33,488 - INFO - Next collection in 52.2s
+2025-04-24 11:28:29,355 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:58:25.641656
+2025-04-24 11:28:29,356 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:28:29,478 - DEBUG - Calculated interval: 59s (Score: 12.92)
+2025-04-24 11:28:29,479 - INFO - Dynamic interval: 59s
+2025-04-24 11:28:29,479 - INFO - Next collection in 55.2s
+2025-04-24 11:29:28,432 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T05:59:24.642950
+2025-04-24 11:29:28,436 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:29:28,526 - DEBUG - Calculated interval: 50s (Score: 13.74)
+2025-04-24 11:29:28,526 - INFO - Dynamic interval: 50s
+2025-04-24 11:29:28,526 - INFO - Next collection in 46.1s
+2025-04-24 11:30:18,394 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:00:14.644103
+2025-04-24 11:30:18,394 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:30:18,477 - DEBUG - Calculated interval: 60s (Score: 12.84)
+2025-04-24 11:30:18,478 - INFO - Dynamic interval: 60s
+2025-04-24 11:30:18,478 - INFO - Next collection in 56.2s
+2025-04-24 11:31:18,472 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:01:14.644851
+2025-04-24 11:31:18,472 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:31:18,570 - DEBUG - Calculated interval: 54s (Score: 13.41)
+2025-04-24 11:31:18,571 - INFO - Dynamic interval: 54s
+2025-04-24 11:31:18,571 - INFO - Next collection in 50.1s
+2025-04-24 11:32:12,507 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:02:08.645982
+2025-04-24 11:32:12,508 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:32:12,600 - DEBUG - Calculated interval: 51s (Score: 13.71)
+2025-04-24 11:32:12,602 - INFO - Dynamic interval: 51s
+2025-04-24 11:32:12,602 - INFO - Next collection in 47.0s
+2025-04-24 11:33:03,360 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:02:59.647277
+2025-04-24 11:33:03,361 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:33:03,462 - DEBUG - Calculated interval: 57s (Score: 13.17)
+2025-04-24 11:33:03,463 - INFO - Dynamic interval: 57s
+2025-04-24 11:33:03,463 - INFO - Next collection in 53.2s
+2025-04-24 11:34:00,341 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:03:56.648070
+2025-04-24 11:34:00,342 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:34:00,447 - DEBUG - Calculated interval: 53s (Score: 13.47)
+2025-04-24 11:34:00,447 - INFO - Dynamic interval: 53s
+2025-04-24 11:34:00,447 - INFO - Next collection in 49.2s
+2025-04-24 11:34:53,373 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:04:49.650148
+2025-04-24 11:34:53,373 - INFO - Queueing model retrain...
+2025-04-24 11:34:57,430 - ERROR - Failed to queue retrain: Error 22 connecting to localhost:6379. 22.
+2025-04-24 11:34:57,434 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:34:57,637 - DEBUG - Calculated interval: 59s (Score: 12.99)
+2025-04-24 11:34:57,638 - INFO - Dynamic interval: 59s
+2025-04-24 11:34:57,638 - INFO - Next collection in 51.0s
+2025-04-24 11:35:52,454 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:05:48.651424
+2025-04-24 11:35:52,455 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:35:52,544 - DEBUG - Calculated interval: 52s (Score: 13.56)
+2025-04-24 11:35:52,545 - INFO - Dynamic interval: 52s
+2025-04-24 11:35:52,545 - INFO - Next collection in 48.1s
+2025-04-24 11:36:44,408 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:06:40.652734
+2025-04-24 11:36:44,409 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:36:44,536 - DEBUG - Calculated interval: 49s (Score: 13.86)
+2025-04-24 11:36:44,538 - INFO - Dynamic interval: 49s
+2025-04-24 11:36:44,538 - INFO - Next collection in 45.1s
+2025-04-24 11:37:33,398 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:07:29.653737
+2025-04-24 11:37:33,399 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:37:33,528 - DEBUG - Calculated interval: 52s (Score: 13.59)
+2025-04-24 11:37:33,529 - INFO - Dynamic interval: 52s
+2025-04-24 11:37:33,529 - INFO - Next collection in 48.1s
+2025-04-24 11:38:25,376 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:08:21.654562
+2025-04-24 11:38:25,378 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:38:25,466 - DEBUG - Calculated interval: 60s (Score: 12.90)
+2025-04-24 11:38:25,466 - INFO - Dynamic interval: 60s
+2025-04-24 11:38:25,466 - INFO - Next collection in 56.2s
+2025-04-24 11:39:25,412 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:09:21.656310
+2025-04-24 11:39:25,413 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:39:25,533 - DEBUG - Calculated interval: 56s (Score: 13.26)
+2025-04-24 11:39:25,534 - INFO - Dynamic interval: 56s
+2025-04-24 11:39:25,534 - INFO - Next collection in 52.1s
+2025-04-24 11:40:21,366 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:10:17.657090
+2025-04-24 11:40:21,366 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:40:21,496 - DEBUG - Calculated interval: 60s (Score: 12.87)
+2025-04-24 11:40:21,497 - INFO - Dynamic interval: 60s
+2025-04-24 11:40:21,497 - INFO - Next collection in 56.2s
+2025-04-24 11:41:21,383 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:11:17.657959
+2025-04-24 11:41:21,384 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:41:21,470 - DEBUG - Calculated interval: 54s (Score: 13.38)
+2025-04-24 11:41:21,471 - INFO - Dynamic interval: 54s
+2025-04-24 11:41:21,471 - INFO - Next collection in 50.2s
+2025-04-24 11:42:15,408 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:12:11.658478
+2025-04-24 11:42:15,408 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:42:15,500 - DEBUG - Calculated interval: 55s (Score: 13.35)
+2025-04-24 11:42:15,501 - INFO - Dynamic interval: 55s
+2025-04-24 11:42:15,501 - INFO - Next collection in 51.2s
+2025-04-24 11:43:10,404 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:13:06.659295
+2025-04-24 11:43:10,405 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:43:10,525 - DEBUG - Calculated interval: 55s (Score: 13.35)
+2025-04-24 11:43:10,526 - INFO - Dynamic interval: 55s
+2025-04-24 11:43:10,526 - INFO - Next collection in 51.1s
+2025-04-24 11:44:05,378 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:14:01.660478
+2025-04-24 11:44:05,378 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:44:05,468 - DEBUG - Calculated interval: 52s (Score: 13.62)
+2025-04-24 11:44:05,470 - INFO - Dynamic interval: 52s
+2025-04-24 11:44:05,470 - INFO - Next collection in 48.2s
+2025-04-24 11:44:57,418 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:14:53.661668
+2025-04-24 11:44:57,418 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:44:57,539 - DEBUG - Calculated interval: 55s (Score: 13.26)
+2025-04-24 11:44:57,540 - INFO - Dynamic interval: 55s
+2025-04-24 11:44:57,540 - INFO - Next collection in 51.1s
+2025-04-24 11:45:52,467 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:15:48.662788
+2025-04-24 11:45:52,468 - INFO - Queueing model retrain...
+2025-04-24 11:45:56,545 - ERROR - Failed to queue retrain: Error 22 connecting to localhost:6379. 22.
+2025-04-24 11:45:56,546 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:45:56,639 - DEBUG - Calculated interval: 53s (Score: 13.50)
+2025-04-24 11:45:56,641 - INFO - Dynamic interval: 53s
+2025-04-24 11:45:56,641 - INFO - Next collection in 45.0s
+2025-04-24 11:46:45,472 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:16:41.664230
+2025-04-24 11:46:45,473 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:46:45,595 - DEBUG - Calculated interval: 54s (Score: 13.41)
+2025-04-24 11:46:45,596 - INFO - Dynamic interval: 54s
+2025-04-24 11:46:45,596 - INFO - Next collection in 50.1s
+2025-04-24 11:47:39,460 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:17:35.665260
+2025-04-24 11:47:39,461 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:47:39,582 - DEBUG - Calculated interval: 56s (Score: 13.20)
+2025-04-24 11:47:39,583 - INFO - Dynamic interval: 56s
+2025-04-24 11:47:39,584 - INFO - Next collection in 52.1s
+2025-04-24 11:48:35,446 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:18:31.665888
+2025-04-24 11:48:35,447 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:48:35,530 - DEBUG - Calculated interval: 60s (Score: 12.87)
+2025-04-24 11:48:35,531 - INFO - Dynamic interval: 60s
+2025-04-24 11:48:35,531 - INFO - Next collection in 56.1s
+2025-04-24 11:49:35,440 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:19:31.666942
+2025-04-24 11:49:35,441 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:49:35,565 - DEBUG - Calculated interval: 55s (Score: 13.29)
+2025-04-24 11:49:35,565 - INFO - Dynamic interval: 55s
+2025-04-24 11:49:35,565 - INFO - Next collection in 51.1s
+2025-04-24 11:50:30,406 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:20:26.668458
+2025-04-24 11:50:30,407 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:50:30,523 - DEBUG - Calculated interval: 50s (Score: 13.77)
+2025-04-24 11:50:30,523 - INFO - Dynamic interval: 50s
+2025-04-24 11:50:30,523 - INFO - Next collection in 46.1s
+2025-04-24 11:51:25,633 - ERROR - Error during metrics collection: ac-wcwqiwl-shard-00-00.6ememug.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms),ac-wcwqiwl-shard-00-01.6ememug.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms),ac-wcwqiwl-shard-00-02.6ememug.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 6809cceb0a8692277e980cb7, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-wcwqiwl-shard-00-00.6ememug.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-wcwqiwl-shard-00-00.6ememug.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms)')>, <ServerDescription ('ac-wcwqiwl-shard-00-01.6ememug.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-wcwqiwl-shard-00-01.6ememug.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms)')>, <ServerDescription ('ac-wcwqiwl-shard-00-02.6ememug.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-wcwqiwl-shard-00-02.6ememug.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms)')>]>
+Traceback (most recent call last):
+  File "D:\Coding\SystemInsights\monitor.py", line 433, in collect_metrics
+    await self.collection.insert_one(metrics)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\synchronous\collection.py", line 891, in insert_one
+    self._insert_one(
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\synchronous\collection.py", line 831, in _insert_one
+    self._database.client._retryable_write(
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2040, in _retryable_write
+    return self._retry_with_session(retryable, func, s, bulk, operation, operation_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1926, in _retry_with_session
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1972, in _retry_internal
+    ).run()
+      ^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2709, in run
+    return self._read() if self._is_read else self._write()
+                                              ^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2819, in _write
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2802, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1791, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\synchronous\topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\synchronous\topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\synchronous\topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Coding\SystemInsights\venv\Lib\site-packages\pymongo\synchronous\topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: ac-wcwqiwl-shard-00-00.6ememug.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms),ac-wcwqiwl-shard-00-01.6ememug.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms),ac-wcwqiwl-shard-00-02.6ememug.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 6809cceb0a8692277e980cb7, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-wcwqiwl-shard-00-00.6ememug.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-wcwqiwl-shard-00-00.6ememug.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms)')>, <ServerDescription ('ac-wcwqiwl-shard-00-01.6ememug.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-wcwqiwl-shard-00-01.6ememug.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms)')>, <ServerDescription ('ac-wcwqiwl-shard-00-02.6ememug.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-wcwqiwl-shard-00-02.6ememug.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms)')>]>
+2025-04-24 11:52:42,142 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:22:26.058562
+2025-04-24 11:52:42,146 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:52:42,298 - DEBUG - Calculated interval: 61s (Score: 12.78)
+2025-04-24 11:52:42,299 - INFO - Dynamic interval: 61s
+2025-04-24 11:52:42,299 - INFO - Next collection in 44.8s
+2025-04-24 11:53:30,973 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:23:27.059562
+2025-04-24 11:53:30,973 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:53:31,068 - DEBUG - Calculated interval: 56s (Score: 13.20)
+2025-04-24 11:53:31,069 - INFO - Dynamic interval: 56s
+2025-04-24 11:53:31,069 - INFO - Next collection in 52.0s
+2025-04-24 11:54:26,822 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:24:23.061086
+2025-04-24 11:54:26,822 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:54:26,957 - DEBUG - Calculated interval: 55s (Score: 13.32)
+2025-04-24 11:54:26,958 - INFO - Dynamic interval: 55s
+2025-04-24 11:54:26,958 - INFO - Next collection in 51.1s
+2025-04-24 11:55:21,853 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:25:18.062077
+2025-04-24 11:55:21,855 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:55:21,947 - DEBUG - Calculated interval: 58s (Score: 13.02)
+2025-04-24 11:55:21,947 - INFO - Dynamic interval: 58s
+2025-04-24 11:55:21,948 - INFO - Next collection in 54.1s
+2025-04-24 11:56:19,779 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:26:16.062823
+2025-04-24 11:56:19,780 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:56:19,910 - DEBUG - Calculated interval: 57s (Score: 13.11)
+2025-04-24 11:56:19,911 - INFO - Dynamic interval: 57s
+2025-04-24 11:56:19,911 - INFO - Next collection in 53.2s
+2025-04-24 11:57:16,788 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:27:13.064176
+2025-04-24 11:57:16,789 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:57:16,918 - DEBUG - Calculated interval: 60s (Score: 12.87)
+2025-04-24 11:57:16,919 - INFO - Dynamic interval: 60s
+2025-04-24 11:57:16,919 - INFO - Next collection in 56.1s
+2025-04-24 11:58:16,855 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:28:13.065293
+2025-04-24 11:58:16,857 - INFO - Queueing model retrain...
+2025-04-24 11:58:20,960 - ERROR - Failed to queue retrain: Error 22 connecting to localhost:6379. 22.
+2025-04-24 11:58:20,963 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:58:21,092 - DEBUG - Calculated interval: 57s (Score: 13.08)
+2025-04-24 11:58:21,092 - INFO - Dynamic interval: 57s
+2025-04-24 11:58:21,093 - INFO - Next collection in 49.0s
+2025-04-24 11:59:13,845 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:29:10.066088
+2025-04-24 11:59:13,847 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 11:59:13,983 - DEBUG - Calculated interval: 49s (Score: 13.83)
+2025-04-24 11:59:13,984 - INFO - Dynamic interval: 49s
+2025-04-24 11:59:13,984 - INFO - Next collection in 45.1s
+2025-04-24 12:00:02,870 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:29:59.066783
+2025-04-24 12:00:02,871 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:00:03,006 - DEBUG - Calculated interval: 52s (Score: 13.56)
+2025-04-24 12:00:03,007 - INFO - Dynamic interval: 52s
+2025-04-24 12:00:03,007 - INFO - Next collection in 48.1s
+2025-04-24 12:00:54,864 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:30:51.067573
+2025-04-24 12:00:54,866 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:00:54,984 - DEBUG - Calculated interval: 51s (Score: 13.66)
+2025-04-24 12:00:54,985 - INFO - Dynamic interval: 51s
+2025-04-24 12:00:54,986 - INFO - Next collection in 47.1s
+2025-04-24 12:01:45,794 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:31:42.068239
+2025-04-24 12:01:45,795 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:01:45,902 - DEBUG - Calculated interval: 55s (Score: 13.33)
+2025-04-24 12:01:45,903 - INFO - Dynamic interval: 55s
+2025-04-24 12:01:45,903 - INFO - Next collection in 51.2s
+2025-04-24 12:02:40,892 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:32:37.069463
+2025-04-24 12:02:40,893 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:02:41,012 - DEBUG - Calculated interval: 54s (Score: 13.36)
+2025-04-24 12:02:41,013 - INFO - Dynamic interval: 54s
+2025-04-24 12:02:41,013 - INFO - Next collection in 50.1s
+2025-04-24 12:03:34,857 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:33:31.070852
+2025-04-24 12:03:34,857 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:03:34,935 - DEBUG - Calculated interval: 49s (Score: 13.81)
+2025-04-24 12:03:34,936 - INFO - Dynamic interval: 49s
+2025-04-24 12:03:34,936 - INFO - Next collection in 45.1s
+2025-04-24 12:04:23,930 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:34:20.071861
+2025-04-24 12:04:23,932 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:04:24,034 - DEBUG - Calculated interval: 55s (Score: 13.30)
+2025-04-24 12:04:24,035 - INFO - Dynamic interval: 55s
+2025-04-24 12:04:24,036 - INFO - Next collection in 51.0s
+2025-04-24 12:05:18,811 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:35:15.072805
+2025-04-24 12:05:18,812 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:05:18,918 - DEBUG - Calculated interval: 62s (Score: 12.64)
+2025-04-24 12:05:18,919 - INFO - Dynamic interval: 62s
+2025-04-24 12:05:18,919 - INFO - Next collection in 58.2s
+2025-04-24 12:06:20,807 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:36:17.073724
+2025-04-24 12:06:20,810 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:06:20,928 - DEBUG - Calculated interval: 56s (Score: 13.18)
+2025-04-24 12:06:20,929 - INFO - Dynamic interval: 56s
+2025-04-24 12:06:20,929 - INFO - Next collection in 52.1s
+2025-04-24 12:07:16,838 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:37:13.074726
+2025-04-24 12:07:16,840 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:07:16,923 - DEBUG - Calculated interval: 49s (Score: 13.87)
+2025-04-24 12:07:16,925 - INFO - Dynamic interval: 49s
+2025-04-24 12:07:16,925 - INFO - Next collection in 45.1s
+2025-04-24 12:08:05,838 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:38:02.075631
+2025-04-24 12:08:05,839 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:08:05,921 - DEBUG - Calculated interval: 66s (Score: 12.34)
+2025-04-24 12:08:05,922 - INFO - Dynamic interval: 66s
+2025-04-24 12:08:05,922 - INFO - Next collection in 62.2s
+2025-04-24 12:09:11,924 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:39:08.076915
+2025-04-24 12:09:11,925 - INFO - Queueing model retrain...
+2025-04-24 12:09:15,995 - ERROR - Failed to queue retrain: Error 22 connecting to localhost:6379. 22.
+2025-04-24 12:09:15,997 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:09:16,264 - DEBUG - Calculated interval: 55s (Score: 13.30)
+2025-04-24 12:09:16,265 - INFO - Dynamic interval: 55s
+2025-04-24 12:09:16,265 - INFO - Next collection in 46.8s
+2025-04-24 12:10:07,317 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:40:03.078315
+2025-04-24 12:10:07,318 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:10:07,406 - DEBUG - Calculated interval: 34s (Score: 15.22)
+2025-04-24 12:10:07,406 - INFO - Dynamic interval: 34s
+2025-04-24 12:10:07,407 - INFO - Next collection in 29.7s
+2025-04-24 12:10:41,099 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:40:37.079291
+2025-04-24 12:10:41,100 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:10:41,281 - DEBUG - Calculated interval: 56s (Score: 13.24)
+2025-04-24 12:10:41,282 - INFO - Dynamic interval: 56s
+2025-04-24 12:10:41,282 - INFO - Next collection in 51.8s
+2025-04-24 12:11:37,026 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:41:33.081198
+2025-04-24 12:11:37,027 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:11:37,222 - DEBUG - Calculated interval: 60s (Score: 12.82)
+2025-04-24 12:11:37,224 - INFO - Dynamic interval: 60s
+2025-04-24 12:11:37,224 - INFO - Next collection in 55.9s
+2025-04-24 12:12:36,263 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:42:33.082339
+2025-04-24 12:12:36,264 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:12:36,347 - DEBUG - Calculated interval: 61s (Score: 12.73)
+2025-04-24 12:12:36,347 - INFO - Dynamic interval: 61s
+2025-04-24 12:12:36,347 - INFO - Next collection in 57.7s
+2025-04-24 12:13:37,263 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:43:34.083705
+2025-04-24 12:13:37,264 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:13:37,338 - DEBUG - Calculated interval: 60s (Score: 12.85)
+2025-04-24 12:13:37,338 - INFO - Dynamic interval: 60s
+2025-04-24 12:13:37,338 - INFO - Next collection in 56.7s
+2025-04-24 12:14:37,255 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:44:34.085275
+2025-04-24 12:14:37,256 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:14:37,352 - DEBUG - Calculated interval: 60s (Score: 12.88)
+2025-04-24 12:14:37,352 - INFO - Dynamic interval: 60s
+2025-04-24 12:14:37,352 - INFO - Next collection in 56.7s
+2025-04-24 12:15:37,241 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:45:34.087441
+2025-04-24 12:15:37,244 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:15:37,334 - DEBUG - Calculated interval: 61s (Score: 12.76)
+2025-04-24 12:15:37,335 - INFO - Dynamic interval: 61s
+2025-04-24 12:15:37,335 - INFO - Next collection in 57.8s
+2025-04-24 12:16:38,257 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:46:35.088567
+2025-04-24 12:16:38,259 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:16:38,351 - DEBUG - Calculated interval: 57s (Score: 13.12)
+2025-04-24 12:16:38,351 - INFO - Dynamic interval: 57s
+2025-04-24 12:16:38,352 - INFO - Next collection in 53.7s
+2025-04-24 12:17:35,279 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:47:32.090610
+2025-04-24 12:17:35,280 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:17:35,396 - DEBUG - Calculated interval: 62s (Score: 12.67)
+2025-04-24 12:17:35,396 - INFO - Dynamic interval: 62s
+2025-04-24 12:17:35,397 - INFO - Next collection in 58.7s
+2025-04-24 12:18:37,337 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:48:34.091260
+2025-04-24 12:18:37,341 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:18:37,431 - DEBUG - Calculated interval: 62s (Score: 12.64)
+2025-04-24 12:18:37,432 - INFO - Dynamic interval: 62s
+2025-04-24 12:18:37,432 - INFO - Next collection in 58.7s
+2025-04-24 12:19:39,282 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:49:36.092001
+2025-04-24 12:19:39,283 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:19:39,366 - DEBUG - Calculated interval: 64s (Score: 12.46)
+2025-04-24 12:19:39,366 - INFO - Dynamic interval: 64s
+2025-04-24 12:19:39,366 - INFO - Next collection in 60.7s
+2025-04-24 12:20:43,265 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:50:40.093056
+2025-04-24 12:20:43,266 - INFO - Queueing model retrain...
+2025-04-24 12:20:47,356 - ERROR - Failed to queue retrain: Error 22 connecting to localhost:6379. 22.
+2025-04-24 12:20:47,359 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:20:47,459 - DEBUG - Calculated interval: 60s (Score: 12.88)
+2025-04-24 12:20:47,460 - INFO - Dynamic interval: 60s
+2025-04-24 12:20:47,460 - INFO - Next collection in 52.6s
+2025-04-24 12:21:43,263 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:51:40.094075
+2025-04-24 12:21:43,265 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:21:43,355 - DEBUG - Calculated interval: 62s (Score: 12.64)
+2025-04-24 12:21:43,355 - INFO - Dynamic interval: 62s
+2025-04-24 12:21:43,355 - INFO - Next collection in 58.7s
+2025-04-24 12:22:45,290 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:52:42.095701
+2025-04-24 12:22:45,292 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:22:45,410 - DEBUG - Calculated interval: 61s (Score: 12.79)
+2025-04-24 12:22:45,410 - INFO - Dynamic interval: 61s
+2025-04-24 12:22:45,411 - INFO - Next collection in 57.7s
+2025-04-24 12:23:46,288 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:53:43.096793
+2025-04-24 12:23:46,288 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:23:46,379 - DEBUG - Calculated interval: 66s (Score: 12.31)
+2025-04-24 12:23:46,380 - INFO - Dynamic interval: 66s
+2025-04-24 12:23:46,380 - INFO - Next collection in 62.7s
+2025-04-24 12:24:52,282 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:54:49.097985
+2025-04-24 12:24:52,283 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:24:52,367 - DEBUG - Calculated interval: 65s (Score: 12.37)
+2025-04-24 12:24:52,368 - INFO - Dynamic interval: 65s
+2025-04-24 12:24:52,368 - INFO - Next collection in 61.7s
+2025-04-24 12:25:57,288 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:55:54.098940
+2025-04-24 12:25:57,289 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:25:57,409 - DEBUG - Calculated interval: 67s (Score: 12.25)
+2025-04-24 12:25:57,411 - INFO - Dynamic interval: 67s
+2025-04-24 12:25:57,411 - INFO - Next collection in 63.7s
+2025-04-24 12:27:04,288 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:57:01.100116
+2025-04-24 12:27:04,288 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:27:04,401 - DEBUG - Calculated interval: 65s (Score: 12.37)
+2025-04-24 12:27:04,402 - INFO - Dynamic interval: 65s
+2025-04-24 12:27:04,402 - INFO - Next collection in 61.7s
+2025-04-24 12:28:09,538 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:58:06.101003
+2025-04-24 12:28:09,541 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:28:09,624 - DEBUG - Calculated interval: 58s (Score: 13.03)
+2025-04-24 12:28:09,625 - INFO - Dynamic interval: 58s
+2025-04-24 12:28:09,625 - INFO - Next collection in 54.5s
+2025-04-24 12:29:07,472 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T06:59:04.101875
+2025-04-24 12:29:07,472 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:29:07,540 - DEBUG - Calculated interval: 57s (Score: 13.15)
+2025-04-24 12:29:07,540 - INFO - Dynamic interval: 57s
+2025-04-24 12:29:07,541 - INFO - Next collection in 53.6s
+2025-04-24 12:30:04,268 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T07:00:01.102149
+2025-04-24 12:30:04,270 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:30:04,368 - DEBUG - Calculated interval: 58s (Score: 13.00)
+2025-04-24 12:30:04,369 - INFO - Dynamic interval: 58s
+2025-04-24 12:30:04,369 - INFO - Next collection in 54.7s
+2025-04-24 12:31:02,290 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T07:00:59.103341
+2025-04-24 12:31:02,290 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:31:02,362 - DEBUG - Calculated interval: 62s (Score: 12.64)
+2025-04-24 12:31:02,362 - INFO - Dynamic interval: 62s
+2025-04-24 12:31:02,363 - INFO - Next collection in 58.7s
+2025-04-24 12:32:04,256 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T07:02:01.104279
+2025-04-24 12:32:04,257 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:32:04,320 - DEBUG - Calculated interval: 63s (Score: 12.58)
+2025-04-24 12:32:04,321 - INFO - Dynamic interval: 63s
+2025-04-24 12:32:04,321 - INFO - Next collection in 59.8s
+2025-04-24 12:33:07,255 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T07:03:04.105427
+2025-04-24 12:33:07,255 - INFO - Queueing model retrain...
+2025-04-24 12:33:11,327 - ERROR - Failed to queue retrain: Error 22 connecting to localhost:6379. 22.
+2025-04-24 12:33:11,329 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:33:11,399 - DEBUG - Calculated interval: 63s (Score: 12.59)
+2025-04-24 12:33:11,400 - INFO - Dynamic interval: 63s
+2025-04-24 12:33:11,400 - INFO - Next collection in 55.7s
+2025-04-24 12:34:10,534 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T07:04:07.106297
+2025-04-24 12:34:10,534 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:34:10,613 - DEBUG - Calculated interval: 64s (Score: 12.50)
+2025-04-24 12:34:10,613 - INFO - Dynamic interval: 64s
+2025-04-24 12:34:10,613 - INFO - Next collection in 60.5s
+2025-04-24 12:35:14,279 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T07:05:11.108140
+2025-04-24 12:35:14,280 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:35:14,367 - DEBUG - Calculated interval: 62s (Score: 12.68)
+2025-04-24 12:35:14,368 - INFO - Dynamic interval: 62s
+2025-04-24 12:35:14,368 - INFO - Next collection in 58.7s
+2025-04-24 12:36:16,276 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T07:06:13.109424
+2025-04-24 12:36:16,276 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:36:16,359 - DEBUG - Calculated interval: 51s (Score: 13.70)
+2025-04-24 12:36:16,360 - INFO - Dynamic interval: 51s
+2025-04-24 12:36:16,360 - INFO - Next collection in 47.7s
+2025-04-24 12:37:07,304 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T07:07:04.110373
+2025-04-24 12:37:07,305 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:37:07,384 - DEBUG - Calculated interval: 60s (Score: 12.89)
+2025-04-24 12:37:07,385 - INFO - Dynamic interval: 60s
+2025-04-24 12:37:07,385 - INFO - Next collection in 56.7s
+2025-04-24 12:38:07,294 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T07:08:04.112129
+2025-04-24 12:38:07,295 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:38:07,372 - DEBUG - Calculated interval: 62s (Score: 12.71)
+2025-04-24 12:38:07,373 - INFO - Dynamic interval: 62s
+2025-04-24 12:38:07,373 - INFO - Next collection in 58.7s
+2025-04-24 12:39:09,269 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T07:09:06.112770
+2025-04-24 12:39:09,272 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:39:09,360 - DEBUG - Calculated interval: 64s (Score: 12.47)
+2025-04-24 12:39:09,360 - INFO - Dynamic interval: 64s
+2025-04-24 12:39:09,361 - INFO - Next collection in 60.8s
+2025-04-24 12:40:13,277 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T07:10:10.113447
+2025-04-24 12:40:13,280 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:40:13,366 - DEBUG - Calculated interval: 57s (Score: 13.10)
+2025-04-24 12:40:13,366 - INFO - Dynamic interval: 57s
+2025-04-24 12:40:13,367 - INFO - Next collection in 53.7s
+2025-04-24 12:41:10,286 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T07:11:07.113917
+2025-04-24 12:41:10,289 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:41:10,381 - DEBUG - Calculated interval: 61s (Score: 12.80)
+2025-04-24 12:41:10,382 - INFO - Dynamic interval: 61s
+2025-04-24 12:41:10,383 - INFO - Next collection in 57.7s
+2025-04-24 12:42:11,266 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T07:12:08.114354
+2025-04-24 12:42:11,267 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:42:11,341 - DEBUG - Calculated interval: 64s (Score: 12.47)
+2025-04-24 12:42:11,341 - INFO - Dynamic interval: 64s
+2025-04-24 12:42:11,341 - INFO - Next collection in 60.8s
+2025-04-24 12:43:15,293 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T07:13:12.115564
+2025-04-24 12:43:15,294 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:43:15,372 - DEBUG - Calculated interval: 65s (Score: 12.44)
+2025-04-24 12:43:15,372 - INFO - Dynamic interval: 65s
+2025-04-24 12:43:15,372 - INFO - Next collection in 61.7s
+2025-04-24 12:44:20,268 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T07:14:17.116757
+2025-04-24 12:44:20,269 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:44:20,365 - DEBUG - Calculated interval: 69s (Score: 12.02)
+2025-04-24 12:44:20,365 - INFO - Dynamic interval: 69s
+2025-04-24 12:44:20,365 - INFO - Next collection in 65.8s
+2025-04-24 12:45:29,292 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T07:15:26.118306
+2025-04-24 12:45:29,293 - INFO - Queueing model retrain...
+2025-04-24 12:45:33,372 - ERROR - Failed to queue retrain: Error 22 connecting to localhost:6379. 22.
+2025-04-24 12:45:33,374 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:45:33,476 - DEBUG - Calculated interval: 63s (Score: 12.62)
+2025-04-24 12:45:33,476 - INFO - Dynamic interval: 63s
+2025-04-24 12:45:33,477 - INFO - Next collection in 55.6s
+2025-04-24 12:46:32,282 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T07:16:29.118835
+2025-04-24 12:46:32,282 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:46:32,367 - DEBUG - Calculated interval: 60s (Score: 12.89)
+2025-04-24 12:46:32,368 - INFO - Dynamic interval: 60s
+2025-04-24 12:46:32,368 - INFO - Next collection in 56.8s
+2025-04-24 12:47:32,286 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-24T07:17:29.120011
+2025-04-24 12:47:32,290 - WARNING - latest is still a Future, attempting to resolve
+2025-04-24 12:47:32,390 - DEBUG - Calculated interval: 64s (Score: 12.50)
+2025-04-24 12:47:32,391 - INFO - Dynamic interval: 64s
+2025-04-24 12:47:32,391 - INFO - Next collection in 60.7s
+2025-04-28 14:04:56,163 - INFO - Starting Async System Monitor
+2025-04-28 14:04:56,876 - INFO - Successfully connected to MongoDB
+2025-04-28 14:05:02,137 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:34:57.289587
+2025-04-28 14:05:02,138 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:05:02,217 - DEBUG - Calculated interval: 42s (Score: 14.46)
+2025-04-28 14:05:02,239 - INFO - Dynamic interval: 42s
+2025-04-28 14:05:02,239 - INFO - Next collection in 37.1s
+2025-04-28 14:05:43,300 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:35:39.290633
+2025-04-28 14:05:43,301 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:05:43,378 - DEBUG - Calculated interval: 34s (Score: 15.21)
+2025-04-28 14:05:43,379 - INFO - Dynamic interval: 34s
+2025-04-28 14:05:43,379 - INFO - Next collection in 29.9s
+2025-04-28 14:06:17,279 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:36:13.291776
+2025-04-28 14:06:17,280 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:06:17,378 - DEBUG - Calculated interval: 30s (Score: 15.63)
+2025-04-28 14:06:17,379 - INFO - Dynamic interval: 30s
+2025-04-28 14:06:17,379 - INFO - Next collection in 25.9s
+2025-04-28 14:06:47,066 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:36:43.293258
+2025-04-28 14:06:47,067 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:06:47,146 - DEBUG - Calculated interval: 46s (Score: 14.13)
+2025-04-28 14:06:47,147 - INFO - Dynamic interval: 46s
+2025-04-28 14:06:47,147 - INFO - Next collection in 42.1s
+2025-04-28 14:07:33,242 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:37:29.294348
+2025-04-28 14:07:33,245 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:07:33,313 - DEBUG - Calculated interval: 46s (Score: 14.07)
+2025-04-28 14:07:33,315 - INFO - Dynamic interval: 46s
+2025-04-28 14:07:33,315 - INFO - Next collection in 42.0s
+2025-04-28 14:08:19,174 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:38:15.295814
+2025-04-28 14:08:19,175 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:08:19,252 - DEBUG - Calculated interval: 30s (Score: 15.72)
+2025-04-28 14:08:19,252 - INFO - Dynamic interval: 30s
+2025-04-28 14:08:19,254 - INFO - Next collection in 26.0s
+2025-04-28 14:08:49,112 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:38:45.296526
+2025-04-28 14:08:49,115 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:08:49,182 - DEBUG - Calculated interval: 39s (Score: 14.73)
+2025-04-28 14:08:49,184 - INFO - Dynamic interval: 39s
+2025-04-28 14:08:49,184 - INFO - Next collection in 35.1s
+2025-04-28 14:09:28,293 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:39:24.297498
+2025-04-28 14:09:28,295 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:09:28,374 - DEBUG - Calculated interval: 43s (Score: 14.34)
+2025-04-28 14:09:28,375 - INFO - Dynamic interval: 43s
+2025-04-28 14:09:28,375 - INFO - Next collection in 38.9s
+2025-04-28 14:10:11,259 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:40:07.298474
+2025-04-28 14:10:11,261 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:10:11,347 - DEBUG - Calculated interval: 39s (Score: 14.70)
+2025-04-28 14:10:11,348 - INFO - Dynamic interval: 39s
+2025-04-28 14:10:11,348 - INFO - Next collection in 35.0s
+2025-04-28 14:10:50,121 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:40:46.299413
+2025-04-28 14:10:50,122 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:10:50,185 - DEBUG - Calculated interval: 48s (Score: 13.95)
+2025-04-28 14:10:50,186 - INFO - Dynamic interval: 48s
+2025-04-28 14:10:50,186 - INFO - Next collection in 44.1s
+2025-04-28 14:11:38,223 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:41:34.300927
+2025-04-28 14:11:38,223 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:11:38,295 - DEBUG - Calculated interval: 38s (Score: 14.86)
+2025-04-28 14:11:38,296 - INFO - Dynamic interval: 38s
+2025-04-28 14:11:38,296 - INFO - Next collection in 34.0s
+2025-04-28 14:12:16,319 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:42:12.301390
+2025-04-28 14:12:16,319 - INFO - Queueing model retrain...
+2025-04-28 14:12:20,399 - ERROR - Failed to queue retrain: Error 22 connecting to localhost:6379. 22.
+2025-04-28 14:12:20,402 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:12:20,468 - DEBUG - Calculated interval: 42s (Score: 14.47)
+2025-04-28 14:12:20,469 - INFO - Dynamic interval: 42s
+2025-04-28 14:12:20,469 - INFO - Next collection in 33.8s
+2025-04-28 14:12:58,140 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:42:54.302326
+2025-04-28 14:12:58,143 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:12:58,213 - DEBUG - Calculated interval: 36s (Score: 15.01)
+2025-04-28 14:12:58,214 - INFO - Dynamic interval: 36s
+2025-04-28 14:12:58,214 - INFO - Next collection in 32.1s
+2025-04-28 14:13:34,161 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:43:30.303222
+2025-04-28 14:13:34,162 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:13:34,231 - DEBUG - Calculated interval: 33s (Score: 15.25)
+2025-04-28 14:13:34,232 - INFO - Dynamic interval: 33s
+2025-04-28 14:13:34,232 - INFO - Next collection in 29.1s
+2025-04-28 14:14:07,165 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:44:03.305050
+2025-04-28 14:14:07,166 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:14:07,234 - DEBUG - Calculated interval: 40s (Score: 14.62)
+2025-04-28 14:14:07,235 - INFO - Dynamic interval: 40s
+2025-04-28 14:14:07,236 - INFO - Next collection in 36.1s
+2025-04-28 14:14:47,166 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:44:43.305881
+2025-04-28 14:14:47,169 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:14:47,239 - DEBUG - Calculated interval: 42s (Score: 14.50)
+2025-04-28 14:14:47,239 - INFO - Dynamic interval: 42s
+2025-04-28 14:14:47,240 - INFO - Next collection in 38.1s
+2025-04-28 14:15:29,171 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:45:25.306861
+2025-04-28 14:15:29,171 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:15:29,243 - DEBUG - Calculated interval: 40s (Score: 14.65)
+2025-04-28 14:15:29,243 - INFO - Dynamic interval: 40s
+2025-04-28 14:15:29,244 - INFO - Next collection in 36.1s
+2025-04-28 14:16:09,279 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:46:05.307506
+2025-04-28 14:16:09,280 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:16:09,348 - DEBUG - Calculated interval: 38s (Score: 14.80)
+2025-04-28 14:16:09,349 - INFO - Dynamic interval: 38s
+2025-04-28 14:16:09,349 - INFO - Next collection in 34.0s
+2025-04-28 14:16:47,148 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:46:43.308304
+2025-04-28 14:16:47,150 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:16:47,224 - DEBUG - Calculated interval: 38s (Score: 14.83)
+2025-04-28 14:16:47,225 - INFO - Dynamic interval: 38s
+2025-04-28 14:16:47,225 - INFO - Next collection in 34.1s
+2025-04-28 14:17:25,157 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:47:21.308867
+2025-04-28 14:17:25,158 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:17:25,226 - DEBUG - Calculated interval: 39s (Score: 14.71)
+2025-04-28 14:17:25,227 - INFO - Dynamic interval: 39s
+2025-04-28 14:17:25,227 - INFO - Next collection in 35.1s
+2025-04-28 14:18:04,192 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:48:00.309388
+2025-04-28 14:18:04,193 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:18:04,282 - DEBUG - Calculated interval: 44s (Score: 14.32)
+2025-04-28 14:18:04,282 - INFO - Dynamic interval: 44s
+2025-04-28 14:18:04,282 - INFO - Next collection in 40.0s
+2025-04-28 14:18:48,158 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:48:44.311041
+2025-04-28 14:18:48,159 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:18:48,234 - DEBUG - Calculated interval: 36s (Score: 14.98)
+2025-04-28 14:18:48,236 - INFO - Dynamic interval: 36s
+2025-04-28 14:18:48,236 - INFO - Next collection in 32.1s
+2025-04-28 14:19:24,143 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:49:20.311634
+2025-04-28 14:19:24,144 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:19:24,217 - DEBUG - Calculated interval: 39s (Score: 14.77)
+2025-04-28 14:19:24,218 - INFO - Dynamic interval: 39s
+2025-04-28 14:19:24,218 - INFO - Next collection in 35.1s
+2025-04-28 14:20:03,141 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:49:59.312601
+2025-04-28 14:20:03,142 - INFO - Queueing model retrain...
+2025-04-28 14:20:07,229 - ERROR - Failed to queue retrain: Error 22 connecting to localhost:6379. 22.
+2025-04-28 14:20:07,232 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:20:07,312 - DEBUG - Calculated interval: 38s (Score: 14.86)
+2025-04-28 14:20:07,313 - INFO - Dynamic interval: 38s
+2025-04-28 14:20:07,313 - INFO - Next collection in 30.0s
+2025-04-28 14:20:41,217 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:50:37.313845
+2025-04-28 14:20:41,220 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:20:41,304 - DEBUG - Calculated interval: 39s (Score: 14.71)
+2025-04-28 14:20:41,305 - INFO - Dynamic interval: 39s
+2025-04-28 14:20:41,305 - INFO - Next collection in 35.0s
+2025-04-28 14:21:20,185 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:51:16.315436
+2025-04-28 14:21:20,187 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:21:20,259 - DEBUG - Calculated interval: 39s (Score: 14.71)
+2025-04-28 14:21:20,261 - INFO - Dynamic interval: 39s
+2025-04-28 14:21:20,261 - INFO - Next collection in 35.1s
+2025-04-28 14:21:59,270 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:51:55.316817
+2025-04-28 14:21:59,272 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:21:59,346 - DEBUG - Calculated interval: 39s (Score: 14.77)
+2025-04-28 14:21:59,347 - INFO - Dynamic interval: 39s
+2025-04-28 14:21:59,348 - INFO - Next collection in 35.0s
+2025-04-28 14:22:38,089 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:52:34.317317
+2025-04-28 14:22:38,092 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:22:38,179 - DEBUG - Calculated interval: 30s (Score: 15.67)
+2025-04-28 14:22:38,179 - INFO - Dynamic interval: 30s
+2025-04-28 14:22:38,179 - INFO - Next collection in 26.1s
+2025-04-28 14:23:08,077 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:53:04.319623
+2025-04-28 14:23:08,077 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:23:08,146 - DEBUG - Calculated interval: 38s (Score: 14.83)
+2025-04-28 14:23:08,148 - INFO - Dynamic interval: 38s
+2025-04-28 14:23:08,148 - INFO - Next collection in 34.2s
+2025-04-28 14:23:46,229 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:53:42.320133
+2025-04-28 14:23:46,233 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:23:46,325 - DEBUG - Calculated interval: 46s (Score: 14.14)
+2025-04-28 14:23:46,325 - INFO - Dynamic interval: 46s
+2025-04-28 14:23:46,326 - INFO - Next collection in 42.0s
+2025-04-28 14:24:32,081 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:54:28.320416
+2025-04-28 14:24:32,082 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:24:32,152 - DEBUG - Calculated interval: 48s (Score: 13.93)
+2025-04-28 14:24:32,153 - INFO - Dynamic interval: 48s
+2025-04-28 14:24:32,153 - INFO - Next collection in 44.2s
+2025-04-28 14:25:20,069 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:55:16.321179
+2025-04-28 14:25:20,069 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:25:20,136 - DEBUG - Calculated interval: 41s (Score: 14.59)
+2025-04-28 14:25:20,137 - INFO - Dynamic interval: 41s
+2025-04-28 14:25:20,137 - INFO - Next collection in 37.2s
+2025-04-28 14:26:01,188 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:55:57.322266
+2025-04-28 14:26:01,190 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:26:01,257 - DEBUG - Calculated interval: 41s (Score: 14.56)
+2025-04-28 14:26:01,257 - INFO - Dynamic interval: 41s
+2025-04-28 14:26:01,258 - INFO - Next collection in 37.1s
+2025-04-28 14:26:42,086 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:56:38.323015
+2025-04-28 14:26:42,087 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:26:42,160 - DEBUG - Calculated interval: 45s (Score: 14.20)
+2025-04-28 14:26:42,160 - INFO - Dynamic interval: 45s
+2025-04-28 14:26:42,161 - INFO - Next collection in 41.2s
+2025-04-28 14:27:27,106 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:57:23.323770
+2025-04-28 14:27:27,107 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:27:27,178 - DEBUG - Calculated interval: 45s (Score: 14.20)
+2025-04-28 14:27:27,179 - INFO - Dynamic interval: 45s
+2025-04-28 14:27:27,179 - INFO - Next collection in 41.1s
+2025-04-28 14:28:12,139 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:58:08.324957
+2025-04-28 14:28:12,140 - INFO - Queueing model retrain...
+2025-04-28 14:28:16,243 - ERROR - Failed to queue retrain: Error 22 connecting to localhost:6379. 22.
+2025-04-28 14:28:16,247 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:28:16,319 - DEBUG - Calculated interval: 45s (Score: 14.23)
+2025-04-28 14:28:16,320 - INFO - Dynamic interval: 45s
+2025-04-28 14:28:16,321 - INFO - Next collection in 37.0s
+2025-04-28 14:28:57,082 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:58:53.326251
+2025-04-28 14:28:57,082 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:28:57,156 - DEBUG - Calculated interval: 45s (Score: 14.20)
+2025-04-28 14:28:57,156 - INFO - Dynamic interval: 45s
+2025-04-28 14:28:57,158 - INFO - Next collection in 41.2s
+2025-04-28 14:29:42,618 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T08:59:38.326788
+2025-04-28 14:29:42,619 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:29:42,699 - DEBUG - Calculated interval: 40s (Score: 14.68)
+2025-04-28 14:29:42,701 - INFO - Dynamic interval: 40s
+2025-04-28 14:29:42,702 - INFO - Next collection in 35.6s
+2025-04-28 14:30:22,488 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:00:18.327472
+2025-04-28 14:30:22,489 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:30:22,563 - DEBUG - Calculated interval: 32s (Score: 15.40)
+2025-04-28 14:30:22,564 - INFO - Dynamic interval: 32s
+2025-04-28 14:30:22,564 - INFO - Next collection in 27.8s
+2025-04-28 14:30:54,297 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:00:50.328103
+2025-04-28 14:30:54,298 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:30:54,373 - DEBUG - Calculated interval: 36s (Score: 14.98)
+2025-04-28 14:30:54,374 - INFO - Dynamic interval: 36s
+2025-04-28 14:30:54,374 - INFO - Next collection in 32.0s
+2025-04-28 14:31:30,159 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:01:26.329077
+2025-04-28 14:31:30,159 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:31:30,229 - DEBUG - Calculated interval: 42s (Score: 14.47)
+2025-04-28 14:31:30,230 - INFO - Dynamic interval: 42s
+2025-04-28 14:31:30,230 - INFO - Next collection in 38.1s
+2025-04-28 14:32:12,294 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:02:08.330071
+2025-04-28 14:32:12,295 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:32:12,366 - DEBUG - Calculated interval: 44s (Score: 14.29)
+2025-04-28 14:32:12,366 - INFO - Dynamic interval: 44s
+2025-04-28 14:32:12,368 - INFO - Next collection in 40.0s
+2025-04-28 14:32:52,332 - INFO - Monitor stopped
+2025-04-28 14:40:17,925 - INFO - Starting Async System Monitor
+2025-04-28 14:40:18,631 - INFO - Successfully connected to MongoDB
+2025-04-28 14:40:23,094 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:10:18.669147
+2025-04-28 14:40:23,094 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:40:23,181 - DEBUG - Calculated interval: 43s (Score: 14.35)
+2025-04-28 14:40:23,182 - INFO - Dynamic interval: 43s
+2025-04-28 14:40:23,182 - INFO - Next collection in 38.5s
+2025-04-28 14:41:05,776 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:11:01.670354
+2025-04-28 14:41:05,777 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:41:05,861 - DEBUG - Calculated interval: 40s (Score: 14.62)
+2025-04-28 14:41:05,862 - INFO - Dynamic interval: 40s
+2025-04-28 14:41:05,862 - INFO - Next collection in 35.8s
+2025-04-28 14:41:45,872 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:11:41.671046
+2025-04-28 14:41:45,873 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:41:45,962 - DEBUG - Calculated interval: 35s (Score: 15.10)
+2025-04-28 14:41:45,962 - INFO - Dynamic interval: 35s
+2025-04-28 14:41:45,962 - INFO - Next collection in 30.7s
+2025-04-28 14:42:20,648 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:12:16.672053
+2025-04-28 14:42:20,649 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:42:20,734 - DEBUG - Calculated interval: 40s (Score: 14.62)
+2025-04-28 14:42:20,736 - INFO - Dynamic interval: 40s
+2025-04-28 14:42:20,736 - INFO - Next collection in 35.9s
+2025-04-28 14:43:00,695 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:12:56.672611
+2025-04-28 14:43:00,696 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:43:00,779 - DEBUG - Calculated interval: 39s (Score: 14.74)
+2025-04-28 14:43:00,780 - INFO - Dynamic interval: 39s
+2025-04-28 14:43:00,780 - INFO - Next collection in 34.9s
+2025-04-28 14:43:39,732 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:13:35.673771
+2025-04-28 14:43:39,733 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:43:39,810 - DEBUG - Calculated interval: 44s (Score: 14.30)
+2025-04-28 14:43:39,811 - INFO - Dynamic interval: 44s
+2025-04-28 14:43:39,811 - INFO - Next collection in 39.9s
+2025-04-28 14:44:23,825 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:14:19.675119
+2025-04-28 14:44:23,826 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:44:23,915 - DEBUG - Calculated interval: 36s (Score: 14.99)
+2025-04-28 14:44:23,916 - INFO - Dynamic interval: 36s
+2025-04-28 14:44:23,916 - INFO - Next collection in 31.8s
+2025-04-28 14:44:59,815 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:14:55.676570
+2025-04-28 14:44:59,816 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:44:59,903 - DEBUG - Calculated interval: 43s (Score: 14.39)
+2025-04-28 14:44:59,904 - INFO - Dynamic interval: 43s
+2025-04-28 14:44:59,904 - INFO - Next collection in 38.8s
+2025-04-28 14:45:42,857 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:15:38.677981
+2025-04-28 14:45:42,860 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:45:42,976 - DEBUG - Calculated interval: 33s (Score: 15.29)
+2025-04-28 14:45:42,977 - INFO - Dynamic interval: 33s
+2025-04-28 14:45:42,977 - INFO - Next collection in 28.7s
+2025-04-28 14:46:15,606 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:16:11.678834
+2025-04-28 14:46:15,607 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:46:15,697 - DEBUG - Calculated interval: 30s (Score: 16.82)
+2025-04-28 14:46:15,699 - INFO - Dynamic interval: 30s
+2025-04-28 14:46:15,699 - INFO - Next collection in 26.0s
+2025-04-28 14:46:45,728 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:16:41.680024
+2025-04-28 14:46:45,729 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:46:45,815 - DEBUG - Calculated interval: 37s (Score: 14.93)
+2025-04-28 14:46:45,816 - INFO - Dynamic interval: 37s
+2025-04-28 14:46:45,816 - INFO - Next collection in 32.9s
+2025-04-28 14:47:22,574 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:17:18.680937
+2025-04-28 14:47:22,575 - INFO - Queueing model retrain...
+2025-04-28 14:47:22,597 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:47:22,683 - DEBUG - Calculated interval: 41s (Score: 14.60)
+2025-04-28 14:47:22,683 - INFO - Dynamic interval: 41s
+2025-04-28 14:47:22,683 - INFO - Next collection in 37.0s
+2025-04-28 14:48:03,572 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:17:59.682721
+2025-04-28 14:48:03,572 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:48:03,684 - DEBUG - Calculated interval: 38s (Score: 14.87)
+2025-04-28 14:48:03,685 - INFO - Dynamic interval: 38s
+2025-04-28 14:48:03,685 - INFO - Next collection in 34.0s
+2025-04-28 14:48:41,599 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:18:37.683669
+2025-04-28 14:48:41,600 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:48:41,686 - DEBUG - Calculated interval: 46s (Score: 14.09)
+2025-04-28 14:48:41,687 - INFO - Dynamic interval: 46s
+2025-04-28 14:48:41,687 - INFO - Next collection in 42.0s
+2025-04-28 14:49:27,623 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:19:23.684525
+2025-04-28 14:49:27,624 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:49:27,700 - DEBUG - Calculated interval: 44s (Score: 14.30)
+2025-04-28 14:49:27,701 - INFO - Dynamic interval: 44s
+2025-04-28 14:49:27,701 - INFO - Next collection in 40.0s
+2025-04-28 14:50:11,745 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:20:07.685671
+2025-04-28 14:50:11,745 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:50:11,828 - DEBUG - Calculated interval: 35s (Score: 15.11)
+2025-04-28 14:50:11,829 - INFO - Dynamic interval: 35s
+2025-04-28 14:50:11,829 - INFO - Next collection in 30.9s
+2025-04-28 14:50:46,600 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:20:42.686937
+2025-04-28 14:50:46,601 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:50:46,680 - DEBUG - Calculated interval: 35s (Score: 15.11)
+2025-04-28 14:50:46,681 - INFO - Dynamic interval: 35s
+2025-04-28 14:50:46,681 - INFO - Next collection in 31.0s
+2025-04-28 14:51:21,645 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:21:17.687850
+2025-04-28 14:51:21,645 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:51:21,723 - DEBUG - Calculated interval: 41s (Score: 14.57)
+2025-04-28 14:51:21,724 - INFO - Dynamic interval: 41s
+2025-04-28 14:51:21,724 - INFO - Next collection in 37.0s
+2025-04-28 14:52:02,856 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:21:58.688995
+2025-04-28 14:52:02,858 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:52:02,962 - DEBUG - Calculated interval: 39s (Score: 14.75)
+2025-04-28 14:52:02,962 - INFO - Dynamic interval: 39s
+2025-04-28 14:52:02,963 - INFO - Next collection in 34.7s
+2025-04-28 14:52:41,999 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:22:37.689543
+2025-04-28 14:52:42,000 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:52:42,082 - DEBUG - Calculated interval: 30s (Score: 15.59)
+2025-04-28 14:52:42,083 - INFO - Dynamic interval: 30s
+2025-04-28 14:52:42,083 - INFO - Next collection in 25.6s
+2025-04-28 14:53:11,778 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:23:07.690934
+2025-04-28 14:53:11,778 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:53:11,862 - DEBUG - Calculated interval: 42s (Score: 14.48)
+2025-04-28 14:53:11,863 - INFO - Dynamic interval: 42s
+2025-04-28 14:53:11,864 - INFO - Next collection in 37.8s
+2025-04-28 14:53:53,849 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:23:49.691594
+2025-04-28 14:53:53,850 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:53:53,935 - DEBUG - Calculated interval: 43s (Score: 14.36)
+2025-04-28 14:53:53,936 - INFO - Dynamic interval: 43s
+2025-04-28 14:53:53,936 - INFO - Next collection in 38.8s
+2025-04-28 14:54:36,638 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:24:32.693218
+2025-04-28 14:54:36,639 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:54:36,720 - DEBUG - Calculated interval: 44s (Score: 14.30)
+2025-04-28 14:54:36,721 - INFO - Dynamic interval: 44s
+2025-04-28 14:54:36,721 - INFO - Next collection in 40.0s
+2025-04-28 14:55:20,788 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:25:16.694824
+2025-04-28 14:55:20,788 - INFO - Queueing model retrain...
+2025-04-28 14:55:20,794 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:55:20,875 - DEBUG - Calculated interval: 41s (Score: 14.60)
+2025-04-28 14:55:20,877 - INFO - Dynamic interval: 41s
+2025-04-28 14:55:20,877 - INFO - Next collection in 36.8s
+2025-04-28 14:56:01,654 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:25:57.695345
+2025-04-28 14:56:01,655 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:56:02,106 - DEBUG - Calculated interval: 43s (Score: 14.42)
+2025-04-28 14:56:02,107 - INFO - Dynamic interval: 43s
+2025-04-28 14:56:02,107 - INFO - Next collection in 38.6s
+2025-04-28 14:56:44,813 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:26:40.696138
+2025-04-28 14:56:44,813 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:56:44,899 - DEBUG - Calculated interval: 38s (Score: 14.84)
+2025-04-28 14:56:44,900 - INFO - Dynamic interval: 38s
+2025-04-28 14:56:44,901 - INFO - Next collection in 33.8s
+2025-04-28 14:57:22,947 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:27:18.697672
+2025-04-28 14:57:22,948 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:57:23,039 - DEBUG - Calculated interval: 41s (Score: 14.60)
+2025-04-28 14:57:23,040 - INFO - Dynamic interval: 41s
+2025-04-28 14:57:23,040 - INFO - Next collection in 36.7s
+2025-04-28 14:58:03,695 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:27:59.698810
+2025-04-28 14:58:03,696 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:58:03,777 - DEBUG - Calculated interval: 45s (Score: 14.21)
+2025-04-28 14:58:03,778 - INFO - Dynamic interval: 45s
+2025-04-28 14:58:03,778 - INFO - Next collection in 40.9s
+2025-04-28 14:58:48,696 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:28:44.699764
+2025-04-28 14:58:48,696 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:58:48,775 - DEBUG - Calculated interval: 40s (Score: 14.63)
+2025-04-28 14:58:48,777 - INFO - Dynamic interval: 40s
+2025-04-28 14:58:48,777 - INFO - Next collection in 35.9s
+2025-04-28 14:59:29,708 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:29:24.700768
+2025-04-28 14:59:29,709 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 14:59:29,792 - DEBUG - Calculated interval: 35s (Score: 15.14)
+2025-04-28 14:59:29,793 - INFO - Dynamic interval: 35s
+2025-04-28 14:59:29,793 - INFO - Next collection in 29.9s
+2025-04-28 15:00:03,707 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:29:59.701287
+2025-04-28 15:00:03,708 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:00:03,799 - DEBUG - Calculated interval: 46s (Score: 14.09)
+2025-04-28 15:00:03,799 - INFO - Dynamic interval: 46s
+2025-04-28 15:00:03,799 - INFO - Next collection in 41.9s
+2025-04-28 15:00:49,787 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:30:45.703293
+2025-04-28 15:00:49,788 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:00:49,879 - DEBUG - Calculated interval: 45s (Score: 14.21)
+2025-04-28 15:00:49,880 - INFO - Dynamic interval: 45s
+2025-04-28 15:00:49,880 - INFO - Next collection in 40.8s
+2025-04-28 15:01:34,809 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:31:30.704746
+2025-04-28 15:01:34,813 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:01:34,899 - DEBUG - Calculated interval: 41s (Score: 14.60)
+2025-04-28 15:01:34,900 - INFO - Dynamic interval: 41s
+2025-04-28 15:01:34,900 - INFO - Next collection in 36.8s
+2025-04-28 15:02:15,799 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:32:11.705955
+2025-04-28 15:02:15,800 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:02:15,895 - DEBUG - Calculated interval: 43s (Score: 14.42)
+2025-04-28 15:02:15,896 - INFO - Dynamic interval: 43s
+2025-04-28 15:02:15,896 - INFO - Next collection in 38.8s
+2025-04-28 15:02:58,805 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:32:54.706533
+2025-04-28 15:02:58,806 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:02:58,897 - DEBUG - Calculated interval: 41s (Score: 14.60)
+2025-04-28 15:02:58,898 - INFO - Dynamic interval: 41s
+2025-04-28 15:02:58,899 - INFO - Next collection in 36.8s
+2025-04-28 15:03:39,611 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:33:35.706964
+2025-04-28 15:03:39,612 - INFO - Queueing model retrain...
+2025-04-28 15:03:39,631 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:03:39,718 - DEBUG - Calculated interval: 45s (Score: 14.24)
+2025-04-28 15:03:39,719 - INFO - Dynamic interval: 45s
+2025-04-28 15:03:39,719 - INFO - Next collection in 41.0s
+2025-04-28 15:04:24,655 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:34:20.707936
+2025-04-28 15:04:24,657 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:04:24,744 - DEBUG - Calculated interval: 40s (Score: 14.69)
+2025-04-28 15:04:24,745 - INFO - Dynamic interval: 40s
+2025-04-28 15:04:24,746 - INFO - Next collection in 36.0s
+2025-04-28 15:05:04,767 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:35:00.708693
+2025-04-28 15:05:04,768 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:05:04,857 - DEBUG - Calculated interval: 39s (Score: 14.75)
+2025-04-28 15:05:04,858 - INFO - Dynamic interval: 39s
+2025-04-28 15:05:04,858 - INFO - Next collection in 34.9s
+2025-04-28 15:05:43,811 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:35:39.710007
+2025-04-28 15:05:43,814 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:05:43,941 - DEBUG - Calculated interval: 36s (Score: 15.05)
+2025-04-28 15:05:43,942 - INFO - Dynamic interval: 36s
+2025-04-28 15:05:43,942 - INFO - Next collection in 31.8s
+2025-04-28 15:06:19,629 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:36:15.711237
+2025-04-28 15:06:19,631 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:06:19,713 - DEBUG - Calculated interval: 40s (Score: 14.63)
+2025-04-28 15:06:19,715 - INFO - Dynamic interval: 40s
+2025-04-28 15:06:19,715 - INFO - Next collection in 36.0s
+2025-04-28 15:06:59,839 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:36:55.712591
+2025-04-28 15:06:59,840 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:06:59,921 - DEBUG - Calculated interval: 37s (Score: 14.90)
+2025-04-28 15:06:59,923 - INFO - Dynamic interval: 37s
+2025-04-28 15:06:59,923 - INFO - Next collection in 32.8s
+2025-04-28 15:07:36,888 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:37:32.713812
+2025-04-28 15:07:36,889 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:07:36,986 - DEBUG - Calculated interval: 41s (Score: 14.60)
+2025-04-28 15:07:36,987 - INFO - Dynamic interval: 41s
+2025-04-28 15:07:36,987 - INFO - Next collection in 36.7s
+2025-04-28 15:08:17,786 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:38:13.714835
+2025-04-28 15:08:17,786 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:08:17,878 - DEBUG - Calculated interval: 38s (Score: 14.84)
+2025-04-28 15:08:17,881 - INFO - Dynamic interval: 38s
+2025-04-28 15:08:17,881 - INFO - Next collection in 33.8s
+2025-04-28 15:08:55,683 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:38:51.716553
+2025-04-28 15:08:55,683 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:08:55,770 - DEBUG - Calculated interval: 39s (Score: 14.72)
+2025-04-28 15:08:55,771 - INFO - Dynamic interval: 39s
+2025-04-28 15:08:55,771 - INFO - Next collection in 34.9s
+2025-04-28 15:09:34,739 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:39:30.717724
+2025-04-28 15:09:34,743 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:09:34,840 - DEBUG - Calculated interval: 40s (Score: 14.66)
+2025-04-28 15:09:34,841 - INFO - Dynamic interval: 40s
+2025-04-28 15:09:34,841 - INFO - Next collection in 35.9s
+2025-04-28 15:10:14,732 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:40:10.718815
+2025-04-28 15:10:14,733 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:10:14,815 - DEBUG - Calculated interval: 42s (Score: 14.45)
+2025-04-28 15:10:14,816 - INFO - Dynamic interval: 42s
+2025-04-28 15:10:14,816 - INFO - Next collection in 37.9s
+2025-04-28 15:10:56,960 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:40:52.719600
+2025-04-28 15:10:56,960 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:10:57,057 - DEBUG - Calculated interval: 30s (Score: 15.83)
+2025-04-28 15:10:57,058 - INFO - Dynamic interval: 30s
+2025-04-28 15:10:57,058 - INFO - Next collection in 25.7s
+2025-04-28 15:11:26,742 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:41:22.720580
+2025-04-28 15:11:26,742 - INFO - Queueing model retrain...
+2025-04-28 15:11:26,747 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:11:26,826 - DEBUG - Calculated interval: 42s (Score: 14.48)
+2025-04-28 15:11:26,827 - INFO - Dynamic interval: 42s
+2025-04-28 15:11:26,827 - INFO - Next collection in 37.9s
+2025-04-28 15:12:08,716 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:42:04.721362
+2025-04-28 15:12:08,717 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:12:08,796 - DEBUG - Calculated interval: 37s (Score: 14.93)
+2025-04-28 15:12:08,796 - INFO - Dynamic interval: 37s
+2025-04-28 15:12:08,797 - INFO - Next collection in 32.9s
+2025-04-28 15:12:45,838 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:42:41.722244
+2025-04-28 15:12:45,839 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:12:45,920 - DEBUG - Calculated interval: 44s (Score: 14.33)
+2025-04-28 15:12:45,921 - INFO - Dynamic interval: 44s
+2025-04-28 15:12:45,921 - INFO - Next collection in 39.8s
+2025-04-28 15:13:29,765 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:43:25.723098
+2025-04-28 15:13:29,767 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:13:29,855 - DEBUG - Calculated interval: 40s (Score: 14.63)
+2025-04-28 15:13:29,856 - INFO - Dynamic interval: 40s
+2025-04-28 15:13:29,856 - INFO - Next collection in 35.9s
+2025-04-28 15:14:09,624 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:44:05.723883
+2025-04-28 15:14:09,625 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:14:09,715 - DEBUG - Calculated interval: 47s (Score: 14.06)
+2025-04-28 15:14:09,716 - INFO - Dynamic interval: 47s
+2025-04-28 15:14:09,716 - INFO - Next collection in 43.0s
+2025-04-28 15:14:56,635 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:44:52.725086
+2025-04-28 15:14:56,635 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:14:56,715 - DEBUG - Calculated interval: 35s (Score: 15.08)
+2025-04-28 15:14:56,716 - INFO - Dynamic interval: 35s
+2025-04-28 15:14:56,716 - INFO - Next collection in 31.0s
+2025-04-28 15:15:31,771 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:45:27.725750
+2025-04-28 15:15:31,772 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:15:31,854 - DEBUG - Calculated interval: 41s (Score: 14.60)
+2025-04-28 15:15:31,855 - INFO - Dynamic interval: 41s
+2025-04-28 15:15:31,855 - INFO - Next collection in 36.9s
+2025-04-28 15:16:12,802 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:46:08.726376
+2025-04-28 15:16:12,806 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:16:12,899 - DEBUG - Calculated interval: 44s (Score: 14.34)
+2025-04-28 15:16:12,899 - INFO - Dynamic interval: 44s
+2025-04-28 15:16:12,900 - INFO - Next collection in 39.8s
+2025-04-28 15:16:56,816 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:46:52.726685
+2025-04-28 15:16:56,816 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:16:56,896 - DEBUG - Calculated interval: 44s (Score: 14.31)
+2025-04-28 15:16:56,898 - INFO - Dynamic interval: 44s
+2025-04-28 15:16:56,898 - INFO - Next collection in 39.8s
+2025-04-28 15:17:40,805 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:47:36.727760
+2025-04-28 15:17:40,806 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:17:40,885 - DEBUG - Calculated interval: 37s (Score: 14.91)
+2025-04-28 15:17:40,886 - INFO - Dynamic interval: 37s
+2025-04-28 15:17:40,886 - INFO - Next collection in 32.8s
+2025-04-28 15:18:17,645 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:48:13.729717
+2025-04-28 15:18:17,646 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:18:17,725 - DEBUG - Calculated interval: 39s (Score: 14.73)
+2025-04-28 15:18:17,726 - INFO - Dynamic interval: 39s
+2025-04-28 15:18:17,726 - INFO - Next collection in 35.0s
+2025-04-28 15:18:56,686 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:48:52.731275
+2025-04-28 15:18:56,686 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:18:56,771 - DEBUG - Calculated interval: 42s (Score: 14.49)
+2025-04-28 15:18:56,772 - INFO - Dynamic interval: 42s
+2025-04-28 15:18:56,772 - INFO - Next collection in 38.0s
+2025-04-28 15:19:38,660 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:49:34.732053
+2025-04-28 15:19:38,660 - INFO - Queueing model retrain...
+2025-04-28 15:19:38,664 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:19:38,741 - DEBUG - Calculated interval: 40s (Score: 14.64)
+2025-04-28 15:19:38,742 - INFO - Dynamic interval: 40s
+2025-04-28 15:19:38,742 - INFO - Next collection in 36.0s
+2025-04-28 15:20:18,742 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:50:14.732674
+2025-04-28 15:20:18,743 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:20:18,830 - DEBUG - Calculated interval: 42s (Score: 14.46)
+2025-04-28 15:20:18,831 - INFO - Dynamic interval: 42s
+2025-04-28 15:20:18,831 - INFO - Next collection in 37.9s
+2025-04-28 15:21:00,754 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:50:56.734013
+2025-04-28 15:21:00,754 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:21:00,838 - DEBUG - Calculated interval: 43s (Score: 14.43)
+2025-04-28 15:21:00,838 - INFO - Dynamic interval: 43s
+2025-04-28 15:21:00,838 - INFO - Next collection in 38.9s
+2025-04-28 15:21:43,759 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:51:39.735685
+2025-04-28 15:21:43,759 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:21:43,840 - DEBUG - Calculated interval: 39s (Score: 14.76)
+2025-04-28 15:21:43,840 - INFO - Dynamic interval: 39s
+2025-04-28 15:21:43,841 - INFO - Next collection in 34.9s
+2025-04-28 15:22:22,727 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:52:18.736278
+2025-04-28 15:22:22,727 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:22:22,806 - DEBUG - Calculated interval: 30s (Score: 15.93)
+2025-04-28 15:22:22,807 - INFO - Dynamic interval: 30s
+2025-04-28 15:22:22,807 - INFO - Next collection in 25.9s
+2025-04-28 15:22:52,743 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:52:48.737231
+2025-04-28 15:22:52,744 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:22:52,824 - DEBUG - Calculated interval: 41s (Score: 14.55)
+2025-04-28 15:22:52,825 - INFO - Dynamic interval: 41s
+2025-04-28 15:22:52,825 - INFO - Next collection in 36.9s
+2025-04-28 15:23:33,750 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:53:29.738618
+2025-04-28 15:23:33,751 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:23:33,831 - DEBUG - Calculated interval: 36s (Score: 15.03)
+2025-04-28 15:23:33,832 - INFO - Dynamic interval: 36s
+2025-04-28 15:23:33,833 - INFO - Next collection in 31.9s
+2025-04-28 15:24:09,889 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:54:05.740210
+2025-04-28 15:24:09,889 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:24:09,976 - DEBUG - Calculated interval: 30s (Score: 15.72)
+2025-04-28 15:24:09,976 - INFO - Dynamic interval: 30s
+2025-04-28 15:24:09,976 - INFO - Next collection in 25.8s
+2025-04-28 15:24:39,734 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:54:35.742722
+2025-04-28 15:24:39,735 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:24:39,814 - DEBUG - Calculated interval: 42s (Score: 14.46)
+2025-04-28 15:24:39,816 - INFO - Dynamic interval: 42s
+2025-04-28 15:24:39,816 - INFO - Next collection in 37.9s
+2025-04-28 15:25:21,816 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:55:17.744097
+2025-04-28 15:25:21,816 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:25:21,900 - DEBUG - Calculated interval: 44s (Score: 14.31)
+2025-04-28 15:25:21,901 - INFO - Dynamic interval: 44s
+2025-04-28 15:25:21,901 - INFO - Next collection in 39.8s
+2025-04-28 15:26:05,892 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:56:01.745232
+2025-04-28 15:26:05,893 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:26:05,978 - DEBUG - Calculated interval: 41s (Score: 14.61)
+2025-04-28 15:26:05,979 - INFO - Dynamic interval: 41s
+2025-04-28 15:26:05,979 - INFO - Next collection in 36.8s
+2025-04-28 15:26:46,752 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:56:42.746635
+2025-04-28 15:26:46,754 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:26:46,834 - DEBUG - Calculated interval: 41s (Score: 14.58)
+2025-04-28 15:26:46,836 - INFO - Dynamic interval: 41s
+2025-04-28 15:26:46,836 - INFO - Next collection in 36.9s
+2025-04-28 15:27:27,927 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:57:23.747005
+2025-04-28 15:27:27,928 - INFO - Queueing model retrain...
+2025-04-28 15:27:27,941 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:27:28,021 - DEBUG - Calculated interval: 38s (Score: 14.88)
+2025-04-28 15:27:28,022 - INFO - Dynamic interval: 38s
+2025-04-28 15:27:28,022 - INFO - Next collection in 33.7s
+2025-04-28 15:28:05,697 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:58:01.748067
+2025-04-28 15:28:05,698 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:28:05,776 - DEBUG - Calculated interval: 43s (Score: 14.37)
+2025-04-28 15:28:05,778 - INFO - Dynamic interval: 43s
+2025-04-28 15:28:05,778 - INFO - Next collection in 39.0s
+2025-04-28 15:28:48,791 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:58:44.748946
+2025-04-28 15:28:48,792 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:28:48,860 - DEBUG - Calculated interval: 35s (Score: 15.12)
+2025-04-28 15:28:48,862 - INFO - Dynamic interval: 35s
+2025-04-28 15:28:48,862 - INFO - Next collection in 30.9s
+2025-04-28 15:29:23,781 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:59:19.749743
+2025-04-28 15:29:23,782 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:29:23,848 - DEBUG - Calculated interval: 39s (Score: 14.76)
+2025-04-28 15:29:23,850 - INFO - Dynamic interval: 39s
+2025-04-28 15:29:23,850 - INFO - Next collection in 34.9s
+2025-04-28 15:30:02,746 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T09:59:58.750801
+2025-04-28 15:30:02,748 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:30:02,817 - DEBUG - Calculated interval: 36s (Score: 15.06)
+2025-04-28 15:30:02,818 - INFO - Dynamic interval: 36s
+2025-04-28 15:30:02,818 - INFO - Next collection in 31.9s
+2025-04-28 15:30:38,791 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T10:00:34.751996
+2025-04-28 15:30:38,792 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:30:38,859 - DEBUG - Calculated interval: 41s (Score: 14.58)
+2025-04-28 15:30:38,860 - INFO - Dynamic interval: 41s
+2025-04-28 15:30:38,861 - INFO - Next collection in 36.9s
+2025-04-28 15:31:19,842 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T10:01:15.752977
+2025-04-28 15:31:19,845 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:31:19,913 - DEBUG - Calculated interval: 30s (Score: 16.56)
+2025-04-28 15:31:19,915 - INFO - Dynamic interval: 30s
+2025-04-28 15:31:19,915 - INFO - Next collection in 25.8s
+2025-04-28 15:31:49,980 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T10:01:45.754035
+2025-04-28 15:31:49,981 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:31:50,050 - DEBUG - Calculated interval: 30s (Score: 17.04)
+2025-04-28 15:31:50,051 - INFO - Dynamic interval: 30s
+2025-04-28 15:31:50,051 - INFO - Next collection in 25.7s
+2025-04-28 15:32:19,996 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T10:02:15.755178
+2025-04-28 15:32:19,997 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:32:20,065 - DEBUG - Calculated interval: 31s (Score: 15.48)
+2025-04-28 15:32:20,065 - INFO - Dynamic interval: 31s
+2025-04-28 15:32:20,065 - INFO - Next collection in 26.7s
+2025-04-28 15:32:50,717 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T10:02:46.757123
+2025-04-28 15:32:50,717 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:32:50,787 - DEBUG - Calculated interval: 45s (Score: 14.19)
+2025-04-28 15:32:50,788 - INFO - Dynamic interval: 45s
+2025-04-28 15:32:50,788 - INFO - Next collection in 41.0s
+2025-04-28 15:33:37,005 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T10:03:31.758512
+2025-04-28 15:33:37,006 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:33:37,080 - DEBUG - Calculated interval: 40s (Score: 14.61)
+2025-04-28 15:33:37,081 - INFO - Dynamic interval: 40s
+2025-04-28 15:33:37,081 - INFO - Next collection in 34.7s
+2025-04-28 15:34:15,779 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T10:04:11.759778
+2025-04-28 15:34:15,780 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:34:15,848 - DEBUG - Calculated interval: 39s (Score: 14.73)
+2025-04-28 15:34:15,849 - INFO - Dynamic interval: 39s
+2025-04-28 15:34:15,849 - INFO - Next collection in 34.9s
+2025-04-28 15:34:54,822 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T10:04:50.760237
+2025-04-28 15:34:54,822 - INFO - Queueing model retrain...
+2025-04-28 15:34:54,826 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:34:54,895 - DEBUG - Calculated interval: 41s (Score: 14.52)
+2025-04-28 15:34:54,896 - INFO - Dynamic interval: 41s
+2025-04-28 15:34:54,896 - INFO - Next collection in 36.9s
+2025-04-28 15:35:35,902 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T10:05:31.761330
+2025-04-28 15:35:35,904 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:35:35,979 - DEBUG - Calculated interval: 45s (Score: 14.19)
+2025-04-28 15:35:35,980 - INFO - Dynamic interval: 45s
+2025-04-28 15:35:35,981 - INFO - Next collection in 40.8s
+2025-04-28 15:36:20,671 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T10:06:16.761758
+2025-04-28 15:36:20,671 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:36:20,757 - DEBUG - Calculated interval: 39s (Score: 14.76)
+2025-04-28 15:36:20,758 - INFO - Dynamic interval: 39s
+2025-04-28 15:36:20,758 - INFO - Next collection in 35.0s
+2025-04-28 15:36:59,817 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T10:06:55.763133
+2025-04-28 15:36:59,818 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:36:59,887 - DEBUG - Calculated interval: 35s (Score: 15.12)
+2025-04-28 15:36:59,888 - INFO - Dynamic interval: 35s
+2025-04-28 15:36:59,888 - INFO - Next collection in 30.9s
+2025-04-28 15:37:34,889 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T10:07:30.764149
+2025-04-28 15:37:34,889 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:37:34,958 - DEBUG - Calculated interval: 43s (Score: 14.34)
+2025-04-28 15:37:34,959 - INFO - Dynamic interval: 43s
+2025-04-28 15:37:34,960 - INFO - Next collection in 38.8s
+2025-04-28 15:38:17,932 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T10:08:13.765088
+2025-04-28 15:38:17,933 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:38:18,005 - DEBUG - Calculated interval: 42s (Score: 14.49)
+2025-04-28 15:38:18,006 - INFO - Dynamic interval: 42s
+2025-04-28 15:38:18,006 - INFO - Next collection in 37.8s
+2025-04-28 15:38:59,878 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T10:08:55.766418
+2025-04-28 15:38:59,879 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:38:59,949 - DEBUG - Calculated interval: 30s (Score: 15.69)
+2025-04-28 15:38:59,950 - INFO - Dynamic interval: 30s
+2025-04-28 15:38:59,950 - INFO - Next collection in 25.8s
+2025-04-28 15:39:25,768 - INFO - Monitor stopped
+2025-04-28 15:41:28,427 - INFO - Starting Async System Monitor
+2025-04-28 15:41:29,051 - INFO - Successfully connected to MongoDB
+2025-04-28 15:41:29,053 - INFO - Training initial model...
+2025-04-28 15:41:29,368 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2025-04-28 15:41:29,443 - DEBUG - Adding TBB (D:\Coding\SystemInsights\myvenv\Lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH
+2025-04-28 15:41:29,455 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2025-04-28 15:41:29,472 - DEBUG - input tempfile: C:\Users\Lenovo\AppData\Local\Temp\tmpbilq22ee\3m9floej.json
+2025-04-28 15:41:30,919 - DEBUG - input tempfile: C:\Users\Lenovo\AppData\Local\Temp\tmpbilq22ee\gz__xua4.json
+2025-04-28 15:41:30,922 - DEBUG - idx 0
+2025-04-28 15:41:30,922 - DEBUG - running CmdStan, num_threads: None
+2025-04-28 15:41:30,922 - DEBUG - CmdStan args: ['D:\\Coding\\SystemInsights\\myvenv\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=92193', 'data', 'file=C:\\Users\\Lenovo\\AppData\\Local\\Temp\\tmpbilq22ee\\3m9floej.json', 'init=C:\\Users\\Lenovo\\AppData\\Local\\Temp\\tmpbilq22ee\\gz__xua4.json', 'output', 'file=C:\\Users\\Lenovo\\AppData\\Local\\Temp\\tmpbilq22ee\\prophet_modelukwq5wd5\\prophet_model-20250428154130.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+2025-04-28 15:41:30,924 - INFO - Chain [1] start processing
+2025-04-28 15:41:31,227 - INFO - Chain [1] done processing
+2025-04-28 15:41:31,241 - INFO - Successfully trained new Prophet model
+2025-04-28 15:41:31,244 - INFO - Model trained and saved to models\96_22_trend_model.pkl
+2025-04-28 15:41:35,680 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T10:11:31.245704
+2025-04-28 15:41:35,681 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:41:35,757 - DEBUG - Calculated interval: 110s (Score: 9.37)
+2025-04-28 15:41:35,758 - INFO - Dynamic interval: 110s
+2025-04-28 15:41:35,758 - INFO - Next collection in 105.5s
+2025-04-28 15:43:25,468 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T10:13:21.246383
+2025-04-28 15:43:25,469 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:43:25,553 - DEBUG - Calculated interval: 128s (Score: 7.66)
+2025-04-28 15:43:25,554 - INFO - Dynamic interval: 128s
+2025-04-28 15:43:25,554 - INFO - Next collection in 123.7s
+2025-04-28 15:45:33,182 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T10:15:29.247574
+2025-04-28 15:45:33,183 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:45:33,258 - DEBUG - Calculated interval: 134s (Score: 7.12)
+2025-04-28 15:45:33,259 - INFO - Dynamic interval: 134s
+2025-04-28 15:45:33,259 - INFO - Next collection in 130.0s
+2025-04-28 15:47:47,450 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T10:17:43.248868
+2025-04-28 15:47:47,451 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:47:47,540 - DEBUG - Calculated interval: 134s (Score: 7.09)
+2025-04-28 15:47:47,541 - INFO - Dynamic interval: 134s
+2025-04-28 15:47:47,541 - INFO - Next collection in 129.7s
+2025-04-28 15:50:01,256 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T10:19:57.250029
+2025-04-28 15:50:01,257 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:50:01,327 - DEBUG - Calculated interval: 131s (Score: 7.36)
+2025-04-28 15:50:01,328 - INFO - Dynamic interval: 131s
+2025-04-28 15:50:01,328 - INFO - Next collection in 126.9s
+2025-04-28 15:52:12,340 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T10:22:08.250990
+2025-04-28 15:52:12,341 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:52:12,412 - DEBUG - Calculated interval: 128s (Score: 7.66)
+2025-04-28 15:52:12,413 - INFO - Dynamic interval: 128s
+2025-04-28 15:52:12,413 - INFO - Next collection in 123.8s
+2025-04-28 15:54:20,394 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T10:24:16.252103
+2025-04-28 15:54:20,395 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:54:20,468 - DEBUG - Calculated interval: 136s (Score: 6.85)
+2025-04-28 15:54:20,469 - INFO - Dynamic interval: 136s
+2025-04-28 15:54:20,469 - INFO - Next collection in 131.8s
+2025-04-28 15:56:36,322 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T10:26:32.249489
+2025-04-28 15:56:36,323 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:56:36,393 - DEBUG - Calculated interval: 123s (Score: 8.11)
+2025-04-28 15:56:36,395 - INFO - Dynamic interval: 123s
+2025-04-28 15:56:36,395 - INFO - Next collection in 118.9s
+2025-04-28 15:58:39,424 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T10:28:35.243981
+2025-04-28 15:58:39,425 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 15:58:39,496 - DEBUG - Calculated interval: 135s (Score: 7.00)
+2025-04-28 15:58:39,498 - INFO - Dynamic interval: 135s
+2025-04-28 15:58:39,498 - INFO - Next collection in 130.7s
+2025-04-28 16:00:54,511 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T10:30:50.237695
+2025-04-28 16:00:54,515 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 16:00:54,586 - DEBUG - Calculated interval: 130s (Score: 7.48)
+2025-04-28 16:00:54,587 - INFO - Dynamic interval: 130s
+2025-04-28 16:00:54,587 - INFO - Next collection in 125.7s
+2025-04-28 16:03:04,295 - INFO - Metrics stored for DESKTOP-5A6SA56 at 2025-04-28T10:33:00.232082
+2025-04-28 16:03:04,295 - WARNING - latest is still a Future, attempting to resolve
+2025-04-28 16:03:04,378 - DEBUG - Calculated interval: 131s (Score: 7.34)
+2025-04-28 16:03:04,379 - INFO - Dynamic interval: 131s
+2025-04-28 16:03:04,379 - INFO - Next collection in 126.9s

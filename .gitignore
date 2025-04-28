@@ -1,4 +1,5 @@
 .env
 venv
+myvenv
 __pycache__/
-system_monitor.log/
+system_monitor.log
