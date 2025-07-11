@@ -46,7 +46,7 @@ The application features intelligent monitoring with adaptive collection interva
 4. Configure environment variables:
    Create a `.env` file with the following variables:
    ```
-   MONGO_URI="mongodb+srv://amrindersingh:7k9pHt7LcbOa8yqB@cluster0.6ememug.mongodb.net/"
+   MONGO_URI="MONGO_URI"
    DB_NAME="system_monitoring"
    COLLECTION_NAME="system_activity"
    REDIS_URL=redis://localhost:6379/0
