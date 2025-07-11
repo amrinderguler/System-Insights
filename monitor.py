@@ -46,6 +46,7 @@ MIN_INTERVAL = int(os.getenv("MIN_INTERVAL",30))  # seconds
 MAX_INTERVAL = int(os.getenv("MAX_INTERVAL",180))  # seconds
 
 class SystemMonitor:
+    """A class to monitor system metrics and store them in MongoDB."""
     def __init__(self):
         self.collection = None 
         self.system_id = socket.gethostname()
@@ -584,7 +585,7 @@ class SystemMonitor:
             
             # Apply bounds
             return max(self.min_interval, min(self.max_interval, interval))
-            
+          
         except Exception as e:
             logger.error(f"Error calculating interval: {str(e)}", exc_info=True)
             return self.default_interval

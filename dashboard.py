@@ -259,6 +259,7 @@ if selected_system:
             if not cpu_df.empty:
                 # Resample data if aggregation is selected
                 if agg_options[selected_agg]:
+
                     cpu_df = cpu_df.set_index('timestamp')
                     numeric_cols = cpu_df.select_dtypes(include=[np.number]).columns
                     cpu_df = cpu_df[numeric_cols].resample(agg_options[selected_agg]).mean().reset_index()

@@ -1,5 +1,4 @@
 # System Insights
-
 A comprehensive system monitoring and analytics tool that collects system metrics, performs trend analysis, and dynamically adjusts monitoring intervals based on machine learning predictions.
 
 ## Overview
@@ -28,7 +27,7 @@ The application features intelligent monitoring with adaptive collection interva
 
 1. Clone the repository:
    ```bash
-   git clone --single-branch --branch Model https://github.com/amrinderguler/System-Insights.git
+   git clone https://github.com/amrinderguler/System-Insights.git
    cd System-Insights
    ```
 
@@ -65,7 +64,6 @@ The application features intelligent monitoring with adaptive collection interva
 ## Usage
 
 ### Running the Monitor
-
 ```bash
 python monitor.py
 ```
