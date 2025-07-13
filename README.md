@@ -52,6 +52,9 @@ The application features intelligent monitoring with adaptive collection interva
    MIN_INTERVAL=30
    MAX_INTERVAL=180
    RETRAIN_CYCLES=10
+   GMAIL_USER=""
+   GMAIL_PASS=""
+   IT_SUPPORT_EMAIL=""
    ```
 
 5. Install and start MongoDB (if not already installed)
@@ -66,6 +69,11 @@ The application features intelligent monitoring with adaptive collection interva
 ### Running the Monitor
 ```bash
 python monitor.py
+```
+
+### Running the anomly detector
+```bash
+python anomaly_check_and_notify.py
 ```
 
 The system will start collecting metrics at default intervals and store them in MongoDB. If Redis is available, it will queue model retraining tasks.
