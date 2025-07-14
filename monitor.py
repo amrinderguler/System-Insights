@@ -617,12 +617,20 @@ class SystemMonitor:
                 if cycle % retrain_every == 0:
                     logger.info("Queueing model retrain...")
                     try:
-                        redis = await AsyncRedis.from_url("redis://localhost:6379")
-                        sync_redis = Redis() 
+                        # Use synchronous Redis client for RQ
+                        sync_redis = Redis(host='localhost', port=6379)  # Explicit connection
                         q = Queue("train_queue", connection=sync_redis)
-                        q.enqueue("train_worker.run_train_task", self.mac_address)
+                        
+                        # Enqueue with explicit module path and timeout
+                        q.enqueue(
+                            "train_worker.run_train_task",  # Fully qualified function path
+                            self.mac_address,
+                            job_timeout=600,  # 10 minute timeout (adjust as needed)
+                            result_ttl=0      # Don't store results
+                        )
+                        logger.info(f"Successfully enqueued training job for {self.mac_address}")
                     except Exception as e:
-                        logger.error(f"Failed to queue retrain: {str(e)}")
+                        logger.error(f"Failed to queue retrain: {str(e)}", exc_info=True)  # Add traceback
                 
                 # Use a completely synchronous approach with a separate thread
                 def get_latest():
