@@ -618,7 +618,9 @@ class SystemMonitor:
                     logger.info("Queueing model retrain...")
                     try:
                         redis = await AsyncRedis.from_url("redis://localhost:6379")
-                        await redis.rpush("train_queue", self.mac_address)
+                        sync_redis = Redis() 
+                        q = Queue("train_queue", connection=sync_redis)
+                        q.enqueue("train_worker.run_train_task", self.mac_address)
                     except Exception as e:
                         logger.error(f"Failed to queue retrain: {str(e)}")
                 
