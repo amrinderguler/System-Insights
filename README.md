@@ -91,20 +91,18 @@ streamlit run dashboard.py
 
 ### Retraining the Model
 
-To enqueue a retraining job for a specific MAC address:
+Retraining jobs are processed asynchronously using Redis and RQ. Make sure Redis is running, then start an RQ worker:
 
 ```bash
-python retrain.py
+rq worker
 ```
-
-You will be prompted for the MAC address if not provided as an argument.
 
 ### Anomaly Detection Worker
 
 To run the anomaly detection and notification worker:
 
 ```bash
-python system-anomaly-monitor/anomaly_check_and_notify.py
+python system-anomaly-monitoring/anomaly_check_and_notify.py
 ```
 
 This process listens for MAC addresses in the Redis queue, checks for anomalies, and sends notifications.
@@ -144,7 +142,7 @@ System Insights consists of several components:
 
 1. **SystemMonitor**: The main class responsible for metric collection and storage (see `monitor.py`)
 2. **TrendForecaster**: Machine learning component for analyzing metrics and predicting optimal intervals ([`trend_model.py`](trend_model.py))
-3. **Anomaly Detection**: Detects anomalies and sends notifications ([`system-anomaly-monitor/src/anomaly_detector.py`](system-anomaly-monitor/anomaly_detector.py))
+3. **Anomaly Detection**: Detects anomalies and sends notifications ([`system-anomaly-monitor/anomaly_detector.py`](system-anomaly-monitor/anomaly_detector.py))
 4. **Dashboard**: Visualizes metrics ([`dashboard.py`](dashboard.py))
 5. **MongoDB**: Backend database for storing metrics and system information
 6. **Redis**: Queue system for distributed model training and anomaly processing
