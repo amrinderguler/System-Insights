@@ -2,7 +2,7 @@ import os
 import asyncio
 from redis import Redis
 from rq import Queue
-from your_main_module import SystemMonitor  # Import your SystemMonitor class
+from monitor import SystemMonitor  
 
 async def train_model_task(mac_address: str):
     """Task that will be run by the RQ worker"""
