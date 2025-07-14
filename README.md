@@ -94,7 +94,7 @@ streamlit run dashboard.py
 Retraining jobs are processed asynchronously using Redis and RQ. Make sure Redis is running, then start an RQ worker:
 
 ```bash
-rq worker
+rq worker train_queue --name model_trainer
 ```
 
 ### Anomaly Detection Worker
