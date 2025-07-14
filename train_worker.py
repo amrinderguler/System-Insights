@@ -13,8 +13,3 @@ async def train_model_task(mac_address: str):
 def run_train_task(mac_address: str):
     """Wrapper that runs the async task in an event loop"""
     return asyncio.run(train_model_task(mac_address))
-
-if __name__ == "__main__":
-    # Start worker if run directly
-    q = Queue("train_queue", connection=Redis())
-    worker = q.run(run_train_task)
