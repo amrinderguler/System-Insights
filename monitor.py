@@ -24,7 +24,6 @@ import asyncio
 from redis import Redis
 from rq import Queue
 from motor.motor_asyncio import AsyncIOMotorClient
-from train_worker import run_train_task
 
 
 # Configure logging
@@ -622,7 +621,7 @@ class SystemMonitor:
                         
                         sync_redis = Redis(host='localhost', port=6379)  
                         q = Queue("train_queue", connection=sync_redis)
-                        q.enqueue(run_train_task, self.mac_address, job_timeout=600)
+                        q.enqueue("train_worker.run_train_task", self.mac_address, job_timeout=600)
                         logger.info(f"Training job enqueued for {self.mac_address}")
                     except Exception as e:
                         logger.error(f"Failed to enqueue training job: {str(e)}", exc_info=True)
