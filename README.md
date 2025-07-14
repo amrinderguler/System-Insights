@@ -68,7 +68,7 @@ The application features intelligent monitoring with adaptive collection interva
 
 5. **Install and start MongoDB** (if not already installed).
 
-6. **(Optional) Install and start Redis:**
+6. **Install and start Redis:**
    - **Windows**: Use WSL or Redis Windows port
    - **macOS**: `brew install redis && brew services start redis`
    - **Linux**: `sudo apt install redis-server && sudo service redis-server start`
