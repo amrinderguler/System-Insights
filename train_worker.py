@@ -18,3 +18,8 @@ if __name__ == "__main__":
     # Start worker if run directly
     q = Queue("train_queue", connection=Redis())
     worker = q.run(run_train_task)
+
+    # Start worker
+    with Connection(redis_conn):
+        worker = Worker([queue])
+        worker.work()
