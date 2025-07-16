@@ -112,6 +112,16 @@ Open a **third terminal** to view the live metrics and trends:
 streamlit run dashboard.py
 ```
 
+### 4\. Anomaly Detection Worker
+
+To run the anomaly detection and notification worker:
+
+```bash
+python system-anomaly-monitoring/anomaly_check_and_notify.py
+```
+
+This process listens for MAC addresses in the Redis queue, checks for anomalies, and sends notifications.
+
 ## Project Structure
 
 ```
