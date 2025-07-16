@@ -16,3 +16,5 @@ uptime
 motor
 setuptools
 load_dotenv
+celery
+eventlet

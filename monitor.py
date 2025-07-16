@@ -18,12 +18,10 @@ import threading
 import queue
 from trend_model import TrendForecaster
 import aiofiles
-from uptime import uptime
 import uptime
 import asyncio
-from redis import Redis
-from rq import Queue
 from motor.motor_asyncio import AsyncIOMotorClient
+from celery_app import app as celery_app
 
 
 # Configure logging
@@ -616,15 +614,18 @@ class SystemMonitor:
                 cycle += 1
                 
                 if cycle % retrain_every == 0:
-                    logger.info("Queueing model retrain...")
+                    logger.info("Queueing model retrain with Celery...")
                     try:
-                        
-                        sync_redis = Redis(host='localhost', port=6379)  
-                        q = Queue("train_queue", connection=sync_redis)
-                        q.enqueue("train_worker.run_train_task", self.mac_address, job_timeout=600)
+                        celery_app.send_task("train.run_train_task", args=[self.mac_address])
                         logger.info(f"Training job enqueued for {self.mac_address}")
                     except Exception as e:
-                        logger.error(f"Failed to enqueue training job: {str(e)}", exc_info=True)
+                        logger.error(f"Failed to enqueue Celery job: {str(e)}", exc_info=True)
+
+                    logger.info("Checking for an updated model file...")
+                    new_forecaster = await self.load_trend_model(self.mac_address)
+                    if new_forecaster:
+                        forecaster = new_forecaster 
+                        logger.info("Successfully loaded updated model.")
                 
                 # Use a completely synchronous approach with a separate thread
                 def get_latest():
@@ -650,7 +651,7 @@ class SystemMonitor:
                 sleep_time = max(1, current_interval - elapsed)
                 logger.info(f"Next collection in {sleep_time:.1f}s")
                 # Use blocking sleep since this is the main loop
-                time.sleep(sleep_time)
+                await asyncio.sleep(sleep_time)
                 
             except KeyboardInterrupt:
                 logger.info("Shutting down...")
