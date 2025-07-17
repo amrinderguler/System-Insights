@@ -1,5 +1,4 @@
 import eventlet
-# This MUST be at the very top of the file.
 eventlet.monkey_patch()
 
 import logging
@@ -7,10 +6,8 @@ import os
 import pickle
 import pandas as pd
 from celery import Celery
-from pymongo import MongoClient  # Use the standard synchronous client
+from pymongo import MongoClient 
 from trend_model import TrendForecaster
-
-# Import the shared Celery app instance
 from celery_app import app
 
 logger = logging.getLogger(__name__)
@@ -22,7 +19,6 @@ def run_train_task(mac_address: str):
     """
     logger.info(f"Celery task started for MAC address: {mac_address}")
     try:
-        # Directly call the new synchronous function
         train_model_and_save_sync(mac_address)
     except Exception as e:
         logger.error(f"An error occurred in the celery task: {e}", exc_info=True)
@@ -32,11 +28,10 @@ def train_model_and_save_sync(mac_address: str):
     """
     Synchronous version of the training logic for the Celery worker.
     """
-    from monitor import SystemMonitor # Keep this local import to prevent circular dependencies
+    from monitor import SystemMonitor 
 
     logger.info(f"Starting model training for MAC address: {mac_address}")
-    
-    # --- Database Connection (Synchronous) ---
+
     client = None
     try:
         mongo_uri = os.getenv("MONGO_URI")
@@ -44,7 +39,7 @@ def train_model_and_save_sync(mac_address: str):
         collection_name = os.getenv("COLLECTION_NAME")
         
         client = MongoClient(mongo_uri, serverSelectionTimeoutMS=5000)
-        client.admin.command('ping') # Verify connection
+        client.admin.command('ping') 
         collection = client[db_name][collection_name]
         logger.info("Worker successfully connected to MongoDB.")
     except Exception as e:
@@ -53,7 +48,7 @@ def train_model_and_save_sync(mac_address: str):
             client.close()
         return
 
-    # --- Data Fetching and Training (Synchronous) ---
+    
     try:
         min_data_points = 20
         cursor = collection.find(
